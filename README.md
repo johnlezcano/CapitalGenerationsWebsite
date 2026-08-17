@@ -4,6 +4,15 @@ A production-ready, responsive marketing website for Capital Generations.
 
 The site is built as a **zero-dependency static website** with a small Node.js build script. It does not use WordPress, a database, or a CMS. The generated `dist/` directory can be deployed directly, and `vercel.json` configures GitHub-to-Vercel deployment.
 
+## Complete ZIP structure
+
+The complete delivery archive contains two top-level folders:
+
+- `capital-generations-site/` — upload this folder to GitHub and Vercel
+- `private-source-assets/` — original supplied dashboards and proposal; do not deploy publicly
+
+Custom generated SVG and PNG assets are included in `public/assets/generated/`.
+
 ## What is included
 
 - Responsive desktop, tablet, and mobile layouts

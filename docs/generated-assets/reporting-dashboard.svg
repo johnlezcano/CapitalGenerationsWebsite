@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Sanitized sales reporting dashboard</title>
+  <desc id="desc">A fictional dashboard showing activity, contactability, qualified meetings, trends, and target-market performance without client data.</desc>
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0758a6"/><stop offset="1" stop-color="#4192cf"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2c8ed0" stop-opacity=".34"/><stop offset="1" stop-color="#2c8ed0" stop-opacity="0"/></linearGradient>
+    </defs>
+  <rect width="1440" height="900" rx="36" fill="#f4f7fa"/>
+  <rect x="40" y="40" width="1360" height="108" rx="20" fill="url(#header)"/>
+  <text x="78" y="91" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#fff">Client Performance Dashboard</text>
+  <text x="78" y="123" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#dff3ff">Illustrative reporting view — no client data</text>
+  <rect x="1118" y="68" width="238" height="54" rx="27" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".36"/>
+  <circle cx="1152" cy="95" r="8" fill="#28d0ac"/><text x="1172" y="102" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#fff">Reporting view</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(40 178)"><rect width="430" height="142" rx="20" fill="#fff"/><text x="34" y="43" font-size="17" font-weight="700" fill="#62798f">OUTREACH ACTIVITY</text><text x="34" y="91" font-size="38" font-weight="800" fill="#092b50">Visible</text><text x="34" y="120" font-size="16" fill="#7a8fa2">Calls, emails, tasks and outcomes</text><circle cx="370" cy="72" r="34" fill="#e6f4ff"/><path d="M350 74h12l8-19 12 37 8-18h18" fill="none" stroke="#1579bd" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g transform="translate(505 178)"><rect width="430" height="142" rx="20" fill="#fff"/><text x="34" y="43" font-size="17" font-weight="700" fill="#62798f">CONTACTABILITY</text><text x="34" y="91" font-size="38" font-weight="800" fill="#092b50">Tracked</text><text x="34" y="120" font-size="16" fill="#7a8fa2">By segment, period and market</text><circle cx="370" cy="72" r="34" fill="#e9fbf6"/><circle cx="370" cy="72" r="18" fill="none" stroke="#20a985" stroke-width="6"/><circle cx="370" cy="72" r="5" fill="#20a985"/></g>
+    <g transform="translate(970 178)"><rect width="430" height="142" rx="20" fill="#fff"/><text x="34" y="43" font-size="17" font-weight="700" fill="#62798f">QUALIFIED MEETINGS</text><text x="34" y="91" font-size="38" font-weight="800" fill="#092b50">Measured</text><text x="34" y="120" font-size="16" fill="#7a8fa2">Scheduled, held and next steps</text><circle cx="370" cy="72" r="34" fill="#fff5df"/><path d="M350 58h40v35h-40zM357 50v14M383 50v14M350 70h40" fill="none" stroke="#ecae25" stroke-width="5" stroke-linecap="round"/></g>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(40 350)">
+      <rect width="850" height="510" rx="22" fill="#fff"/>
+      <text x="34" y="46" font-size="23" font-weight="800" fill="#122f4d">Performance trend</text><text x="34" y="74" font-size="15" fill="#7c90a2">Illustrative period-over-period conversion view</text>
+      <g stroke="#dfe8ef" stroke-width="2"><path d="M70 140H800M70 220H800M70 300H800M70 380H800M70 460H800"/><path d="M70 110V460M215 110V460M360 110V460M505 110V460M650 110V460M800 110V460"/></g>
+      <path d="M70 410C142 390 174 412 215 356S315 330 360 324S456 280 505 270S600 196 650 205S744 128 800 146L800 460H70Z" fill="url(#area)"/>
+      <path d="M70 410C142 390 174 412 215 356S315 330 360 324S456 280 505 270S600 196 650 205S744 128 800 146" fill="none" stroke="#1a82c7" stroke-width="8" stroke-linecap="round"/>
+      <g fill="#fff" stroke="#1a82c7" stroke-width="6"><circle cx="70" cy="410" r="8"/><circle cx="215" cy="356" r="8"/><circle cx="360" cy="324" r="8"/><circle cx="505" cy="270" r="8"/><circle cx="650" cy="205" r="8"/><circle cx="800" cy="146" r="8"/></g>
+      <g font-size="14" fill="#758b9d"><text x="55" y="488">P1</text><text x="200" y="488">P2</text><text x="345" y="488">P3</text><text x="490" y="488">P4</text><text x="635" y="488">P5</text><text x="785" y="488">P6</text></g>
+    </g>
+    <g transform="translate(920 350)">
+      <rect width="480" height="244" rx="22" fill="#fff"/>
+      <text x="30" y="46" font-size="23" font-weight="800" fill="#122f4d">Outreach outcomes</text>
+      <g transform="translate(42 82)">
+        <g><rect x="0" y="90" width="42" height="70" rx="8" fill="#cfe7f8"/><rect x="48" y="42" width="42" height="118" rx="8" fill="#2f8ecf"/><text x="5" y="190" font-size="14" fill="#6d8293">Contact</text></g>
+        <g transform="translate(130)"><rect x="0" y="110" width="42" height="50" rx="8" fill="#cfe7f8"/><rect x="48" y="78" width="42" height="82" rx="8" fill="#2f8ecf"/><text x="-3" y="190" font-size="14" fill="#6d8293">Qualified</text></g>
+        <g transform="translate(260)"><rect x="0" y="122" width="42" height="38" rx="8" fill="#cfe7f8"/><rect x="48" y="58" width="42" height="102" rx="8" fill="#2f8ecf"/><text x="8" y="190" font-size="14" fill="#6d8293">Meeting</text></g>
+      </g>
+    </g>
+    <g transform="translate(920 622)">
+      <rect width="480" height="238" rx="22" fill="#fff"/>
+      <text x="30" y="46" font-size="23" font-weight="800" fill="#122f4d">Meeting outcomes</text>
+      <g font-size="17" fill="#29455f">
+        <g transform="translate(32 83)"><circle cx="10" cy="10" r="9" fill="#1c83c6"/><text x="34" y="17">Scheduled</text><text x="390" y="17" text-anchor="end" font-weight="700">Tracked</text></g>
+        <g transform="translate(32 124)"><circle cx="10" cy="10" r="9" fill="#22a889"/><text x="34" y="17">Held</text><text x="390" y="17" text-anchor="end" font-weight="700">Tracked</text></g>
+        <g transform="translate(32 165)"><circle cx="10" cy="10" r="9" fill="#e9b647"/><text x="34" y="17">Rescheduled</text><text x="390" y="17" text-anchor="end" font-weight="700">Tracked</text></g>
+        <g transform="translate(32 206)"><circle cx="10" cy="10" r="9" fill="#a9b7c2"/><text x="34" y="17">No show</text><text x="390" y="17" text-anchor="end" font-weight="700">Tracked</text></g>
+      </g>
+    </g>
+  </g>
+</svg>

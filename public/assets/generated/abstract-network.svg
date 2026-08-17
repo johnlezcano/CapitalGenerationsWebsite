@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract Capital Generations network background</title>
+  <desc id="desc">An abstract field of connected blue nodes and arcs for use as a website background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06172f"/><stop offset="1" stop-color="#0c3154"/></linearGradient>
+    <radialGradient id="g"><stop stop-color="#2fb9ed" stop-opacity=".55"/><stop offset="1" stop-color="#2fb9ed" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1110" cy="300" r="430" fill="url(#g)"/>
+  <circle cx="280" cy="770" r="340" fill="url(#g)" opacity=".65"/>
+  <g fill="none" stroke="#78d3f5" stroke-opacity=".13">
+    <path d="M-60 730C280 390 650 960 1020 520S1660 310 1710 80" stroke-width="3"/>
+    <path d="M-70 540C270 180 650 760 1010 350S1550 180 1680 40" stroke-width="2"/>
+    <path d="M180 1040C340 620 740 930 970 580S1340 170 1640 260" stroke-width="2"/>
+    <circle cx="1130" cy="340" r="310"/><circle cx="1130" cy="340" r="220"/><circle cx="320" cy="740" r="250"/><circle cx="320" cy="740" r="170"/>
+  </g>
+  <g fill="#61cdf4">
+    <circle cx="160" cy="625" r="9"/><circle cx="320" cy="740" r="13"/><circle cx="520" cy="705" r="7"/><circle cx="710" cy="650" r="10"/><circle cx="900" cy="560" r="8"/><circle cx="1130" cy="340" r="15"/><circle cx="1290" cy="220" r="7"/><circle cx="1410" cy="390" r="9"/><circle cx="1210" cy="560" r="6"/><circle cx="990" cy="210" r="7"/>
+  </g>
+  <g fill="#fff" opacity=".65"><circle cx="205" cy="510" r="4"/><circle cx="430" cy="820" r="4"/><circle cx="620" cy="550" r="4"/><circle cx="780" cy="720" r="4"/><circle cx="1040" cy="450" r="4"/><circle cx="1220" cy="270" r="4"/><circle cx="1360" cy="520" r="4"/></g>
+</svg>

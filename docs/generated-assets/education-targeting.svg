@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Education market targeting illustration</title>
+  <desc id="desc">A network of education buyer roles connected to a targeted account strategy.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06172f"/><stop offset="1" stop-color="#0e426e"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#42bdec" stop-opacity=".5"/><stop offset="1" stop-color="#42bdec" stop-opacity="0"/></radialGradient>
+    </defs>
+  <rect width="1400" height="900" rx="46" fill="url(#bg)"/>
+  <circle cx="700" cy="450" r="330" fill="url(#glow)"/>
+  <g fill="none" stroke="#7cd4f5" stroke-opacity=".25" stroke-width="3">
+    <path d="M700 450L300 205M700 450L1100 205M700 450L210 500M700 450L1190 500M700 450L340 720M700 450L1060 720"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <circle cx="700" cy="450" r="170" fill="#0b74b8" stroke="#87d9fa" stroke-width="3"/>
+    <path d="M625 405l75-45 75 45-75 45zM650 444v58M750 444v58M628 508h144M650 508v25M700 508v25M750 508v25" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="700" y="586" text-anchor="middle" font-size="24" font-weight="700" letter-spacing="2" fill="#dff5ff">EDUCATION SALES</text>
+    <g transform="translate(115 120)"><rect width="370" height="170" rx="28" fill="#153b61" stroke="#7dcff2" stroke-opacity=".4"/><text x="185" y="72" text-anchor="middle" font-size="24" font-weight="700" fill="#9fcde6">DISTRICT LEADERS</text><text x="185" y="118" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">Superintendents</text></g>
+    <g transform="translate(915 120)"><rect width="370" height="170" rx="28" fill="#153b61" stroke="#7dcff2" stroke-opacity=".4"/><text x="185" y="72" text-anchor="middle" font-size="24" font-weight="700" fill="#9fcde6">ACADEMIC TEAMS</text><text x="185" y="118" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">Curriculum leaders</text></g>
+    <g transform="translate(40 415)"><rect width="340" height="170" rx="28" fill="#153b61" stroke="#7dcff2" stroke-opacity=".4"/><text x="170" y="72" text-anchor="middle" font-size="24" font-weight="700" fill="#9fcde6">SCHOOL LEADERS</text><text x="170" y="118" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">Principals</text></g>
+    <g transform="translate(1020 415)"><rect width="340" height="170" rx="28" fill="#153b61" stroke="#7dcff2" stroke-opacity=".4"/><text x="170" y="72" text-anchor="middle" font-size="24" font-weight="700" fill="#9fcde6">TECHNOLOGY</text><text x="170" y="118" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">IT leaders</text></g>
+    <g transform="translate(160 635)"><rect width="390" height="170" rx="28" fill="#153b61" stroke="#7dcff2" stroke-opacity=".4"/><text x="195" y="72" text-anchor="middle" font-size="24" font-weight="700" fill="#9fcde6">STUDENT SERVICES</text><text x="195" y="118" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">Special education</text></g>
+    <g transform="translate(850 635)"><rect width="390" height="170" rx="28" fill="#153b61" stroke="#7dcff2" stroke-opacity=".4"/><text x="195" y="72" text-anchor="middle" font-size="24" font-weight="700" fill="#9fcde6">OPERATIONS</text><text x="195" y="118" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">Finance &amp; grants</text></g>
+  </g>
+  <g fill="#5fd0f3"><circle cx="300" cy="205" r="9"/><circle cx="1100" cy="205" r="9"/><circle cx="210" cy="500" r="9"/><circle cx="1190" cy="500" r="9"/><circle cx="340" cy="720" r="9"/><circle cx="1060" cy="720" r="9"/></g>
+</svg>

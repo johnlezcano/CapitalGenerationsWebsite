@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-labelledby="title desc">
+  <title id="title">Capital Generations five-step sales development process</title>
+  <desc id="desc">Align, Build, Deploy, Engage and Improve connected in a continuous process.</desc>
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#66c8f0"/><stop offset="1" stop-color="#0e6eb8"/></linearGradient>
+    </defs>
+  <rect width="1600" height="640" rx="34" fill="#f3f7fb"/>
+  <path d="M160 320H1440" stroke="#c7ddec" stroke-width="12" stroke-linecap="round"/>
+  <path d="M160 320H1440" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(80 172)"><rect width="260" height="296" rx="28" fill="#fff"/><circle cx="130" cy="72" r="38" fill="#0f78bd"/><text x="130" y="85" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">01</text><text x="130" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#092c51">Align</text><text x="130" y="194" text-anchor="middle" font-size="18" fill="#6f8497"><tspan x="130">Offer, ICP, roles,</tspan><tspan x="130" dy="28">goals and quality.</tspan></text></g>
+    <g transform="translate(375 172)"><rect width="260" height="296" rx="28" fill="#fff"/><circle cx="130" cy="72" r="38" fill="#1179bd"/><text x="130" y="85" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">02</text><text x="130" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#092c51">Build</text><text x="130" y="194" text-anchor="middle" font-size="18" fill="#6f8497"><tspan x="130">Target accounts, data,</tspan><tspan x="130" dy="28">messaging and workflow.</tspan></text></g>
+    <g transform="translate(670 172)"><rect width="260" height="296" rx="28" fill="#fff"/><circle cx="130" cy="72" r="38" fill="#147abc"/><text x="130" y="85" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">03</text><text x="130" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#092c51">Deploy</text><text x="130" y="194" text-anchor="middle" font-size="18" fill="#6f8497"><tspan x="130">SDR or AE, manager,</tspan><tspan x="130" dy="28">success and data support.</tspan></text></g>
+    <g transform="translate(965 172)"><rect width="260" height="296" rx="28" fill="#fff"/><circle cx="130" cy="72" r="38" fill="#177bbb"/><text x="130" y="85" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">04</text><text x="130" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#092c51">Engage</text><text x="130" y="194" text-anchor="middle" font-size="18" fill="#6f8497"><tspan x="130">Human-led calls and</tspan><tspan x="130" dy="28">coordinated follow-up.</tspan></text></g>
+    <g transform="translate(1260 172)"><rect width="260" height="296" rx="28" fill="#fff"/><circle cx="130" cy="72" r="38" fill="#197cba"/><text x="130" y="85" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">05</text><text x="130" y="150" text-anchor="middle" font-size="30" font-weight="800" fill="#092c51">Improve</text><text x="130" y="194" text-anchor="middle" font-size="18" fill="#6f8497"><tspan x="130">Review, learn, adjust</tspan><tspan x="130" dy="28">and strengthen conversion.</tspan></text></g>
+  </g>
+  <g fill="#fff" stroke="#1180c4" stroke-width="5"><circle cx="340" cy="320" r="13"/><circle cx="635" cy="320" r="13"/><circle cx="930" cy="320" r="13"/><circle cx="1225" cy="320" r="13"/></g>
+</svg>
