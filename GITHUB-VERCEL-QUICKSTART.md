@@ -1,47 +1,65 @@
-# GitHub + Vercel quick start
+# Update the existing GitHub + Vercel deployment
 
-## 1. Create the GitHub repository
+The GitHub repository, Vercel account, repository connection, and first deployment already exist. This release should be pushed into that existing setup.
 
-1. In GitHub, select **New repository**.
-2. Name it `capital-generations-site`.
-3. Choose private or public. Private is recommended while reviewing.
-4. Do not initialize it with another framework or template.
+## 1. Use only the deployable website folder
 
-## 2. Upload the website
+Upload or copy the contents of:
 
-Upload the contents of this `capital-generations-site` folder—not the sibling `private-source-assets` folder from the complete archive.
-
-Using Git on your computer:
-
-```bash
-git init
-git add .
-git commit -m "Initial Capital Generations website"
-git branch -M main
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-git push -u origin main
+```text
+capital-generations-site/
 ```
 
-## 3. Import into Vercel
+Do not upload the sibling `private-source-assets/` folder to a public repository. It contains the original proposal and dashboard screenshots.
 
-1. In Vercel, select **Add New → Project**.
-2. Import `capital-generations-site` from GitHub.
-3. Vercel will use the settings in `vercel.json`:
-   - Build command: `npm run build`
-   - Output directory: `dist`
-4. Select **Deploy**.
+## 2. Replace the repository files
 
-## 4. Review the preview URL
+From the local Git repository, copy in the updated files and run:
 
-Vercel will give you a temporary URL. Review every page on desktop and mobile before connecting the domain.
+```bash
+git add -A
+git commit -m "Add production contact integrations"
+git push origin main
+```
 
-## 5. Later integrations
+The updated release includes:
 
-After the preview is approved:
+- Formspree endpoint
+- `jlezcano@capitalgenerations.com`
+- `631-877-1393`
+- click-to-call links
+- WhatsApp links and floating button
+- LinkedIn links
+- updated contact and privacy copy
 
-- add the Formspree endpoint in `site.config.mjs`
-- add the GA4 measurement ID in `site.config.mjs`
-- add the Search Console verification value in `site.config.mjs`
-- add the domain in Vercel and follow its DNS instructions
+## 3. Let Vercel deploy automatically
 
-Run `npm run validate` and push after every configuration change.
+The existing Vercel project should detect the push and run:
+
+```text
+Build command: npm run build
+Output directory: dist
+```
+
+Open the new Vercel deployment URL and confirm the build is marked **Ready**.
+
+## 4. Test before domain work
+
+Before changing DNS:
+
+1. Open `/contact` on the deployed site.
+2. Test Calendly, phone, WhatsApp, email, and LinkedIn links.
+3. Submit one real Formspree inquiry.
+4. Confirm delivery to `jlezcano@capitalgenerations.com`.
+5. Check desktop and mobile layouts.
+
+## 5. Remaining integrations
+
+After this release is deployed and tested:
+
+- add the GA4 Measurement ID
+- add Search Console verification
+- complete final QA
+- connect the domain and DNS last
+
+Run `npm run validate` before each push.

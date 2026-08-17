@@ -1014,8 +1014,8 @@ function contactPage(site) {
       answer: 'It is a practical fit conversation. The goal is to understand the sales motion and determine whether an SDR, AE, or connected team model makes sense.',
     },
     {
-      question: 'Can I email instead of booking a call?',
-      answer: `Yes. Email ${site.email} or use the contact form once it is connected.`,
+      question: 'Can I contact Capital Generations without booking a call?',
+      answer: `Yes. Email ${site.email}, call ${site.phoneDisplay}, send a WhatsApp message, or use the contact form.`,
     },
   ];
 
@@ -1046,16 +1046,24 @@ function contactPage(site) {
           <p>Choose a time on the Capital Generations calendar. The conversation will focus on your target market, current team, sales bottleneck, and desired outcome.</p>
           ${primaryButton('Open Calendly', site.calendlyUrl, { external: true, track: 'book_call_contact' })}
           <small>Calendly opens in a new tab.</small>
+          <div class="direct-contact" aria-label="Other ways to contact Capital Generations">
+            <span>Or contact us directly</span>
+            <a href="${site.phoneUrl}" data-track="phone_contact">${icon('phone')}<span><strong>${site.phoneDisplay}</strong><small>Call Capital Generations</small></span></a>
+            <a href="${site.whatsappUrl}" target="_blank" rel="noopener noreferrer" data-track="whatsapp_contact">${icon('whatsapp')}<span><strong>WhatsApp</strong><small>Start a business conversation</small></span></a>
+            <a href="mailto:${site.email}" data-track="email_contact">${icon('mail')}<span><strong>${site.email}</strong><small>Send an email</small></span></a>
+            ${site.social?.linkedin ? `<a href="${site.social.linkedin}" target="_blank" rel="noopener noreferrer" data-track="linkedin_contact">${icon('linkedin')}<span><strong>LinkedIn</strong><small>Follow Capital Generations</small></span></a>` : ''}
+          </div>
         </div>
 
         <div class="contact-form-wrap reveal">
           <div class="contact-form-wrap__head">
             ${eyebrow('Send a note')}
             <h2>Prefer to start with context?</h2>
-            <p>The form is ready for Formspree. Add the endpoint in <code>site.config.mjs</code> after you create the form.</p>
+            <p>Share a few details and your message will be sent directly to the Capital Generations team.</p>
           </div>
-          <form class="contact-form" method="POST" action="${formEndpoint}" data-contact-form data-formspree-endpoint="${formEndpoint}">
+          <form class="contact-form" method="POST" action="${formEndpoint}" data-contact-form data-formspree-endpoint="${formEndpoint}" data-contact-email="${site.email}">
             <input type="hidden" name="_subject" value="New Capital Generations website inquiry" />
+            <input type="hidden" name="source" value="Capital Generations website" />
             <label class="honeypot" aria-hidden="true">Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
             <div class="form-row">
               <label><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
@@ -1103,7 +1111,7 @@ function privacyPage(site) {
       <h2>Information you submit</h2>
       <p>When you contact Capital Generations, book a meeting, or submit a website form, you may provide information such as your name, work email, company, website, service interest, and message. Capital Generations may use that information to respond to your inquiry, evaluate fit, communicate about services, and maintain business records.</p>
       <h2>Scheduling and form providers</h2>
-      <p>The website links to Calendly for scheduling. A contact form may be connected to Formspree. Information submitted through those services is also subject to the provider’s own privacy and security practices.</p>
+      <p>The website links to Calendly for scheduling, WhatsApp for messaging, and LinkedIn for company information. The contact form uses Formspree. Information submitted through or shared with those services is also subject to each provider’s privacy and security practices.</p>
       <h2>Analytics</h2>
       <p>Google Analytics 4 may be added after launch to understand website traffic and usage. When enabled, analytics may collect device, browser, approximate location, referral, page-view, and interaction information according to Google’s configuration and policies.</p>
       <h2>How information may be shared</h2>

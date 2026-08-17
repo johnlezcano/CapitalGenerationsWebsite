@@ -1,6 +1,7 @@
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { site } from '../site.config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
@@ -46,6 +47,9 @@ const banned = [
   'filipinos',
   'indians',
   'eastern europeans',
+  'contact@capitalgenerations.com',
+  'add the endpoint in site.config.mjs',
+  'form has not been connected to formspree',
 ];
 
 for (const file of htmlFiles) {
@@ -81,6 +85,38 @@ for (const file of htmlFiles) {
     } catch {
       failures.push(`${relative}: broken internal reference: ${ref}`);
     }
+  }
+}
+
+
+const contactHtmlPath = path.join(dist, 'contact', 'index.html');
+try {
+  const contactHtml = await readFile(contactHtmlPath, 'utf8');
+  const requiredContactValues = [
+    site.formspreeEndpoint,
+    site.email,
+    site.phoneDisplay,
+    `tel:${site.phoneE164}`,
+    site.whatsappUrl,
+    site.social.linkedin,
+  ].filter(Boolean);
+
+  for (const value of requiredContactValues) {
+    if (!contactHtml.includes(value)) failures.push(`contact/index.html: missing configured contact value: ${value}`);
+  }
+} catch {
+  failures.push('Unable to inspect contact/index.html for production contact configuration.');
+}
+
+if (!site.formspreeEndpoint.startsWith('https://formspree.io/f/')) {
+  failures.push('site.config.mjs: Formspree endpoint is missing or invalid.');
+}
+
+for (const file of htmlFiles) {
+  const html = await readFile(file, 'utf8');
+  const relative = path.relative(dist, file);
+  if (!html.includes('data-track="whatsapp_floating"')) {
+    failures.push(`${relative}: missing global WhatsApp button`);
   }
 }
 

@@ -38,17 +38,23 @@ The site does not publish the supplied screenshots. Instead, it contains an illu
 
 The component is labeled illustrative and contains no client-specific values.
 
-## Contact details
+## Confirmed public contact details
 
-Used:
-
-- `contact@capitalgenerations.com`
-- New York, NY
+- Email: `jlezcano@capitalgenerations.com`
+- Phone: `631-877-1393`
+- Telephone link: `tel:+16318771393`
+- WhatsApp: `https://wa.me/16318771393`
 - Calendly: `https://calendly.com/capitalgenerations/conversation`
+- LinkedIn: `https://www.linkedin.com/company/capital-generations`
+- Location: New York, NY
 
-Not used:
+## Lead form
 
-- A public phone number, because the existing website and proposal contain different numbers. Add one only after confirming the preferred public number.
+The site uses the confirmed Formspree endpoint:
+
+- `https://formspree.io/f/xjybazzn`
+
+The endpoint is wired into the source and generated contact page. Formspree account settings still need to be tested to confirm notifications arrive at `jlezcano@capitalgenerations.com` and that spam handling is acceptable.
 
 ## Domain
 
@@ -56,13 +62,11 @@ The canonical domain is currently configured as:
 
 - `https://capitalgenerations.tech`
 
-Change `site.url` before launch if the final production domain will be different.
+Domain and DNS work remains last. Change `site.url` only if the final production domain differs.
 
-## Post-build integrations
+## Remaining integrations
 
-Left intentionally blank until the relevant accounts are created:
+Still intentionally blank until the relevant Google properties are created:
 
-- Formspree endpoint
-- GA4 measurement ID
+- GA4 Measurement ID
 - Search Console HTML verification value
-- LinkedIn URL

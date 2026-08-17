@@ -108,6 +108,9 @@
     const status = contactForm.querySelector('[data-form-status]');
     const submitButton = contactForm.querySelector('button[type="submit"]');
     const endpoint = (contactForm.dataset.formspreeEndpoint || '').trim();
+    const contactEmail = (contactForm.dataset.contactEmail || 'jlezcano@capitalgenerations.com').trim();
+    const escapeHtml = (value) => value.replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
+    const emailLink = `<a href="mailto:${encodeURI(contactEmail)}">${escapeHtml(contactEmail)}</a>`;
     const defaultButtonHtml = submitButton ? submitButton.innerHTML : '';
 
     const showStatus = (message, type) => {
@@ -123,7 +126,7 @@
 
       if (!endpoint) {
         showStatus(
-          'The form has not been connected to Formspree yet. Please <a href="mailto:contact@capitalgenerations.com">email Capital Generations</a> or use the Calendly link.',
+          `The form is temporarily unavailable. Please email ${emailLink} or use the Calendly link.`,
           'error',
         );
         return;
@@ -148,7 +151,7 @@
         trackEvent('form_submit_success', { form_name: 'contact', page_path: window.location.pathname });
       } catch (error) {
         showStatus(
-          'The form could not be sent. Please try again or <a href="mailto:contact@capitalgenerations.com">email Capital Generations</a>.',
+          `The form could not be sent. Please try again or email ${emailLink}.`,
           'error',
         );
         trackEvent('form_submit_error', { form_name: 'contact', page_path: window.location.pathname });

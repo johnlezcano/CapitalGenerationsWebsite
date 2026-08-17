@@ -1,49 +1,10 @@
-# Build Quality Report
+# QA Report — Version 1.1.0
 
-## Generated output
+- Page/viewport combinations checked: 22
+- Every indexable page checked at desktop 1440×1000 and mobile 390×844
+- Additional homepage and contact screenshots created at tablet 834×1112
+- Form UI and success behavior tested with `fetch` intercepted locally; no real Formspree lead was sent
+- Mobile navigation: passed
+- Automated failures: 0
 
-- 11 indexable pages
-- 1 custom 404 page
-- XML sitemap
-- robots file
-- web app manifest
-- Open Graph image
-- favicons and mobile icons
-- Vercel redirects and headers
-
-## Automated validation completed
-
-`npm run validate` passed with:
-
-- required output present
-- unique page titles
-- complete meta descriptions
-- exactly one H1 per page
-- canonical URLs present
-- no broken internal references
-- no client names from the supplied material
-- no published proposal pricing
-- no nationality-based competitor language
-
-## Browser layout checks completed
-
-Every page was rendered at:
-
-- desktop: 1440 × 1000
-- mobile: 390 × 844
-
-Checks passed for:
-
-- no JavaScript console errors
-- no page errors
-- no horizontal overflow
-- one H1 per page
-- working mobile navigation
-
-The homepage was also visually inspected at:
-
-- desktop: 1440 × 1000
-- tablet: 834 × 1112
-- mobile: 390 × 844
-
-Preview screenshots are stored in `docs/previews/`.
+All automated checks passed. Real Formspree email delivery, Safari, iPhone, Android, Vercel production, and domain testing remain launch-stage tasks.

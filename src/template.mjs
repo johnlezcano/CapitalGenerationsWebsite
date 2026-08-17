@@ -58,6 +58,10 @@ function header(site, currentPath) {
 }
 
 function footer(site) {
+  const linkedinLink = site.social?.linkedin
+    ? `<a class="footer-contact-link" href="${site.social.linkedin}" target="_blank" rel="noopener noreferrer" data-track="linkedin_footer" aria-label="Follow Capital Generations on LinkedIn">${icon('linkedin')}<span>LinkedIn</span></a>`
+    : '';
+
   return `<footer class="site-footer">
     <div class="container">
       <div class="site-footer__top">
@@ -66,7 +70,12 @@ function footer(site) {
             <img src="/assets/images/logo-capital-generations.png" width="566" height="240" alt="Capital Generations" />
           </a>
           <p>Managed outsourced SDR and AE teams for growing B2B companies.</p>
-          <a class="footer-email" href="mailto:${site.email}">${icon('mail')}<span>${site.email}</span></a>
+          <div class="footer-contact-list" aria-label="Capital Generations contact details">
+            <a class="footer-contact-link" href="mailto:${site.email}" data-track="email_footer">${icon('mail')}<span>${site.email}</span></a>
+            <a class="footer-contact-link" href="${site.phoneUrl}" data-track="phone_footer">${icon('phone')}<span>${site.phoneDisplay}</span></a>
+            <a class="footer-contact-link" href="${site.whatsappUrl}" target="_blank" rel="noopener noreferrer" data-track="whatsapp_footer" aria-label="Message Capital Generations on WhatsApp">${icon('whatsapp')}<span>WhatsApp</span></a>
+            ${linkedinLink}
+          </div>
         </div>
         <div class="site-footer__links">
           <div>
@@ -98,6 +107,13 @@ function footer(site) {
   </footer>`;
 }
 
+function whatsappButton(site) {
+  if (!site.whatsappUrl) return '';
+  return `<a class="whatsapp-fab" href="${site.whatsappUrl}" target="_blank" rel="noopener noreferrer" data-track="whatsapp_floating" aria-label="Message Capital Generations on WhatsApp">
+    ${icon('whatsapp')}<span>WhatsApp</span>
+  </a>`;
+}
+
 function organizationSchema(site) {
   return {
     '@context': 'https://schema.org',
@@ -108,7 +124,16 @@ function organizationSchema(site) {
     logo: `${site.url}/assets/images/logo-capital-generations.png`,
     image: `${site.url}/assets/images/og-default.jpg`,
     email: site.email,
+    telephone: site.phoneE164,
     description: site.description,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      telephone: site.phoneE164,
+      email: site.email,
+      availableLanguage: ['English'],
+      areaServed: 'US',
+    },
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'New York',
@@ -223,6 +248,7 @@ export function renderDocument({ site, page }) {
     ${page.body}
   </main>
   ${footer(site)}
+  ${whatsappButton(site)}
 </body>
 </html>`;
 }

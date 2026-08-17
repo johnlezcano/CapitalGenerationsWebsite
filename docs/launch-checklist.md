@@ -1,81 +1,151 @@
-# Launch Checklist
+# Capital Generations Website Project Checklist
 
-## 1. Repository and preview deployment
+This is the source-of-truth checklist for the project.
 
-- [ ] Create a new GitHub repository.
-- [ ] Push the complete project.
-- [ ] Create the Vercel account.
-- [ ] Import the GitHub repository into Vercel.
-- [ ] Confirm the build command is `npm run build`.
-- [ ] Confirm the output directory is `dist`.
-- [ ] Review the Vercel preview URL on desktop, tablet, and mobile.
+## 1. Domain
+- [ ] Confirm domain
+- [ ] Confirm registrar
+- [ ] Confirm DNS access
 
-## 2. Content review
+## 2. Hosting
+- [x] Create/confirm Vercel account
+- [x] Choose appropriate plan
 
-- [ ] Confirm SDR service scope.
-- [ ] Confirm AE service scope.
-- [ ] Confirm full-team service scope.
-- [ ] Confirm education buyer-role language.
-- [ ] Confirm every anonymized performance claim is approved for public use.
-- [ ] Confirm no client logo or name should be added.
-- [ ] Confirm `contact@capitalgenerations.com` is the preferred public inbox.
-- [ ] Decide whether a public phone number should be added.
-- [ ] Have counsel review the privacy notice.
+## 3. GitHub
+- [x] Create/confirm GitHub account
+- [x] Create website repository
+- [x] Connect GitHub to Vercel
 
-## 3. Formspree
+## 4. Website strategy
+- [x] Understand the business
+- [x] Understand target customer
+- [x] Review current site
+- [x] Define positioning
+- [x] Define primary CTA
+- [x] Define sitemap
+- [x] Define page structure
 
-- [ ] Create the Formspree form.
-- [ ] Add the endpoint to `site.config.mjs`.
-- [ ] Run `npm run validate`.
-- [ ] Push the update.
-- [ ] Submit a real inquiry from the deployed site.
-- [ ] Confirm email delivery and spam handling.
-- [ ] Confirm the success message and error fallback.
+## 5. Brand/design direction
+- [x] Confirm logo
+- [x] Confirm colors
+- [x] Confirm typography
+- [x] Confirm visual style
+- [x] Determine image strategy
 
-## 4. Google Analytics 4
+## 6. Content
+- [x] Homepage copy
+- [x] Services copy
+- [x] About copy
+- [x] Case studies/results if applicable
+- [x] Contact/lead form copy
+- [x] Calls to action
+- [x] SEO titles and descriptions
 
-- [ ] Create the GA4 property.
-- [ ] Create the web data stream.
-- [ ] Add the measurement ID to `site.config.mjs`.
-- [ ] Deploy the update.
-- [ ] Verify Realtime page views.
-- [ ] Verify Calendly click events.
-- [ ] Verify form success and error events.
-- [ ] Mark the most important conversion events in GA4.
+## 7. Images/assets
+- [x] Logo files
+- [x] Hero imagery
+- [x] Supporting website images
+- [x] Icons
+- [x] Favicon
+- [x] Social sharing image
 
-## 5. Search Console
+## 8. Build website
+- [x] Responsive desktop design
+- [x] Tablet layout
+- [x] Mobile layout
+- [x] Navigation
+- [x] Footer
+- [x] All pages
+- [x] Forms
+- [x] Basic accessibility
+- [x] Basic performance optimization
 
-- [ ] Add the domain or URL-prefix property.
-- [ ] Complete verification by HTML meta tag or DNS.
-- [ ] Submit `/sitemap.xml`.
-- [ ] Confirm the homepage is indexable.
-- [ ] Inspect service, education, results, about, and contact URLs.
-- [ ] Monitor indexing and coverage after launch.
+## 9. Deploy
+- [x] Upload code to GitHub
+- [x] Deploy through Vercel
+- [x] Confirm production deployment
 
-## 6. Domain and DNS
+## 10. Connect domain
+- [ ] Add domain in Vercel
+- [ ] Configure DNS
+- [ ] Confirm HTTPS
+- [ ] Confirm www/non-www behavior
 
-- [ ] Add the production domain in Vercel.
-- [ ] Copy the DNS records Vercel provides.
-- [ ] Update DNS at the domain provider.
-- [ ] Confirm HTTPS is active.
-- [ ] Confirm the preferred domain redirects correctly.
-- [ ] Update `site.url` if the final canonical domain changes.
-- [ ] Rebuild and redeploy after changing the canonical domain.
+## 11. Business email
+- [x] Create business email if needed
+- [x] Configure Google Workspace/Microsoft 365
+- [x] Set up forwarding/routing if needed
+- [x] Confirm send/receive
 
-## 7. Final quality assurance
+## 12. Lead functionality
+- [x] Contact form
+- [x] Form backend such as Formspree or equivalent
+- [ ] Email notifications
+- [ ] Test lead submission
+- [ ] Spam/deliverability check
 
-- [ ] Run `npm run validate`.
-- [ ] Test all navigation links.
-- [ ] Test all Calendly buttons.
-- [ ] Test the contact form.
-- [ ] Test the mobile menu.
-- [ ] Review desktop at 1440px and 1920px.
-- [ ] Review tablet around 768–1024px.
-- [ ] Review mobile around 375–430px.
-- [ ] Review Chrome, Safari, Firefox, and Edge.
-- [ ] Confirm the 404 page works.
-- [ ] Confirm legacy redirects work.
-- [ ] Confirm Open Graph sharing image.
-- [ ] Confirm favicon and mobile icon.
-- [ ] Confirm analytics and Search Console.
-- [ ] Confirm the privacy notice reflects the services actually enabled.
+## 13. WhatsApp / scheduling
+- [x] WhatsApp button if appropriate
+- [x] Business WhatsApp number
+- [x] Calendly or booking link if appropriate
+
+## 14. Google Search Console
+- [ ] Create property
+- [ ] Verify domain
+- [ ] Submit sitemap
+- [ ] Confirm indexing setup
+
+## 15. Google Analytics
+- [ ] Create GA4 property
+- [ ] Create web data stream
+- [ ] Add Measurement ID to site
+- [ ] Redeploy
+- [ ] Confirm Realtime tracking
+
+## 16. SEO / technical checks
+- [x] Sitemap
+- [x] robots.txt
+- [x] Canonical tags
+- [x] Page titles
+- [x] Meta descriptions
+- [x] Open Graph/social metadata
+- [x] Favicon
+- [x] Broken-link check
+
+## 17. Final cross-device testing
+- [ ] Desktop Chrome
+- [ ] Desktop Safari
+- [ ] iPhone
+- [ ] Android
+- [ ] iPad/tablet
+- [ ] Navigation
+- [ ] Forms
+- [ ] CTAs
+
+## 18. Final launch checks
+- [ ] No placeholder content
+- [ ] Correct business information
+- [ ] Correct emails
+- [ ] Correct phone numbers
+- [ ] Forms working
+- [ ] Analytics working
+- [ ] Search Console working
+- [ ] HTTPS working
+- [ ] Domain working
+
+## 19. Launch
+- [ ] Site publicly live
+- [ ] Final production review
+
+## 20. Ongoing maintenance
+- [ ] Update copy/pricing as needed
+- [ ] Review forms periodically
+- [ ] Review Analytics
+- [ ] Review Search Console
+- [ ] Test mobile periodically
+- [ ] Confirm domain renewal
+- [ ] Confirm business email
+
+## Current release status
+
+The website code now contains the Formspree endpoint, public email, phone, WhatsApp, Calendly, and LinkedIn integrations. The next operational task is to push this updated release to the existing GitHub repository, allow Vercel to redeploy it, and then complete the remaining Step 12 lead-delivery tests. Domain and DNS remain last.

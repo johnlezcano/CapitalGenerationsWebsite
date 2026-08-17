@@ -86,7 +86,7 @@ async function build() {
 
   await writeFile(
     path.join(dist, 'humans.txt'),
-    `Capital Generations\nManaged outsourced SDR and AE teams.\nNew York, NY\n${site.email}\n`,
+    `Capital Generations\nManaged outsourced SDR and AE teams.\nNew York, NY\n${site.phoneDisplay}\n${site.email}\n${site.social.linkedin}\n`,
     'utf8',
   );
 
