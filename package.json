@@ -1,0 +1,17 @@
+{
+  "name": "capital-generations-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-ready marketing website for Capital Generations.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "validate": "node scripts/build.mjs && node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}
