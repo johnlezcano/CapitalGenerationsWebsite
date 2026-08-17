@@ -47,7 +47,7 @@ const banned = [
   'filipinos',
   'indians',
   'eastern europeans',
-  'contact@capitalgenerations.com',
+  ['jlezcano', 'capitalgenerations.com'].join('@'),
   'add the endpoint in site.config.mjs',
   'form has not been connected to formspree',
 ];
@@ -112,9 +112,21 @@ if (!site.formspreeEndpoint.startsWith('https://formspree.io/f/')) {
   failures.push('site.config.mjs: Formspree endpoint is missing or invalid.');
 }
 
+if (site.email !== 'contact@capitalgenerations.com') {
+  failures.push('site.config.mjs: public email must be contact@capitalgenerations.com.');
+}
+
+if (site.foundedYear !== 2020) {
+  failures.push('site.config.mjs: foundedYear must be 2020.');
+}
+
 for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
   const relative = path.relative(dist, file);
+  if (!html.includes(site.email)) failures.push(`${relative}: missing configured public email`);
+  if (!html.includes(`Established ${site.foundedYear}. ${site.location}.`)) {
+    failures.push(`${relative}: missing updated footer establishment line`);
+  }
   if (!html.includes('data-track="whatsapp_floating"')) {
     failures.push(`${relative}: missing global WhatsApp button`);
   }

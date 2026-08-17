@@ -108,7 +108,7 @@
     const status = contactForm.querySelector('[data-form-status]');
     const submitButton = contactForm.querySelector('button[type="submit"]');
     const endpoint = (contactForm.dataset.formspreeEndpoint || '').trim();
-    const contactEmail = (contactForm.dataset.contactEmail || 'jlezcano@capitalgenerations.com').trim();
+    const contactEmail = (contactForm.dataset.contactEmail || 'contact@capitalgenerations.com').trim();
     const escapeHtml = (value) => value.replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]);
     const emailLink = `<a href="mailto:${encodeURI(contactEmail)}">${escapeHtml(contactEmail)}</a>`;
     const defaultButtonHtml = submitButton ? submitButton.innerHTML : '';

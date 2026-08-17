@@ -100,7 +100,7 @@ function footer(site) {
         </div>
       </div>
       <div class="site-footer__bottom">
-        <p>© <span data-current-year></span> Capital Generations. ${site.location}.</p>
+        <p>© <span data-current-year></span> Capital Generations. Established ${site.foundedYear}. ${site.location}.</p>
         <div><a href="/privacy">Privacy</a><a href="/sitemap.xml">Sitemap</a></div>
       </div>
     </div>
@@ -126,6 +126,7 @@ function organizationSchema(site) {
     email: site.email,
     telephone: site.phoneE164,
     description: site.description,
+    foundingDate: site.foundedYear,
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',

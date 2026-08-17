@@ -18,19 +18,20 @@ From the local Git repository, copy in the updated files and run:
 
 ```bash
 git add -A
-git commit -m "Add production contact integrations"
+git commit -m "Update public contact email and established year"
 git push origin main
 ```
 
 The updated release includes:
 
 - Formspree endpoint
-- `jlezcano@capitalgenerations.com`
+- `contact@capitalgenerations.com`
 - `631-877-1393`
 - click-to-call links
 - WhatsApp links and floating button
 - LinkedIn links
 - updated contact and privacy copy
+- Established 2020 in the global footer and organization schema
 
 ## 3. Let Vercel deploy automatically
 
@@ -50,8 +51,9 @@ Before changing DNS:
 1. Open `/contact` on the deployed site.
 2. Test Calendly, phone, WhatsApp, email, and LinkedIn links.
 3. Submit one real Formspree inquiry.
-4. Confirm delivery to `jlezcano@capitalgenerations.com`.
-5. Check desktop and mobile layouts.
+4. Confirm the visible email links use `contact@capitalgenerations.com`.
+5. Confirm the Formspree recipient remains `contact@capitalgenerations.com`.
+6. Check desktop and mobile layouts.
 
 ## 5. Remaining integrations
 

@@ -1,0 +1,157 @@
+{
+  "version": "1.2.0",
+  "generated_at": "2026-08-17T20:02:19.671256+00:00",
+  "validation_command": "npm run validate",
+  "validation_result": "passed",
+  "pages": [
+    {
+      "path": "/404.html",
+      "file": "404.html",
+      "title": "Page Not Found | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/about",
+      "file": "about/index.html",
+      "title": "About Capital Generations | Managed B2B Sales Teams",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/contact",
+      "file": "contact/index.html",
+      "title": "Book a Sales Strategy Call | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/how-it-works",
+      "file": "how-it-works/index.html",
+      "title": "How Our Managed Sales Teams Work | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "Outsourced SDR &amp; AE Teams | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/industries/education",
+      "file": "industries/education/index.html",
+      "title": "Education Sales Development | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/privacy",
+      "file": "privacy/index.html",
+      "title": "Privacy Notice | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/results",
+      "file": "results/index.html",
+      "title": "Outsourced Sales Results | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/services/ae-teams",
+      "file": "services/ae-teams/index.html",
+      "title": "Outsourced AE Teams | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/services/full-sales-teams",
+      "file": "services/full-sales-teams/index.html",
+      "title": "Outsourced Sales Teams | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/services",
+      "file": "services/index.html",
+      "title": "Outsourced Sales Services | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    },
+    {
+      "path": "/services/sdr-teams",
+      "file": "services/sdr-teams/index.html",
+      "title": "Outsourced SDR Teams | Capital Generations",
+      "h1_count": 1,
+      "contact_email_present": true,
+      "retired_email_absent": true,
+      "established_footer_present": true,
+      "founding_date_schema_present": true,
+      "whatsapp_button_present": true
+    }
+  ],
+  "contact": {
+    "form_action": "https://formspree.io/f/xjybazzn",
+    "form_action_present": true,
+    "email": "contact@capitalgenerations.com",
+    "mailto_present": true,
+    "phone_href": "tel:+16318771393",
+    "phone_present": true,
+    "whatsapp_href": "https://wa.me/16318771393",
+    "whatsapp_present": true,
+    "linkedin_href": "https://www.linkedin.com/company/capital-generations",
+    "linkedin_present": true
+  },
+  "notes": [
+    "Formspree controls the notification recipient outside the website code.",
+    "GA4 and Google Search Console values remain intentionally blank.",
+    "Domain and DNS work remains later in the launch sequence."
+  ]
+}

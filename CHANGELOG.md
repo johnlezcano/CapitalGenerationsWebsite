@@ -1,18 +1,21 @@
 # Changelog
 
+## 1.2.0 — Contact email and established year
+
+- Replaced every public and source-level reference to the retired personal mailbox with `contact@capitalgenerations.com`
+- Updated contact-page, footer, privacy, form fallback, `humans.txt`, and structured-data email values
+- Added “Established 2020” to the global footer
+- Added `foundingDate: 2020` to organization schema
+- Updated validation to reject the retired personal email and require the established-year footer
+- Recorded the user-confirmed Formspree delivery test as complete
+- Kept GA4, Search Console, final real-device QA, and domain/DNS as later tasks
+
 ## 1.1.0 — Production contact integrations
 
 - Connected Formspree endpoint `https://formspree.io/f/xjybazzn`
-- Updated the public email to `jlezcano@capitalgenerations.com`
-- Added public phone number `631-877-1393` and click-to-call links
-- Added WhatsApp links and a responsive floating WhatsApp button
-- Added LinkedIn links to the contact page and footer
-- Added phone, email, and LinkedIn data to organization schema
-- Updated contact-page copy and privacy-provider disclosure
+- Added the original public contact email, phone, WhatsApp, LinkedIn, and Calendly integrations
 - Added analytics event hooks for phone, email, WhatsApp, LinkedIn, Calendly, and forms
-- Updated project checklist, deployment instructions, and content decisions
-- Added version 1.1 automated QA report and responsive screenshots
-- Kept domain/DNS, GA4, Search Console, and real Formspree delivery testing as later launch tasks
+- Added version 1.1 automated QA and responsive screenshots
 
 ## 1.0.0 — Initial website build
 

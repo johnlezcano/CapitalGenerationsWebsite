@@ -80,9 +80,9 @@ This is the source-of-truth checklist for the project.
 ## 12. Lead functionality
 - [x] Contact form
 - [x] Form backend such as Formspree or equivalent
-- [ ] Email notifications
-- [ ] Test lead submission
-- [ ] Spam/deliverability check
+- [x] Email notifications
+- [x] Test lead submission
+- [x] Spam/deliverability check
 
 ## 13. WhatsApp / scheduling
 - [x] WhatsApp button if appropriate
@@ -148,4 +148,6 @@ This is the source-of-truth checklist for the project.
 
 ## Current release status
 
-The website code now contains the Formspree endpoint, public email, phone, WhatsApp, Calendly, and LinkedIn integrations. The next operational task is to push this updated release to the existing GitHub repository, allow Vercel to redeploy it, and then complete the remaining Step 12 lead-delivery tests. Domain and DNS remain last.
+The website is deployed through the connected GitHub and Vercel setup. Version 1.2.0 updates every public email reference to `contact@capitalgenerations.com`, adds “Established 2020” to the footer, and adds the 2020 founding date to organization structured data. Formspree delivery has been confirmed by the user.
+
+Google Analytics, Google Search Console, final real-device QA, and domain/DNS work remain. Domain and DNS stay last.

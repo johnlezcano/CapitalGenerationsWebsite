@@ -40,13 +40,14 @@ The component is labeled illustrative and contains no client-specific values.
 
 ## Confirmed public contact details
 
-- Email: `jlezcano@capitalgenerations.com`
+- Email: `contact@capitalgenerations.com`
 - Phone: `631-877-1393`
 - Telephone link: `tel:+16318771393`
 - WhatsApp: `https://wa.me/16318771393`
 - Calendly: `https://calendly.com/capitalgenerations/conversation`
 - LinkedIn: `https://www.linkedin.com/company/capital-generations`
 - Location: New York, NY
+- Established: 2020
 
 ## Lead form
 
@@ -54,7 +55,7 @@ The site uses the confirmed Formspree endpoint:
 
 - `https://formspree.io/f/xjybazzn`
 
-The endpoint is wired into the source and generated contact page. Formspree account settings still need to be tested to confirm notifications arrive at `jlezcano@capitalgenerations.com` and that spam handling is acceptable.
+The endpoint is wired into the source and generated contact page. Formspree delivery has been tested. Keep the Formspree recipient configured as `contact@capitalgenerations.com` and periodically review spam handling and notification settings.
 
 ## Domain
 
@@ -70,3 +71,9 @@ Still intentionally blank until the relevant Google properties are created:
 
 - GA4 Measurement ID
 - Search Console HTML verification value
+
+## Established year
+
+- Capital Generations has been in business since 2020.
+- The public footer displays “Established 2020.”
+- Organization structured data includes `foundingDate: 2020`.

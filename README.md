@@ -1,6 +1,6 @@
 # Capital Generations Website
 
-Version **1.1.0** of the production-ready Capital Generations marketing website.
+Version **1.2.0** of the production-ready Capital Generations marketing website.
 
 The site is a zero-dependency static Node.js build. It does not use WordPress, a database, or a CMS. The source generates a deployable `dist/` directory, and `vercel.json` is configured for GitHub-to-Vercel deployment.
 
@@ -39,11 +39,13 @@ The main settings are in `site.config.mjs`:
 ```js
 export const site = {
   url: 'https://capitalgenerations.tech',
-  email: 'jlezcano@capitalgenerations.com',
+  email: 'contact@capitalgenerations.com',
   phoneDisplay: '631-877-1393',
   phoneE164: '+16318771393',
   phoneUrl: 'tel:+16318771393',
   whatsappUrl: 'https://wa.me/16318771393',
+  location: 'New York, NY',
+  foundedYear: 2020,
   calendlyUrl: 'https://calendly.com/capitalgenerations/conversation',
   formspreeEndpoint: 'https://formspree.io/f/xjybazzn',
   gaMeasurementId: '',
@@ -54,7 +56,7 @@ export const site = {
 };
 ```
 
-The Formspree endpoint is connected in code. Formspree controls the receiving inbox, so confirm in the Formspree account that submissions are routed to `jlezcano@capitalgenerations.com` and complete a real submission test after deployment.
+The Formspree endpoint is connected in code. Formspree controls the receiving inbox, and the user has confirmed live delivery. Keep the Formspree recipient set to `contact@capitalgenerations.com`.
 
 ## Local use
 
@@ -97,7 +99,7 @@ The validation script rebuilds the site and checks:
 ```text
 capital-generations-site/
 ├── dist/                    # Generated deployable website
-├── docs/                    # Strategy, checklist, launch notes, previews
+├── docs/                    # Strategy, checklist, launch notes, and QA documentation
 ├── public/                  # Static source assets
 ├── scripts/
 │   ├── build.mjs            # Generates pages and SEO files
@@ -120,7 +122,7 @@ Use the existing connected repository and Vercel project:
 
 ```bash
 git add -A
-git commit -m "Add Formspree, WhatsApp, phone and LinkedIn integrations"
+git commit -m "Update public contact email and established year"
 git push origin main
 ```
 
@@ -131,14 +133,14 @@ Vercel should automatically build and deploy the pushed commit using:
 
 Review the new Vercel deployment before doing any domain or DNS work.
 
-## Formspree testing
+## Formspree verification
 
-After the updated build is deployed:
+The lead flow has already been confirmed. After this update is deployed, perform one quick regression check:
 
 1. Open the deployed `/contact` page.
 2. Submit one real test inquiry.
 3. Confirm the success message appears.
-4. Confirm delivery to `jlezcano@capitalgenerations.com`.
+4. Confirm delivery to `contact@capitalgenerations.com`.
 5. Reply to the test inquiry to confirm the sender address is available.
 6. Review Formspree spam filtering and notification settings.
 
@@ -194,6 +196,6 @@ Before the domain is switched:
 - connect and test GA4
 - verify Search Console
 - test phone, WhatsApp, LinkedIn, Calendly, and all forms
-- confirm the public email and phone number
+- confirm the public email, established year, and phone number
 - confirm client names, dashboards, proposal pricing, and original source assets remain private
 - have qualified counsel review the privacy notice
