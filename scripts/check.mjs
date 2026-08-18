@@ -175,8 +175,12 @@ if (site.email !== 'contact@capitalgenerations.com') {
   failures.push('site.config.mjs: public email must be contact@capitalgenerations.com.');
 }
 
-if (site.url !== 'https://capitalgenerations.com') {
-  failures.push('site.config.mjs: canonical site URL must be https://capitalgenerations.com.');
+if (site.url !== 'https://www.capitalgenerations.com') {
+  failures.push('site.config.mjs: canonical site URL must be https://www.capitalgenerations.com.');
+}
+
+if (site.gaMeasurementId !== 'G-RGYQXFRE1W') {
+  failures.push('site.config.mjs: GA4 Measurement ID must be G-RGYQXFRE1W.');
 }
 
 if (site.phoneDisplay !== '(631) 877 1393') {
@@ -196,6 +200,15 @@ for (const file of htmlFiles) {
   }
   if (!html.includes('data-track="whatsapp_floating"')) {
     failures.push(`${relative}: missing global WhatsApp button`);
+  }
+  if (!html.includes(`https://www.googletagmanager.com/gtag/js?id=${site.gaMeasurementId}`)) {
+    failures.push(`${relative}: missing Google Analytics tag loader`);
+  }
+  if (!html.includes(`gtag('config', ${JSON.stringify(site.gaMeasurementId)})`)) {
+    failures.push(`${relative}: missing Google Analytics configuration`);
+  }
+  if (html.includes(`${site.url}//#webpage`)) {
+    failures.push(`${relative}: homepage WebPage schema contains a double slash`);
   }
 }
 
@@ -219,5 +232,5 @@ if (failures.length) {
   process.exitCode = 1;
 } else {
   console.log(`Validated ${htmlFiles.length} HTML files and ${allFiles.length} total generated files.`);
-  console.log('No broken internal references, private client names, published pricing, prohibited positioning language, or dash styled public copy found.');
+  console.log('No broken internal references, private client names, published pricing, prohibited positioning language, dash styled public copy, or missing GA4 tags found.');
 }

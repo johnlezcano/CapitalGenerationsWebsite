@@ -1105,15 +1105,15 @@ function privacyPage(site) {
     path: '/privacy',
     title: 'Privacy Notice | Capital Generations',
     description: 'Privacy notice for the Capital Generations website, contact form, scheduling links, analytics, and information submitted by website visitors.',
-    body: `<section class="legal-hero section section--dark"><div class="container"><div class="legal-hero__content">${eyebrow('Privacy notice', 'light')}<h1>How website information is handled.</h1><p>Last updated: August 17, 2026</p></div></div></section>
+    body: `<section class="legal-hero section section--dark"><div class="container"><div class="legal-hero__content">${eyebrow('Privacy notice', 'light')}<h1>How website information is handled.</h1><p>Last updated: August 18, 2026</p></div></div></section>
     <section class="section legal-content"><div class="container legal-content__inner">
-      <p class="legal-intro">This notice describes the basic information practices for the Capital Generations website. It should be reviewed by qualified counsel before public launch, especially after analytics and form services are connected.</p>
+      <p class="legal-intro">This notice describes the basic information practices for the Capital Generations website. It should be reviewed by qualified counsel when analytics, form services, or data practices change.</p>
       <h2>Information you submit</h2>
       <p>When you contact Capital Generations, book a meeting, or submit a website form, you may provide information such as your name, work email, company, website, service interest, and message. Capital Generations may use that information to respond to your inquiry, evaluate fit, communicate about services, and maintain business records.</p>
       <h2>Scheduling and form providers</h2>
       <p>The website links to Calendly for scheduling, WhatsApp for messaging, and LinkedIn for company information. The contact form uses Formspree. Information submitted through or shared with those services is also subject to each provider’s privacy and security practices.</p>
       <h2>Analytics</h2>
-      <p>Google Analytics 4 may be added after launch to understand website traffic and usage. When enabled, analytics may collect device, browser, approximate location, referral, page view, and interaction information according to Google’s configuration and policies.</p>
+      <p>The website uses Google Analytics 4 to understand website traffic and usage. Analytics may collect device, browser, approximate location, referral, page view, and interaction information according to Google’s configuration and policies.</p>
       <h2>How information may be shared</h2>
       <p>Information may be shared with service providers that support website hosting, scheduling, form processing, analytics, email, and business operations. Capital Generations does not intend to sell personal information submitted through the website.</p>
       <h2>Data retention and security</h2>

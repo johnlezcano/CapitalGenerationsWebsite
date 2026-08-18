@@ -1,0 +1,58 @@
+{
+  "project": "Capital Generations Website",
+  "version": "1.5.0",
+  "build_date": "2026-08-18",
+  "status": "passed_local_validation",
+  "generated": {
+    "indexable_pages": 11,
+    "custom_404_pages": 1,
+    "html_files_checked": 12,
+    "total_generated_files_checked": 38
+  },
+  "production": {
+    "primary_url": "https://www.capitalgenerations.com",
+    "apex_redirect_expected": "https://capitalgenerations.com to https://www.capitalgenerations.com",
+    "hosting": "Vercel",
+    "registrar_and_dns": "Squarespace"
+  },
+  "analytics": {
+    "provider": "Google Analytics 4",
+    "measurement_id": "G-RGYQXFRE1W",
+    "tag_loader_pages": 12,
+    "tag_config_pages": 12,
+    "events": [
+      "book_call",
+      "phone",
+      "email",
+      "whatsapp",
+      "linkedin",
+      "form_submit_success",
+      "form_submit_error"
+    ],
+    "realtime_verified": false,
+    "realtime_note": "Verify after the production Vercel deployment."
+  },
+  "search_console": {
+    "verification": "DNS TXT record",
+    "sitemap_url": "https://www.capitalgenerations.com/sitemap.xml",
+    "sitemap_status": "Success",
+    "discovered_pages": 11
+  },
+  "checks": {
+    "build": "passed",
+    "internal_links": "passed",
+    "canonical_urls": "passed",
+    "structured_data_homepage_id": "passed",
+    "ga4_tag_on_every_page": "passed",
+    "formspree_configuration": "passed",
+    "public_contact_configuration": "passed",
+    "private_content_exclusion": "passed",
+    "dash_styled_public_copy": "passed",
+    "mobile_navigation_regression": "source_retained_from_v1.4.0"
+  },
+  "server_checks": {
+    "base_url": "http://127.0.0.1:4173",
+    "routes_checked": 13,
+    "http_200_responses": 13
+  }
+}

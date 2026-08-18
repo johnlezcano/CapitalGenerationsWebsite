@@ -158,11 +158,12 @@ function organizationSchema(site) {
 }
 
 function webpageSchema(site, page) {
+  const pageUrl = `${site.url}${page.path === '/' ? '' : page.path}`;
   const data = {
     '@context': 'https://schema.org',
     '@type': page.schemaType || 'WebPage',
-    '@id': `${site.url}${page.path === '/' ? '/' : page.path}/#webpage`,
-    url: `${site.url}${page.path === '/' ? '' : page.path}`,
+    '@id': `${pageUrl}/#webpage`,
+    url: pageUrl,
     name: page.title,
     description: page.description,
     isPartOf: { '@id': `${site.url}/#website` },
@@ -206,7 +207,17 @@ export function renderDocument({ site, page }) {
   const schemas = [organizationSchema(site), websiteSchema(site), ...webpageSchema(site, { ...page, path })];
   const searchVerification = site.searchConsoleVerification
     ? `<meta name="google-site-verification" content="${esc(site.searchConsoleVerification)}" />`
-    : '<!-- Add Google Search Console verification in site.config.mjs -->';
+    : '<!-- Search Console is verified through DNS -->';
+  const gaId = String(site.gaMeasurementId || '').trim();
+  const googleTag = gaId
+    ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaId)}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', ${JSON.stringify(gaId)});
+  </script>`
+    : '<!-- Google Analytics 4 is not configured -->';
 
   return `<!doctype html>
 <html lang="en" data-ga-id="${esc(site.gaMeasurementId)}">
@@ -240,6 +251,7 @@ export function renderDocument({ site, page }) {
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="/assets/styles.css" />
   <script type="application/ld+json">${JSON.stringify(schemas)}</script>
+  ${googleTag}
   <script src="/assets/main.js" defer></script>
 </head>
 <body class="${esc(page.bodyClass || '')}" data-page-path="${path}">

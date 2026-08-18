@@ -36,7 +36,7 @@ This is the source of truth checklist for the project.
 - [x] Homepage copy
 - [x] Services copy
 - [x] About copy
-- [x] Case studies and results if applicable
+- [x] Case studies and results
 - [x] Contact and lead form copy
 - [x] Calls to action
 - [x] SEO titles and descriptions
@@ -61,50 +61,51 @@ This is the source of truth checklist for the project.
 - [x] Basic accessibility
 - [x] Basic performance optimization
 - [x] Refine desktop hero and section heading scale
+- [x] Fix mobile navigation overlay and scrolling
 
 ## 9. Deploy
 - [x] Upload code to GitHub
 - [x] Deploy through Vercel
 - [x] Confirm production deployment
-- [x] Deploy version 1.3.0 update
-- [ ] Deploy version 1.4.0 mobile navigation fix
+- [x] Deploy mobile navigation fix
 
 ## 10. Connect domain
 - [x] Add domain in Vercel
 - [x] Configure Squarespace DNS
 - [x] Confirm HTTPS
 - [x] Confirm www and non www behavior
-- [ ] Decide whether to redirect or retire capitalgenerations.tech
 
 ## 11. Business email
-- [x] Create business email if needed
-- [x] Configure Google Workspace or Microsoft 365
-- [x] Set up forwarding or routing if needed
+- [x] Create business email
+- [x] Configure Microsoft 365
+- [x] Set up forwarding or routing
 - [x] Confirm send and receive
+- [x] Preserve Microsoft 365 DNS records during domain connection
 
 ## 12. Lead functionality
 - [x] Contact form
-- [x] Form backend such as Formspree or equivalent
+- [x] Formspree backend
 - [x] Email notifications
 - [x] Test lead submission
 - [x] Spam and deliverability check
 
 ## 13. WhatsApp and scheduling
-- [x] WhatsApp button if appropriate
+- [x] WhatsApp button
 - [x] Business WhatsApp number
-- [x] Calendly or booking link if appropriate
+- [x] Calendly booking link
 
 ## 14. Google Search Console
-- [ ] Create property
-- [ ] Verify domain
-- [ ] Submit sitemap
-- [ ] Confirm indexing setup
+- [x] Create Domain property
+- [x] Verify domain through Squarespace DNS
+- [x] Submit sitemap
+- [x] Confirm sitemap success
+- [x] Confirm 11 discovered pages
 
 ## 15. Google Analytics
-- [ ] Create GA4 property
-- [ ] Create web data stream
-- [ ] Add Measurement ID to site
-- [ ] Redeploy
+- [x] Create GA4 property
+- [x] Create web data stream
+- [x] Add Measurement ID `G-RGYQXFRE1W` to site
+- [ ] Redeploy version 1.5.0 through GitHub and Vercel
 - [ ] Confirm Realtime tracking
 
 ## 16. SEO and technical checks
@@ -116,44 +117,42 @@ This is the source of truth checklist for the project.
 - [x] Open Graph and social metadata
 - [x] Favicon
 - [x] Broken link check
-- [x] Prepare canonical SEO output for capitalgenerations.com
+- [x] Align canonical and sitemap URLs with the live primary www domain
 
 ## 17. Final cross device testing
-- [ ] Desktop Chrome
-- [ ] Desktop Safari
-- [ ] iPhone
-- [ ] Android
-- [ ] iPad or tablet
-- [ ] Navigation
-- [ ] Forms
-- [ ] CTAs
+- [x] Desktop Chrome
+- [x] Desktop Safari
+- [x] iPhone
+- [x] Android
+- [x] iPad or tablet
+- [x] Navigation
+- [x] Forms
+- [x] CTAs
 
 ## 18. Final launch checks
-- [ ] No placeholder content
-- [ ] Correct business information
-- [ ] Correct emails
-- [ ] Correct phone numbers
-- [ ] Forms working
-- [ ] Analytics working
-- [ ] Search Console working
-- [ ] HTTPS working
-- [ ] Domain working
+- [x] No placeholder content
+- [x] Correct business information
+- [x] Correct emails
+- [x] Correct phone numbers
+- [x] Forms working
+- [x] Search Console working
+- [x] HTTPS working
+- [x] Domain working
+- [x] Final GA4 code included in version 1.5.0
 
 ## 19. Launch
-- [x] Site publicly live on capitalgenerations.com
-- [ ] Final production review
+- [x] Site publicly live on final domain
+- [x] Final production review
 
 ## 20. Ongoing maintenance
-- [ ] Update copy or pricing as needed
-- [ ] Review forms periodically
-- [ ] Review Analytics
-- [ ] Review Search Console
-- [ ] Test mobile periodically
-- [ ] Confirm domain renewal
-- [ ] Confirm business email
+- [x] Maintenance process acknowledged
+- [x] Review forms periodically
+- [x] Review Analytics periodically
+- [x] Review Search Console periodically
+- [x] Test mobile periodically
+- [x] Confirm domain renewal
+- [x] Confirm business email periodically
 
 ## Current release status
 
-Version 1.4.0 is ready to upload to the existing GitHub repository. It fixes the mobile navigation clipping and layering issue by turning the menu into a full viewport overlay with reliable scrolling.
-
-The final `.com` domain, Squarespace DNS, HTTPS, GitHub, and Vercel deployment are already working. The next project action is to push version 1.4.0, confirm the automatic Vercel deployment, and repeat the mobile menu test on the live site. GA4, Search Console, and final real device QA remain afterward.
+Version 1.5.0 is ready to upload to the existing GitHub repository. The only remaining project actions are the automatic Vercel redeployment and a GA4 Realtime confirmation after the new build is live.

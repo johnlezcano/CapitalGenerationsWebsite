@@ -1,7 +1,7 @@
 export const site = {
   name: 'Capital Generations',
   shortName: 'Capital Generations',
-  url: 'https://capitalgenerations.com',
+  url: 'https://www.capitalgenerations.com',
   email: 'contact@capitalgenerations.com',
   phoneDisplay: '(631) 877 1393',
   phoneE164: '+16318771393',
@@ -16,9 +16,11 @@ export const site = {
   // Production form endpoint supplied for the website.
   formspreeEndpoint: 'https://formspree.io/f/xjybazzn',
 
-  // Add these after the Google properties are created.
-  gaMeasurementId: '', // Example: G-XXXXXXXXXX
-  searchConsoleVerification: '', // Paste only the content value from Google's meta tag.
+  // Google Analytics 4 production Measurement ID.
+  gaMeasurementId: 'G-RGYQXFRE1W',
+
+  // Search Console ownership is verified through a Squarespace DNS TXT record.
+  searchConsoleVerification: '',
 
   social: {
     linkedin: 'https://www.linkedin.com/company/capital-generations',

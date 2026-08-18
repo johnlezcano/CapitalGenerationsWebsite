@@ -1,6 +1,6 @@
-# Update the existing GitHub and Vercel deployment
+# Deploy Capital Generations version 1.5.0
 
-The GitHub repository, Vercel project, production domain, Squarespace DNS records, HTTPS, and Microsoft 365 email records are already connected and working.
+The GitHub repository, Vercel project, production domain, Squarespace DNS records, HTTPS, Search Console, Formspree, and Microsoft 365 email records are already connected and working.
 
 ## 1. Use only the deployable website folder
 
@@ -18,18 +18,19 @@ From the local Git repository, copy in the updated files and run:
 
 ```bash
 git add -A
-git commit -m "Fix mobile navigation overlay"
+git commit -m "Add GA4 tracking"
 git push origin main
 ```
 
-Version 1.4.0 includes:
+Version 1.5.0 includes:
 
-- a full viewport mobile navigation overlay
-- all four Services links visible and reachable
-- How it works, Results, Education, About, Contact, and Book a call reachable on short phone screens
-- vertical menu scrolling with mobile safe area padding
-- menu scroll reset and improved accessible toggle labeling
-- all existing Formspree, phone, WhatsApp, Calendly, email, LinkedIn, SEO, and domain settings retained
+- Google Analytics 4 Measurement ID `G-RGYQXFRE1W`
+- the standard Google tag on every page
+- event tracking for Calendly, phone, email, WhatsApp, LinkedIn, and form outcomes
+- an updated privacy notice for active analytics
+- canonical and sitemap output aligned to `https://www.capitalgenerations.com`
+- the version 1.4.0 mobile navigation overlay fix
+- all existing Formspree, phone, WhatsApp, Calendly, email, LinkedIn, SEO, domain, and website assets retained
 
 ## 3. Let Vercel deploy automatically
 
@@ -42,29 +43,34 @@ Output directory: dist
 
 Open the new deployment and confirm it is marked **Ready**.
 
-## 4. Test the mobile navigation on production
+## 4. Confirm production health
 
-1. Open the homepage on a phone.
-2. Open the main menu.
-3. Open Services.
-4. Confirm all four Services options appear.
-5. Confirm the menu can scroll on shorter screens.
-6. Confirm How it works, Results, Education, About, Contact, and Book a call are clickable.
-7. Close and reopen the menu and confirm it starts at the top.
-
-## 5. Confirm production health
-
-- open `https://capitalgenerations.com`
 - open `https://www.capitalgenerations.com`
+- open `https://capitalgenerations.com` and confirm it redirects correctly
 - confirm HTTPS has no certificate warning
+- confirm the mobile navigation opens above the page and every link remains reachable
 - confirm Microsoft 365 email continues to send and receive
 - confirm the contact form still reaches `contact@capitalgenerations.com`
 
-## 6. Remaining integrations
+## 5. Confirm Google Analytics Realtime
 
-- configure GA4
-- verify Google Search Console
-- submit `https://capitalgenerations.com/sitemap.xml`
-- complete final real device QA
+1. Open Google Analytics.
+2. Open Reports, then Realtime.
+3. Visit the production website in another browser tab.
+4. Navigate between several pages.
+5. Click LinkedIn, Calendly, phone, email, or WhatsApp once.
+6. Confirm the active user and event appear in Realtime.
 
-Run `npm run validate` before each push.
+Analytics can take a short period to appear. Disable browser tracking protection or test in another browser if the first visit is blocked.
+
+## 6. Search Console status
+
+Search Console is already verified through DNS. The sitemap is already submitted successfully at:
+
+```text
+https://www.capitalgenerations.com/sitemap.xml
+```
+
+It reported 11 discovered pages.
+
+Run `npm run validate` before each future push.

@@ -1,6 +1,6 @@
 # Capital Generations Website
 
-Version **1.4.0** of the production ready Capital Generations marketing website.
+Version **1.5.0** of the production Capital Generations marketing website.
 
 The site is a zero dependency static Node.js build. It does not use WordPress, a database, or a CMS. The source generates a deployable `dist/` directory, and `vercel.json` is configured for the existing GitHub to Vercel deployment.
 
@@ -25,16 +25,17 @@ Custom generated website assets are included in `public/assets/generated/` and a
 - Public phone and click to call links
 - WhatsApp links plus a global floating WhatsApp button
 - LinkedIn links on the contact page and in the footer
-- GA4 ready event tracking
-- Google Search Console verification placeholder
+- Google Analytics 4 with Measurement ID `G-RGYQXFRE1W`
+- Analytics events for Calendly, phone, email, WhatsApp, LinkedIn, and contact form outcomes
+- Google Search Console domain verification completed through Squarespace DNS
+- Search Console sitemap submitted successfully with 11 discovered pages
 - SEO titles, descriptions, canonicals, Open Graph tags, schema, sitemap, and robots file
+- Canonical and sitemap output aligned to the live primary URL at `https://www.capitalgenerations.com`
 - Accessibility basics, responsive navigation, reduced motion support, and keyboard focus states
+- Mobile navigation overlay with scrollable access to every menu item
 - Legacy redirects from the old website structure
 - No published pricing, client logos, client names, or raw dashboards
 - Public copy rewritten without dash punctuation or hyphenated style phrases
-- Refined desktop hero and section heading scale
-- Final canonical URL prepared for `capitalgenerations.com`
-- Mobile navigation overlay fix with scrollable access to every menu item
 
 ## Current production configuration
 
@@ -42,7 +43,7 @@ The main settings are in `site.config.mjs`:
 
 ```js
 export const site = {
-  url: 'https://capitalgenerations.com',
+  url: 'https://www.capitalgenerations.com',
   email: 'contact@capitalgenerations.com',
   phoneDisplay: '(631) 877 1393',
   phoneE164: '+16318771393',
@@ -52,7 +53,7 @@ export const site = {
   foundedYear: 2020,
   calendlyUrl: 'https://calendly.com/capitalgenerations/conversation',
   formspreeEndpoint: 'https://formspree.io/f/xjybazzn',
-  gaMeasurementId: '',
+  gaMeasurementId: 'G-RGYQXFRE1W',
   searchConsoleVerification: '',
   social: {
     linkedin: 'https://www.linkedin.com/company/capital-generations',
@@ -60,7 +61,7 @@ export const site = {
 };
 ```
 
-The Formspree endpoint is connected in code. Formspree controls the receiving inbox, and live delivery has been confirmed. Keep the Formspree recipient set to `contact@capitalgenerations.com`.
+The Search Console verification field stays blank because ownership was verified through DNS. The Formspree endpoint is connected in code, and live delivery has been confirmed. Keep the Formspree notification recipient set to `contact@capitalgenerations.com`.
 
 ## Local use
 
@@ -90,7 +91,8 @@ The validation script rebuilds the site and checks:
 - required generated files
 - page titles and descriptions
 - one H1 per page
-- canonical tags using `https://capitalgenerations.com`
+- canonical tags using `https://www.capitalgenerations.com`
+- Google Analytics tag loader and configuration on every page
 - broken internal links
 - required Formspree, phone, WhatsApp, email, and LinkedIn values
 - global WhatsApp button output
@@ -103,22 +105,22 @@ The validation script rebuilds the site and checks:
 
 ```text
 capital-generations-site/
-├── dist/                    # Generated deployable website
-├── docs/                    # Strategy, checklist, previews, launch notes, and QA documentation
-├── public/                  # Static source assets
-├── scripts/
-│   ├── build.mjs            # Generates pages and SEO files
-│   ├── check.mjs            # Validates generated output
-│   └── serve.mjs            # Local static server
-├── src/
-│   ├── components.mjs       # Reusable HTML components and visuals
-│   ├── content.mjs          # Website copy and page composition
-│   ├── main.js              # Navigation, form submission, analytics
-│   ├── styles.css           # Responsive visual system
-│   └── template.mjs         # Header, footer, metadata, schema
-├── site.config.mjs          # Contact details and integrations
-├── vercel.json              # Vercel build, redirects, and headers
-└── package.json
+|-- dist/                    # Generated deployable website
+|-- docs/                    # Strategy, checklist, previews, launch notes, and QA documentation
+|-- public/                  # Static source assets
+|-- scripts/
+|   |-- build.mjs            # Generates pages and SEO files
+|   |-- check.mjs            # Validates generated output
+|   `-- serve.mjs            # Local static server
+|-- src/
+|   |-- components.mjs       # Reusable HTML components and visuals
+|   |-- content.mjs          # Website copy and page composition
+|   |-- main.js              # Navigation, form submission, analytics events
+|   |-- styles.css           # Responsive visual system
+|   `-- template.mjs         # Header, footer, metadata, schema, and Google tag
+|-- site.config.mjs          # Contact details and integrations
+|-- vercel.json              # Vercel build, redirects, and headers
+`-- package.json
 ```
 
 ## Update the existing GitHub and Vercel deployment
@@ -127,7 +129,7 @@ Use the existing connected repository and Vercel project:
 
 ```bash
 git add -A
-git commit -m "Fix mobile navigation overlay"
+git commit -m "Add GA4 tracking"
 git push origin main
 ```
 
@@ -138,72 +140,84 @@ Vercel should automatically build and deploy the pushed commit using:
 
 Review the new Vercel deployment on the connected production domain.
 
-## Formspree verification
-
-The lead flow has already been confirmed. After this update is deployed, perform one quick regression check:
-
-1. Open the deployed `/contact` page.
-2. Submit one real test inquiry.
-3. Confirm the success message appears.
-4. Confirm delivery to `contact@capitalgenerations.com`.
-5. Reply to the test inquiry to confirm the sender address is available.
-6. Review Formspree spam filtering and notification settings.
-
-Do not submit automated test messages repeatedly to the production endpoint.
-
 ## Google Analytics 4
 
-GA4 is not connected yet. After the GA4 property and web data stream exist:
+Version 1.5.0 contains the production Google tag for Measurement ID:
 
-1. Copy the Measurement ID, such as `G-XXXXXXXXXX`.
-2. Add it to `gaMeasurementId` in `site.config.mjs`.
-3. Run `npm run validate`.
-4. Commit and push.
-5. Confirm Realtime traffic and conversion events.
+```text
+G-RGYQXFRE1W
+```
 
-Tracked events include Calendly, phone, email, WhatsApp, LinkedIn, and form success or error interactions.
+The standard Google tag is generated in the document head on every page. The existing event hooks report these interactions when GA4 is active:
+
+- header and footer Calendly links
+- phone links
+- email links
+- WhatsApp links
+- LinkedIn links
+- successful contact form submissions
+- contact form submission errors
+
+After deployment:
+
+1. Open Google Analytics.
+2. Open Reports, then Realtime.
+3. Visit the production website in a separate browser tab.
+4. Navigate between several pages.
+5. Click one non destructive tracked link, such as LinkedIn or Calendly.
+6. Confirm the active user and event appear in Realtime.
+
+Do not submit repeated production form tests solely to generate analytics events.
 
 ## Google Search Console
 
-Search Console is not connected yet. The site supports HTML meta tag verification through `searchConsoleVerification` in `site.config.mjs`. DNS verification can also be completed after Squarespace DNS access is confirmed.
+Search Console is configured as a Domain property for `capitalgenerations.com` and verified through a Squarespace DNS TXT record.
 
-After the final domain is connected and verified, submit:
+The sitemap was submitted successfully at:
 
 ```text
-https://capitalgenerations.com/sitemap.xml
+https://www.capitalgenerations.com/sitemap.xml
 ```
+
+Search Console reported 11 discovered pages. Indexing can continue over time after discovery.
 
 ## Domain and DNS
 
-The intended final domain is `capitalgenerations.com`, registered at Squarespace. The site already generates canonical URLs, structured data, Open Graph URLs, robots instructions, and the sitemap for that domain.
+The production domain is registered at Squarespace and connected to Vercel. The live primary URL is:
 
-The production domain is already connected through Squarespace DNS and Vercel. After the version 1.4.0 deployment is ready:
+```text
+https://www.capitalgenerations.com
+```
 
-1. Confirm `capitalgenerations.com` and `www.capitalgenerations.com` still show valid configuration in Vercel.
-2. Confirm HTTPS and the preferred redirect behavior remain healthy.
-3. Recheck the mobile navigation on the production domain.
-4. Recheck canonicals, sitemap, forms, analytics, and Search Console.
+The apex domain redirects to the primary `www` domain. HTTPS is active. The Microsoft 365 MX, SPF, DKIM, DMARC, and Autodiscover records were preserved during the website DNS update.
 
 The old `.tech` domain can later redirect to `.com` or be retired after important old links have been considered.
+
+## Formspree verification
+
+The lead flow has already been confirmed. After any future website update, perform one quick regression check:
+
+1. Open the deployed `/contact` page.
+2. Submit one real test inquiry only when needed.
+3. Confirm the success message appears.
+4. Confirm delivery to `contact@capitalgenerations.com`.
+5. Review Formspree spam filtering and notification settings periodically.
 
 ## Content editing locations
 
 - Page copy: `src/content.mjs`
-- Header, footer, metadata, schema: `src/template.mjs`
+- Header, footer, metadata, schema, and Google tag: `src/template.mjs`
 - Reusable visuals and icons: `src/components.mjs`
 - Styling and responsive behavior: `src/styles.css`
-- Interaction and integrations: `src/main.js`
+- Interaction and analytics events: `src/main.js`
+- Production values: `site.config.mjs`
 
-## Important launch review
+## Final review after this deployment
 
-Before final project signoff:
-
-- verify the new Vercel deployment
-- verify the Formspree delivery inbox
-- connect and test GA4 when ready
-- verify Search Console when ready
-- test phone, WhatsApp, LinkedIn, Calendly, and all forms
-- confirm the public email, established year, and phone number
-- confirm client names, dashboards, proposal pricing, and original source assets remain private
-- complete final testing on real desktop, phone, and tablet devices
-- have qualified counsel review the privacy notice
+- confirm the Vercel deployment is Ready
+- confirm both domain variants resolve correctly
+- confirm the mobile navigation remains fixed
+- confirm the contact form still reaches `contact@capitalgenerations.com`
+- confirm GA4 Realtime receives page views and events
+- confirm the Search Console sitemap remains successful
+- confirm Microsoft 365 email continues to send and receive

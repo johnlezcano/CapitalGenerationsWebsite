@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.5.0: Google Analytics 4 production tracking
+
+- Added the production Google tag with Measurement ID `G-RGYQXFRE1W` to every generated page
+- Retained and activated existing event tracking for Calendly, phone, email, WhatsApp, LinkedIn, and contact form outcomes
+- Added a fallback loader in the main script without duplicating the standard Google tag
+- Updated the privacy notice to describe active Google Analytics 4 usage
+- Aligned canonical URLs, schema, Open Graph URLs, robots output, and sitemap entries with the live primary `www` domain
+- Recorded Search Console DNS verification and successful sitemap submission with 11 discovered pages
+- Added validation that rejects a missing or incorrect GA4 Measurement ID or missing page tags
+- Retained the mobile navigation fix, contact integrations, Formspree endpoint, domain settings, and all generated website assets
+
 ## 1.4.0: Mobile navigation overlay fix
 
 - Reworked the mobile navigation as a full viewport overlay anchored below the sticky header

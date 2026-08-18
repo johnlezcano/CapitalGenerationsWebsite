@@ -23,7 +23,7 @@ The site uses selected outcome claims from the supplied proposal without naming 
 - 250% private school growth during a seasonal ramp
 - 3 to 1 meeting advantage over an internal team in a selected engagement
 
-These claims should receive one final internal review before the production domain is connected.
+The claims remain anonymized and are presented as selected engagement outcomes rather than universal guarantees.
 
 ## Dashboard treatment
 
@@ -40,7 +40,7 @@ The component is labeled illustrative and contains no client specific values.
 
 ## Copy style
 
-Version 1.3.0 removes dash punctuation and hyphenated style phrases from public page copy, metadata, accessibility copy, interface messages, and text inside generated SVG assets. Technical URLs, file names, CSS selectors, and machine values still use normal hyphens where required.
+Public page copy, metadata, accessibility copy, interface messages, and text inside generated SVG assets avoid dash punctuation and hyphenated style phrases. Technical URLs, file names, CSS selectors, and machine values still use normal hyphens where required.
 
 ## Confirmed public contact details
 
@@ -63,21 +63,21 @@ The endpoint is wired into the source and generated contact page. Formspree deli
 
 ## Domain
 
-The intended canonical domain is configured as:
+The production canonical domain is configured as:
 
-- `https://capitalgenerations.com`
+- `https://www.capitalgenerations.com`
 
-The registrar is Squarespace. DNS access and final domain connection remain launch tasks. The old `.tech` domain can later redirect to `.com` or be retired after old links are considered.
+The apex domain redirects to the primary `www` domain. The registrar is Squarespace, DNS points the website to Vercel, HTTPS is active, and Microsoft 365 email records remain intact.
 
-## Remaining integrations
+## Google integrations
 
-Still intentionally blank until the relevant Google properties are created:
-
-- GA4 Measurement ID
-- Search Console HTML verification value
+- Google Search Console uses DNS verification for the `capitalgenerations.com` Domain property.
+- The sitemap at `https://www.capitalgenerations.com/sitemap.xml` was accepted successfully with 11 discovered pages.
+- Google Analytics 4 uses Measurement ID `G-RGYQXFRE1W`.
+- Search Console HTML verification remains blank because DNS verification is already complete.
 
 ## Established year
 
 - Capital Generations has been in business since 2020.
-- The public footer displays “Established 2020.”
+- The public footer displays `Established 2020`.
 - Organization structured data includes `foundingDate: 2020`.

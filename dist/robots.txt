@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://capitalgenerations.com/sitemap.xml
+Sitemap: https://www.capitalgenerations.com/sitemap.xml

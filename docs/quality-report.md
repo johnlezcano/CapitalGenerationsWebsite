@@ -1,46 +1,53 @@
-# QA Report: Version 1.4.0
+# QA Report: Version 1.5.0
 
-## Automated validation
+## Build result
 
-- `npm run validate`: passed
-- Generated pages: 11 indexable pages plus custom 404
-- HTML files checked: 12
-- Required generated files: present
-- Broken internal references: 0
-- Private client names in public output: 0
-- Published proposal pricing in public output: 0
-- Retired personal email references in the deployable project: 0
-- Dash styled public copy findings: 0
-- Canonical domain: `https://capitalgenerations.com`
-- Contact email: `contact@capitalgenerations.com`
-- Displayed phone: `(631) 877 1393`
-- Formspree, telephone, WhatsApp, Calendly, and LinkedIn integrations: retained
+- Build command completed successfully
+- Validation command completed successfully
+- 11 indexable pages generated
+- Custom 404 page generated
+- 12 HTML files checked
+- 38 total generated files checked
+- 11 page routes plus sitemap and robots returned HTTP 200 through the local production server
 
-## Mobile navigation regression test
+## Google Analytics 4
 
-The open Services menu was tested through Chromium mobile emulation at:
+- Measurement ID is `G-RGYQXFRE1W`
+- Standard Google tag loader is present on all 12 HTML files
+- Google tag configuration is present on all 12 HTML files
+- Existing event hooks remain active for Calendly, phone, email, WhatsApp, LinkedIn, form success, and form error interactions
+- The main JavaScript fallback avoids loading the Google tag twice
+- Realtime reporting cannot be confirmed until version 1.5.0 is deployed to Vercel
 
-- 360 by 640
-- 375 by 667
-- 390 by 844
-- 768 by 1024
+## Search and canonical configuration
 
-All four Services links were present. How it works, Results, Education, About, Contact, and Book a call were reachable. The navigation filled the viewport below the sticky header, overlaid page content, and scrolled on shorter screens.
+- Canonical URLs use `https://www.capitalgenerations.com`
+- Structured data URLs use the live primary `www` domain
+- Homepage WebPage schema uses a valid single slash identifier
+- Sitemap contains 11 URLs on the live primary `www` domain
+- robots.txt references `https://www.capitalgenerations.com/sitemap.xml`
+- Search Console ownership is already verified through DNS
+- Search Console sitemap submission previously returned Success with 11 discovered pages
 
-## Fix implemented
+## Content and privacy
 
-- Replaced the clipped fixed mobile navigation with a header anchored full viewport overlay
-- Added dynamic viewport height, vertical scrolling, mobile safe area padding, and overscroll containment
-- Added a menu scroll reset on open and close
-- Close the Services submenu when the mobile menu closes
-- Update the accessible menu button label between Open navigation and Close navigation
+- Privacy notice now states that Google Analytics 4 is active
+- Public email remains `contact@capitalgenerations.com`
+- Formspree endpoint remains `https://formspree.io/f/xjybazzn`
+- Phone and WhatsApp remain connected to `+16318771393`
+- Calendly and LinkedIn links remain unchanged
+- No client names, raw dashboard files, proposal pricing, or retired private email are present in the public website package
+- Public website copy remains free of dash styled prose
 
-## Still pending after deployment
+## Regression coverage
 
-- Push version 1.4.0 to GitHub and confirm the Vercel deployment
-- Repeat the mobile navigation test on the production domain
-- Complete final real device testing on Safari, iPhone, Android, and tablet
-- Configure GA4 and confirm Realtime tracking
-- Verify Google Search Console and submit the sitemap
+- Mobile navigation source and styles are retained from version 1.4.0
+- Form submission logic is unchanged apart from active analytics event reporting
+- Internal link validation passed
+- Required generated file validation passed
+- Contact integration validation passed
+- GA4 tag validation passed
 
-Automated validation and browser emulation do not replace final production testing on real devices.
+## Remaining live check
+
+After the GitHub push and automatic Vercel deployment, open GA4 Realtime and confirm one active user plus at least one page view or tracked link event. This live check cannot be completed from the local build alone.
