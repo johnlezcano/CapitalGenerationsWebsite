@@ -105,8 +105,8 @@ This is the source of truth checklist for the project.
 - [x] Create GA4 property
 - [x] Create web data stream
 - [x] Add Measurement ID `G-RGYQXFRE1W` to site
-- [ ] Redeploy version 1.5.0 through GitHub and Vercel
-- [ ] Confirm Realtime tracking
+- [x] Deploy version 1.5.0 through GitHub and Vercel
+- [x] Confirm Realtime tracking
 
 ## 16. SEO and technical checks
 - [x] Sitemap
@@ -138,7 +138,7 @@ This is the source of truth checklist for the project.
 - [x] Search Console working
 - [x] HTTPS working
 - [x] Domain working
-- [x] Final GA4 code included in version 1.5.0
+- [x] Final GA4 code included and verified in production
 
 ## 19. Launch
 - [x] Site publicly live on final domain
@@ -155,4 +155,4 @@ This is the source of truth checklist for the project.
 
 ## Current release status
 
-Version 1.5.0 is ready to upload to the existing GitHub repository. The only remaining project actions are the automatic Vercel redeployment and a GA4 Realtime confirmation after the new build is live.
+The launch checklist is complete. Version 1.6.0 is an approved copy and call to action refinement that retains the live production configuration. Founder and team content remain a separate future update after internal assets are supplied.

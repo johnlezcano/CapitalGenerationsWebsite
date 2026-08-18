@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.6.0: Human copy and conversational calls to action
+
+- Rewrote the existing website copy to sound more direct, natural, and personal while preserving the service positioning and SEO structure
+- Replaced corporate phrasing with plain language about hiring, training, management, outreach, follow up, and reporting
+- Added varied conversational calls to action across page heroes, closing sections, navigation, footer, and contact flows
+- Kept the current page structure and visual layout unchanged
+- Did not add founder, leadership, team biography, photo, or placeholder sections
+- Retained GA4, Search Console, Formspree, Calendly, WhatsApp, LinkedIn, mobile navigation, domain, SEO, and Microsoft 365 configuration
+- Preserved the site rule against dash styled public copy
+
 ## 1.5.0: Google Analytics 4 production tracking
 
 - Added the production Google tag with Measurement ID `G-RGYQXFRE1W` to every generated page

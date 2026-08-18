@@ -38,10 +38,10 @@ function header(site, currentPath) {
         <details class="nav-dropdown"${serviceActive ? ' data-active="true"' : ''}>
           <summary${serviceActive ? ' aria-current="page"' : ''}>Services ${icon('chevron')}</summary>
           <div class="nav-dropdown__panel">
-            <a href="/services"><strong>Services overview</strong><span>Choose the right sales capacity.</span></a>
-            <a href="/services/sdr-teams"><strong>Outsourced SDR teams</strong><span>Create qualified conversations.</span></a>
-            <a href="/services/ae-teams"><strong>Outsourced AE teams</strong><span>Add sales execution capacity.</span></a>
-            <a href="/services/full-sales-teams"><strong>Full sales teams</strong><span>Connect outreach and execution.</span></a>
+            <a href="/services"><strong>Services overview</strong><span>Find the right place to start.</span></a>
+            <a href="/services/sdr-teams"><strong>Outsourced SDR teams</strong><span>Create more qualified conversations.</span></a>
+            <a href="/services/ae-teams"><strong>Outsourced AE teams</strong><span>Give opportunities more follow through.</span></a>
+            <a href="/services/full-sales-teams"><strong>Full sales teams</strong><span>Connect prospecting and sales.</span></a>
           </div>
         </details>
         ${navAnchor('How it works', '/how-it-works', currentPath)}
@@ -51,7 +51,7 @@ function header(site, currentPath) {
         <div class="site-nav__mobile-contact">
           ${navAnchor('Contact', '/contact', currentPath)}
         </div>
-        ${primaryButton('Book a call', site.calendlyUrl, { external: true, className: 'site-nav__cta', track: 'book_call_header' })}
+        ${primaryButton('Let’s talk sales', site.calendlyUrl, { external: true, className: 'site-nav__cta', track: 'book_call_header' })}
       </nav>
     </div>
   </header>`;
@@ -69,7 +69,7 @@ function footer(site) {
           <a class="brand brand--footer" href="/" aria-label="Capital Generations home">
             <img src="/assets/images/logo-capital-generations.png" width="566" height="240" alt="Capital Generations" />
           </a>
-          <p>Managed outsourced SDR and AE teams for growing B2B companies.</p>
+          <p>We hire, train, and manage SDR and AE teams for growing B2B companies.</p>
           <div class="footer-contact-list" aria-label="Capital Generations contact details">
             <a class="footer-contact-link" href="mailto:${site.email}" data-track="email_footer">${icon('mail')}<span>${site.email}</span></a>
             <a class="footer-contact-link" href="${site.phoneUrl}" data-track="phone_footer">${icon('phone')}<span>${site.phoneDisplay}</span></a>
@@ -94,9 +94,9 @@ function footer(site) {
           </div>
         </div>
         <div class="site-footer__cta">
-          <span>Need more qualified pipeline?</span>
-          <h2>Let’s talk about the team behind it.</h2>
-          ${primaryButton('Book a strategy call', site.calendlyUrl, { external: true, track: 'book_call_footer' })}
+          <span>Trying to create more pipeline?</span>
+          <h2>Tell us where sales is getting stuck.</h2>
+          ${primaryButton('Talk through your goals', site.calendlyUrl, { external: true, track: 'book_call_footer' })}
         </div>
       </div>
       <div class="site-footer__bottom">

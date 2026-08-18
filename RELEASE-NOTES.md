@@ -1,39 +1,36 @@
-# Capital Generations Website 1.5.0
+# Capital Generations Website 1.6.0
 
 ## Purpose
 
-This release activates Google Analytics 4 and prepares the current website as the final working version for now.
+This release completes the approved interim humanization pass. It updates the existing copy and calls to action without changing the current layout or adding new founder or team sections.
 
-## Production analytics
+## What changed
 
-- Measurement ID: `G-RGYQXFRE1W`
-- Standard Google tag included in every page head
-- Page views enabled through the Google tag
-- Existing event tracking retained for Calendly, phone, email, WhatsApp, LinkedIn, and contact form outcomes
-- Privacy notice updated to reflect active analytics
+- Rewrote key website copy in a more direct, natural, and personal voice
+- Replaced corporate language with plain descriptions of hiring, training, management, outreach, follow up, and reporting
+- Added varied conversational calls to action across page heroes, closing sections, navigation, footer, and contact flows
+- Updated service, process, education, results, about, contact, FAQ, and 404 copy
+- Kept all current sections, layouts, responsive behavior, and visual assets in place
 
-## Search and domain alignment
+## What was intentionally not added
 
-- Canonicals use `https://www.capitalgenerations.com`
-- Sitemap URLs use the primary `www` domain
-- robots.txt references the primary sitemap URL
-- Structured data and social metadata use the primary `www` domain
-- Search Console remains verified through DNS
-- Search Console sitemap status remains recorded as Success with 11 discovered pages
+- Founder or leadership section
+- Founder biography or photograph
+- New team section
+- Team member biographies or photographs
+- Empty content slots or placeholder people
 
-## Retained functionality
+Those additions remain reserved for a later release after the approved internal assets are supplied.
 
-- Version 1.4.0 mobile navigation fix
-- Formspree contact form
-- `contact@capitalgenerations.com`
-- Phone and WhatsApp number
-- Calendly scheduling
-- LinkedIn links
-- Responsive layouts and generated website assets
-- Privacy separation between public website files and private source assets
+## Production settings retained
+
+- Primary domain: `https://www.capitalgenerations.com`
+- GA4 Measurement ID: `G-RGYQXFRE1W`
+- Formspree endpoint: `https://formspree.io/f/xjybazzn`
+- Contact email: `contact@capitalgenerations.com`
+- Phone and WhatsApp: `+1 631 877 1393`
+- Calendly, LinkedIn, Search Console, sitemap, canonical URLs, and Microsoft 365 email configuration remain unchanged
 
 ## Deployment
 
-Upload the contents of `capital-generations-site/` to the existing GitHub repository. Commit and push. Vercel should deploy automatically.
-
-After deployment, confirm GA4 Realtime activity. That is the only remaining live verification for this release.
+Replace the existing GitHub repository files with the contents of this package, commit, and push. Vercel should rebuild automatically.

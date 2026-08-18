@@ -1,6 +1,6 @@
-# Deploy Capital Generations version 1.5.0
+# Deploy Capital Generations version 1.6.0
 
-The GitHub repository, Vercel project, production domain, Squarespace DNS records, HTTPS, Search Console, Formspree, and Microsoft 365 email records are already connected and working.
+The GitHub repository, Vercel project, production domain, Squarespace DNS records, HTTPS, Search Console, GA4, Formspree, and Microsoft 365 email records are already connected and working.
 
 ## 1. Use only the deployable website folder
 
@@ -18,19 +18,18 @@ From the local Git repository, copy in the updated files and run:
 
 ```bash
 git add -A
-git commit -m "Add GA4 tracking"
+git commit -m "Humanize website copy and calls to action"
 git push origin main
 ```
 
-Version 1.5.0 includes:
+Version 1.6.0 includes:
 
-- Google Analytics 4 Measurement ID `G-RGYQXFRE1W`
-- the standard Google tag on every page
-- event tracking for Calendly, phone, email, WhatsApp, LinkedIn, and form outcomes
-- an updated privacy notice for active analytics
-- canonical and sitemap output aligned to `https://www.capitalgenerations.com`
-- the version 1.4.0 mobile navigation overlay fix
-- all existing Formspree, phone, WhatsApp, Calendly, email, LinkedIn, SEO, domain, and website assets retained
+- more direct and conversational copy across the existing website
+- varied calls to action tied to pipeline, team needs, sales gaps, and goals
+- no new founder, leadership, biography, photo, team, or placeholder sections
+- the existing GA4, Search Console, Formspree, phone, WhatsApp, Calendly, email, LinkedIn, SEO, domain, and website configuration
+- the mobile navigation overlay fix
+- the rule against dash styled public copy
 
 ## 3. Let Vercel deploy automatically
 
@@ -51,19 +50,9 @@ Open the new deployment and confirm it is marked **Ready**.
 - confirm the mobile navigation opens above the page and every link remains reachable
 - confirm Microsoft 365 email continues to send and receive
 - confirm the contact form still reaches `contact@capitalgenerations.com`
+- confirm GA4 Realtime continues to receive visits
 
-## 5. Confirm Google Analytics Realtime
-
-1. Open Google Analytics.
-2. Open Reports, then Realtime.
-3. Visit the production website in another browser tab.
-4. Navigate between several pages.
-5. Click LinkedIn, Calendly, phone, email, or WhatsApp once.
-6. Confirm the active user and event appear in Realtime.
-
-Analytics can take a short period to appear. Disable browser tracking protection or test in another browser if the first visit is blocked.
-
-## 6. Search Console status
+## 5. Search Console status
 
 Search Console is already verified through DNS. The sitemap is already submitted successfully at:
 

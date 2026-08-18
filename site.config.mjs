@@ -11,7 +11,7 @@ export const site = {
   foundedYear: 2020,
   calendlyUrl: 'https://calendly.com/capitalgenerations/conversation',
   description:
-    'Capital Generations recruits, trains, manages, and reports on dedicated SDR and AE teams that create qualified pipeline for growing B2B companies.',
+    'Capital Generations hires, trains, manages, and reports on dedicated SDR and AE teams that help growing B2B companies create qualified pipeline.',
 
   // Production form endpoint supplied for the website.
   formspreeEndpoint: 'https://formspree.io/f/xjybazzn',

@@ -66,7 +66,7 @@ export function serviceCard({ iconName, eyebrowText, title, description, href, b
     <h3>${title}</h3>
     <p>${description}</p>
     ${bullets.length ? `<ul class="check-list check-list--compact">${bullets.map((item) => `<li>${icon('check')}<span>${item}</span></li>`).join('')}</ul>` : ''}
-    ${arrowLink('Explore service', href)}
+    ${arrowLink('See how this team works', href)}
   </article>`;
 }
 
@@ -110,12 +110,12 @@ export function checkList(items, className = '') {
   return `<ul class="check-list ${className}">${items.map((item) => `<li>${icon('check')}<span>${item}</span></li>`).join('')}</ul>`;
 }
 
-export function ctaBand({ title, description, primaryHref, primaryLabel = 'Book a strategy call', secondaryHref = '/contact', secondaryLabel = 'Contact us', external = true }) {
+export function ctaBand({ title, description, primaryHref, primaryLabel = 'Talk through your sales goals', secondaryHref = '/contact', secondaryLabel = 'Send us a note', external = true }) {
   return `<section class="cta-band section section--tight">
     <div class="container">
       <div class="cta-band__inner reveal">
         <div>
-          ${eyebrow('Ready when you are', 'light')}
+          ${eyebrow('Let’s talk', 'light')}
           <h2>${title}</h2>
           <p>${description}</p>
         </div>
@@ -132,7 +132,7 @@ export function breadcrumb(items) {
   return `<nav class="breadcrumb" aria-label="Breadcrumb"><ol>${items.map((item, index) => `<li>${index < items.length - 1 ? `<a href="${item.href}">${item.label}</a><span>/</span>` : `<span aria-current="page">${item.label}</span>`}</li>`).join('')}</ol></nav>`;
 }
 
-export function pageHero({ eyebrowText, title, description, bullets = [], primaryHref, primaryLabel = 'Book a strategy call', secondaryHref = '', secondaryLabel = '', visual = '', breadcrumbItems = [] }) {
+export function pageHero({ eyebrowText, title, description, bullets = [], primaryHref, primaryLabel = 'Talk with us', secondaryHref = '', secondaryLabel = '', visual = '', breadcrumbItems = [] }) {
   return `<section class="page-hero section section--dark">
     <div class="page-hero__glow" aria-hidden="true"></div>
     <div class="container">

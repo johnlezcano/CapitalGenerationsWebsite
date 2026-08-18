@@ -1,6 +1,6 @@
 # Capital Generations Website
 
-Version **1.5.0** of the production Capital Generations marketing website.
+Version **1.6.0** of the production Capital Generations marketing website.
 
 The site is a zero dependency static Node.js build. It does not use WordPress, a database, or a CMS. The source generates a deployable `dist/` directory, and `vercel.json` is configured for the existing GitHub to Vercel deployment.
 
@@ -36,6 +36,8 @@ Custom generated website assets are included in `public/assets/generated/` and a
 - Legacy redirects from the old website structure
 - No published pricing, client logos, client names, or raw dashboards
 - Public copy rewritten without dash punctuation or hyphenated style phrases
+- Existing copy humanized with direct language and conversational calls to action
+- No founder, leadership, biography, photo, team, or placeholder sections added in this release
 
 ## Current production configuration
 
@@ -129,7 +131,7 @@ Use the existing connected repository and Vercel project:
 
 ```bash
 git add -A
-git commit -m "Add GA4 tracking"
+git commit -m "Humanize website copy and calls to action"
 git push origin main
 ```
 
@@ -142,7 +144,7 @@ Review the new Vercel deployment on the connected production domain.
 
 ## Google Analytics 4
 
-Version 1.5.0 contains the production Google tag for Measurement ID:
+Version 1.6.0 retains the production Google tag for Measurement ID:
 
 ```text
 G-RGYQXFRE1W
