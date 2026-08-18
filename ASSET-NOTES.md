@@ -2,10 +2,12 @@
 
 ## Public assets used by the site
 
-- `public/assets/images/` — optimized Capital Generations logo, logo mark, icons, favicon files, and Open Graph artwork
-- `public/assets/generated/` — original generated SVG illustrations and PNG previews made for this build
-- `docs/previews/` — desktop, tablet, and mobile website previews
-- `docs/generated-assets/` — review copies of all generated visual assets
+- `public/assets/images/`: optimized Capital Generations logo, logo mark, icons, favicon files, and Open Graph artwork
+- `public/assets/generated/`: original generated SVG illustrations and PNG previews made for this build
+- `docs/previews/`: version 1.3 desktop and mobile homepage previews
+- `docs/generated-assets/`: review copies of all generated visual assets
+
+Generated SVG text was updated for the version 1.3 copy style and the matching PNG files were regenerated.
 
 ## Original client materials
 

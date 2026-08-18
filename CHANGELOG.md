@@ -1,23 +1,35 @@
 # Changelog
 
-## 1.2.0 — Contact email and established year
+## 1.3.0: Copy and typography refinement
 
-- Replaced every public and source-level reference to the retired personal mailbox with `contact@capitalgenerations.com`
-- Updated contact-page, footer, privacy, form fallback, `humans.txt`, and structured-data email values
+- Rewrote public page copy, metadata, accessibility copy, interface messages, and generated SVG text to remove dash punctuation and hyphenated style phrases
+- Added validation that rejects dash styled public copy while allowing technical URLs and machine values
+- Reduced desktop homepage hero type and page hero type for a more refined visual scale
+- Reduced desktop section heading type and made a smaller supporting adjustment on tablet and mobile
+- Changed the canonical site URL from `capitalgenerations.tech` to `capitalgenerations.com`
+- Updated canonical tags, structured data, sitemap entries, robots output, and Open Graph URLs for the final `.com` domain
+- Changed the displayed phone format to `(631) 877 1393` while retaining the same telephone and WhatsApp destinations
+- Regenerated public PNG previews for the edited SVG assets
+- Added version 1.3 desktop and mobile preview images
+
+## 1.2.0: Contact email and established year
+
+- Replaced every public and source level reference to the retired personal mailbox with `contact@capitalgenerations.com`
+- Updated contact page, footer, privacy, form fallback, `humans.txt`, and structured data email values
 - Added “Established 2020” to the global footer
 - Added `foundingDate: 2020` to organization schema
-- Updated validation to reject the retired personal email and require the established-year footer
-- Recorded the user-confirmed Formspree delivery test as complete
-- Kept GA4, Search Console, final real-device QA, and domain/DNS as later tasks
+- Updated validation to reject the retired personal email and require the established year footer
+- Recorded the user confirmed Formspree delivery test as complete
+- Kept GA4, Search Console, final real device QA, and domain or DNS as later tasks
 
-## 1.1.0 — Production contact integrations
+## 1.1.0: Production contact integrations
 
 - Connected Formspree endpoint `https://formspree.io/f/xjybazzn`
 - Added the original public contact email, phone, WhatsApp, LinkedIn, and Calendly integrations
 - Added analytics event hooks for phone, email, WhatsApp, LinkedIn, Calendly, and forms
 - Added version 1.1 automated QA and responsive screenshots
 
-## 1.0.0 — Initial website build
+## 1.0.0: Initial website build
 
 - Complete responsive static website
 - Service, industry, results, about, contact, privacy, and 404 pages

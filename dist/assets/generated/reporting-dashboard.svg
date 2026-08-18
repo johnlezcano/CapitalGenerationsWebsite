@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
   <title id="title">Sanitized sales reporting dashboard</title>
-  <desc id="desc">A fictional dashboard showing activity, contactability, qualified meetings, trends, and target-market performance without client data.</desc>
+  <desc id="desc">A fictional dashboard showing activity, contactability, qualified meetings, trends, and target market performance without client data.</desc>
   <defs>
     <linearGradient id="header" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0758a6"/><stop offset="1" stop-color="#4192cf"/></linearGradient>
     <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2c8ed0" stop-opacity=".34"/><stop offset="1" stop-color="#2c8ed0" stop-opacity="0"/></linearGradient>
@@ -8,7 +8,7 @@
   <rect width="1440" height="900" rx="36" fill="#f4f7fa"/>
   <rect x="40" y="40" width="1360" height="108" rx="20" fill="url(#header)"/>
   <text x="78" y="91" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#fff">Client Performance Dashboard</text>
-  <text x="78" y="123" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#dff3ff">Illustrative reporting view — no client data</text>
+  <text x="78" y="123" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#dff3ff">Illustrative reporting view: no client data</text>
   <rect x="1118" y="68" width="238" height="54" rx="27" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".36"/>
   <circle cx="1152" cy="95" r="8" fill="#28d0ac"/><text x="1172" y="102" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#fff">Reporting view</text>
   <g font-family="Arial, Helvetica, sans-serif">
@@ -19,7 +19,7 @@
   <g font-family="Arial, Helvetica, sans-serif">
     <g transform="translate(40 350)">
       <rect width="850" height="510" rx="22" fill="#fff"/>
-      <text x="34" y="46" font-size="23" font-weight="800" fill="#122f4d">Performance trend</text><text x="34" y="74" font-size="15" fill="#7c90a2">Illustrative period-over-period conversion view</text>
+      <text x="34" y="46" font-size="23" font-weight="800" fill="#122f4d">Performance trend</text><text x="34" y="74" font-size="15" fill="#7c90a2">Illustrative period over period conversion view</text>
       <g stroke="#dfe8ef" stroke-width="2"><path d="M70 140H800M70 220H800M70 300H800M70 380H800M70 460H800"/><path d="M70 110V460M215 110V460M360 110V460M505 110V460M650 110V460M800 110V460"/></g>
       <path d="M70 410C142 390 174 412 215 356S315 330 360 324S456 280 505 270S600 196 650 205S744 128 800 146L800 460H70Z" fill="url(#area)"/>
       <path d="M70 410C142 390 174 412 215 356S315 330 360 324S456 280 505 270S600 196 650 205S744 128 800 146" fill="none" stroke="#1a82c7" stroke-width="8" stroke-linecap="round"/>

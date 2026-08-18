@@ -27,14 +27,14 @@ function homeHero(site) {
       <div class="home-hero__content reveal">
         ${eyebrow('Managed outsourced sales teams', 'light')}
         <h1>Build pipeline without building the entire team.</h1>
-        <p>Capital Generations recruits, trains, manages, and supports dedicated SDRs and AEs—so your company gets more qualified conversations without another hiring and management burden.</p>
+        <p>Capital Generations recruits, trains, manages, and supports dedicated SDRs and AEs, so your company gets more qualified conversations without another hiring and management burden.</p>
         <div class="button-row">
           ${primaryButton('Book a strategy call', site.calendlyUrl, { external: true, track: 'book_call_hero' })}
           ${secondaryButton('See how it works', '/how-it-works', { className: 'button--on-dark' })}
         </div>
         <div class="hero-proof">
           <span>${icon('check')}Dedicated sales talent</span>
-          <span>${icon('check')}Human-led outreach</span>
+          <span>${icon('check')}Human led outreach</span>
           <span>${icon('check')}Manager accountability</span>
           <span>${icon('check')}Transparent reporting</span>
         </div>
@@ -77,19 +77,19 @@ function homePage(site) {
     },
     {
       question: 'Are the representatives dedicated to our company?',
-      answer: 'Engagements are structured around dedicated sales capacity aligned to your market, messaging, goals, and process. The supporting management, data, and client-success functions keep the program accountable and adaptable.',
+      answer: 'Engagements are structured around dedicated sales capacity aligned to your market, messaging, goals, and process. The supporting management, data, and client success functions keep the program accountable and adaptable.',
     },
     {
       question: 'Do you only work with education companies?',
-      answer: 'No. Capital Generations supports growing B2B companies across industries, with particularly deep experience selling into K-12, higher education, and education-adjacent markets.',
+      answer: 'No. Capital Generations supports growing B2B companies across industries, with particularly deep experience selling into K through 12, higher education, and education related markets.',
     },
     {
       question: 'How is outreach different from automated appointment setting?',
-      answer: 'The model is human-led and account-aware. Calls and follow-up are tailored to the prospect, role, market, and conversation rather than relying on generic scripts or high-volume automated sequences alone.',
+      answer: 'The model is human led and account aware. Calls and follow up are tailored to the prospect, role, market, and conversation rather than relying on generic scripts or high volume automated sequences alone.',
     },
     {
       question: 'What can we see in reporting?',
-      answer: 'Reporting can cover outreach activity, contactability, target-market performance, meeting status, held-meeting outcomes, geography, and conversion trends. The reporting view is configured to the engagement.',
+      answer: 'Reporting can cover outreach activity, contactability, target market performance, meeting status, held meeting outcomes, geography, and conversion trends. The reporting view is configured to the engagement.',
     },
   ];
 
@@ -134,21 +134,21 @@ function homePage(site) {
           description: 'Add pipeline generation, closing support, or a connected team that handles both.',
         })}
         <div class="service-grid">
-          ${serviceCard({ iconName: 'phone', eyebrowText: 'Pipeline generation', title: 'Outsourced SDR teams', description: 'Dedicated SDR capacity for targeting, prospecting, qualifying, scheduling, and following up with the right accounts.', href: '/services/sdr-teams', bullets: ['Phone-first multichannel outreach', 'Qualified meeting setting', 'Managed execution and reporting'] })}
-          ${serviceCard({ iconName: 'briefcase', eyebrowText: 'Sales execution', title: 'Outsourced AE teams', description: 'Add dedicated sales execution capacity to move qualified opportunities through discovery, follow-up, and your sales process.', href: '/services/ae-teams', bullets: ['Aligned to your process', 'Opportunity follow-through', 'Managed pipeline discipline'] })}
-          ${serviceCard({ iconName: 'layers', eyebrowText: 'Connected coverage', title: 'Full sales teams', description: 'Connect SDR and AE capacity under one operating rhythm—from target account to qualified opportunity and beyond.', href: '/services/full-sales-teams', bullets: ['Unified handoffs', 'One management structure', 'End-to-end visibility'] })}
+          ${serviceCard({ iconName: 'phone', eyebrowText: 'Pipeline generation', title: 'Outsourced SDR teams', description: 'Dedicated SDR capacity for targeting, prospecting, qualifying, scheduling, and following up with the right accounts.', href: '/services/sdr-teams', bullets: ['Phone first multichannel outreach', 'Qualified meeting setting', 'Managed execution and reporting'] })}
+          ${serviceCard({ iconName: 'briefcase', eyebrowText: 'Sales execution', title: 'Outsourced AE teams', description: 'Add dedicated sales execution capacity to move qualified opportunities through discovery, follow up, and your sales process.', href: '/services/ae-teams', bullets: ['Aligned to your process', 'Opportunity follow through', 'Managed pipeline discipline'] })}
+          ${serviceCard({ iconName: 'layers', eyebrowText: 'Connected coverage', title: 'Full sales teams', description: 'Connect SDR and AE capacity under one operating rhythm, from target account to qualified opportunity and beyond.', href: '/services/full-sales-teams', bullets: ['Unified handoffs', 'One management structure', 'End to end visibility'] })}
         </div>
       </div>
     </section>
 
     <section class="section section--dark process-section">
       <div class="container">
-        ${sectionHeading({ eyebrowText: 'A repeatable operating model', title: 'From target market to qualified conversation.', description: 'The work is structured, measured, and adjusted around your goals—not a generic campaign dropped into a shared queue.', tone: 'dark' })}
+        ${sectionHeading({ eyebrowText: 'A repeatable operating model', title: 'From target market to qualified conversation.', description: 'The work is structured, measured, and adjusted around your goals, not a generic campaign dropped into a shared queue.', tone: 'dark' })}
         <div class="process-grid process-grid--five">
           ${processStep({ number: '01', iconName: 'compass', title: 'Align', description: 'Clarify the offer, sales motion, ICP, target roles, goals, and definitions of quality.' })}
           ${processStep({ number: '02', iconName: 'search', title: 'Build', description: 'Develop the target market, account lists, contact coverage, messaging, and workflow.' })}
-          ${processStep({ number: '03', iconName: 'users', title: 'Deploy', description: 'Assign and prepare the right sales talent, manager, client-success lead, and data support.' })}
-          ${processStep({ number: '04', iconName: 'message', title: 'Engage', description: 'Launch human-led calls and follow-up across the channels that fit the buyer.' })}
+          ${processStep({ number: '03', iconName: 'users', title: 'Deploy', description: 'Assign and prepare the right sales talent, manager, client success lead, and data support.' })}
+          ${processStep({ number: '04', iconName: 'message', title: 'Engage', description: 'Launch human led calls and follow up across the channels that fit the buyer.' })}
           ${processStep({ number: '05', iconName: 'refresh', title: 'Improve', description: 'Review performance, listen to the market, adjust targeting, and strengthen conversion.' })}
         </div>
         <div class="section-link-row">${arrowLink('See the full operating process', '/how-it-works', 'text-link--light')}</div>
@@ -158,8 +158,8 @@ function homePage(site) {
     <section class="section reporting-section">
       <div class="container reporting-section__grid">
         <div class="reporting-section__copy">
-          ${sectionHeading({ eyebrowText: 'Visibility built in', title: 'See the work. See the trend. See what changes next.', description: 'Capital Generations uses Outreach for execution and Power BI reporting to help clients understand activity, contactability, conversion, meeting status, and target-market performance.' })}
-          ${checkList(['Outreach activity and contact outcomes', 'Meeting scheduled, held, canceled, and no-show status', 'Target-market and geography performance', 'Period-over-period conversion trends'])}
+          ${sectionHeading({ eyebrowText: 'Visibility built in', title: 'See the work. See the trend. See what changes next.', description: 'Capital Generations uses Outreach for execution and Power BI reporting to help clients understand activity, contactability, conversion, meeting status, and target market performance.' })}
+          ${checkList(['Outreach activity and contact outcomes', 'Meeting scheduled, held, canceled, and missed meeting status', 'Target market and geography performance', 'Period over period conversion trends'])}
           ${arrowLink('Explore reporting and results', '/results')}
         </div>
         ${dashboardMock()}
@@ -168,10 +168,10 @@ function homePage(site) {
 
     <section class="section section--soft results-preview">
       <div class="container">
-        ${sectionHeading({ eyebrowText: 'Selected client outcomes', title: 'Measured by pipeline movement—not activity theater.', description: 'Anonymized results from prior engagements. Outcomes vary by offer, market, sales cycle, and client execution.', align: 'center' })}
+        ${sectionHeading({ eyebrowText: 'Selected client outcomes', title: 'Measured by pipeline movement, not activity theater.', description: 'Anonymized results from prior engagements. Outcomes vary by offer, market, sales cycle, and client execution.', align: 'center' })}
         <div class="metrics-grid metrics-grid--four">
           ${resultMetric({ value: '600%', label: 'increase in meetings held', detail: 'Achieved by month three in one education engagement.' })}
-          ${resultMetric({ value: '3×', label: 'internal meeting output', detail: 'Out-scheduled an internal SDR team in a selected engagement.' })}
+          ${resultMetric({ value: '3×', label: 'internal meeting output', detail: 'Scheduled more meetings than the internal SDR team in a selected engagement.' })}
           ${resultMetric({ value: '200+', label: 'meetings scheduled', detail: 'Generated during the first half of 2023 for one client.' })}
           ${resultMetric({ value: '$3.5M', label: 'pipeline generated', detail: 'Reported during 2023 in a selected education engagement.' })}
         </div>
@@ -193,7 +193,7 @@ function homePage(site) {
         <div class="education-callout__copy reveal">
           ${eyebrow('Education sales expertise')}
           <h2>Education buying is complex. Your outreach should understand that.</h2>
-          <p>Capital Generations has substantial experience helping education companies reach district, school, academic, technology, special-education, finance, and student-success stakeholders.</p>
+          <p>Capital Generations has substantial experience helping education companies reach district, school, academic, technology, special education, finance, and student success stakeholders.</p>
           ${arrowLink('Explore education sales development', '/industries/education')}
         </div>
       </div>
@@ -225,20 +225,20 @@ function servicesPage(site) {
     },
     {
       question: 'Are services limited to the United States?',
-      answer: 'The strongest current positioning is US-focused B2B sales, with experience supporting broader and international outreach requirements when the engagement calls for it.',
+      answer: 'The strongest current positioning is United States focused B2B sales, with experience supporting broader and international outreach requirements when the engagement calls for it.',
     },
   ];
 
   return {
     path: '/services',
     title: 'Outsourced Sales Services | Capital Generations',
-    description: 'Add managed SDR, AE, or full sales-team capacity with recruiting, training, management, data support, client success, and reporting built in.',
+    description: 'Add managed SDR, AE, or full sales team capacity with recruiting, training, management, data support, client success, and reporting built in.',
     faqs,
     body: `${pageHero({
       eyebrowText: 'Outsourced sales services',
-      title: 'Add the sales capacity you need—backed by the system it requires.',
+      title: 'Add the sales capacity you need, backed by the system it requires.',
       description: 'Choose dedicated SDR support, AE support, or a connected sales team. Capital Generations manages the people, process, accountability, data, and visibility around the work.',
-      bullets: ['Dedicated sales talent', 'Manager-led accountability', 'Client success and data support', 'Performance reporting'],
+      bullets: ['Dedicated sales talent', 'Manager led accountability', 'Client success and data support', 'Performance reporting'],
       primaryHref: site.calendlyUrl,
       secondaryHref: '/how-it-works',
       secondaryLabel: 'See how it works',
@@ -248,11 +248,11 @@ function servicesPage(site) {
 
     <section class="section">
       <div class="container">
-        ${sectionHeading({ eyebrowText: 'Three ways to engage', title: 'Start with the gap in your current sales motion.', description: 'Every option is designed as managed sales capacity—not anonymous staffing or a shared appointment-setting pool.' })}
+        ${sectionHeading({ eyebrowText: 'Three ways to engage', title: 'Start with the gap in your current sales motion.', description: 'Every option is designed as managed sales capacity, not anonymous staffing or a shared appointment setting pool.' })}
         <div class="service-grid">
-          ${serviceCard({ iconName: 'phone', eyebrowText: 'Pipeline generation', title: 'Outsourced SDR teams', description: 'Build target lists, start relevant conversations, qualify interest, schedule meetings, and keep follow-up moving.', href: '/services/sdr-teams', bullets: ['Target-account research', 'Custom phone-led outreach', 'Meeting setting and confirmation'] })}
-          ${serviceCard({ iconName: 'briefcase', eyebrowText: 'Sales execution', title: 'Outsourced AE teams', description: 'Add capacity to handle discovery, demos, follow-up, opportunity movement, and pipeline discipline inside your process.', href: '/services/ae-teams', bullets: ['Discovery and follow-up support', 'Opportunity management', 'Process and CRM alignment'] })}
-          ${serviceCard({ iconName: 'layers', eyebrowText: 'Integrated coverage', title: 'Full sales teams', description: 'Connect prospecting and sales execution through one managed team, workflow, reporting structure, and client relationship.', href: '/services/full-sales-teams', bullets: ['SDR-to-AE handoffs', 'Unified management', 'End-to-end visibility'] })}
+          ${serviceCard({ iconName: 'phone', eyebrowText: 'Pipeline generation', title: 'Outsourced SDR teams', description: 'Build target lists, start relevant conversations, qualify interest, schedule meetings, and keep follow up moving.', href: '/services/sdr-teams', bullets: ['Target account research', 'Custom phone led outreach', 'Meeting setting and confirmation'] })}
+          ${serviceCard({ iconName: 'briefcase', eyebrowText: 'Sales execution', title: 'Outsourced AE teams', description: 'Add capacity to handle discovery, demos, follow up, opportunity movement, and pipeline discipline inside your process.', href: '/services/ae-teams', bullets: ['Discovery and follow up support', 'Opportunity management', 'Process and CRM alignment'] })}
+          ${serviceCard({ iconName: 'layers', eyebrowText: 'Integrated coverage', title: 'Full sales teams', description: 'Connect prospecting and sales execution through one managed team, workflow, reporting structure, and client relationship.', href: '/services/full-sales-teams', bullets: ['SDR to AE handoffs', 'Unified management', 'End to end visibility'] })}
         </div>
       </div>
     </section>
@@ -277,13 +277,13 @@ function servicesPage(site) {
         </div>
         <div class="selection-guide__cards">
           <article class="selection-card reveal"><span>Choose SDR teams when…</span><h3>You need more qualified conversations.</h3><p>Your closers have capacity, but the top of the funnel is inconsistent or too dependent on referrals and inbound.</p>${arrowLink('Explore SDR teams', '/services/sdr-teams')}</article>
-          <article class="selection-card reveal"><span>Choose AE teams when…</span><h3>You need more sales execution capacity.</h3><p>Qualified opportunities exist, but discovery, follow-up, demos, and pipeline movement need more dedicated attention.</p>${arrowLink('Explore AE teams', '/services/ae-teams')}</article>
+          <article class="selection-card reveal"><span>Choose AE teams when…</span><h3>You need more sales execution capacity.</h3><p>Qualified opportunities exist, but discovery, follow up, demos, and pipeline movement need more dedicated attention.</p>${arrowLink('Explore AE teams', '/services/ae-teams')}</article>
           <article class="selection-card reveal"><span>Choose a full team when…</span><h3>You want one connected operating model.</h3><p>You need both pipeline creation and sales execution aligned under one management and reporting structure.</p>${arrowLink('Explore full sales teams', '/services/full-sales-teams')}</article>
         </div>
       </div>
     </section>
 
-    ${faqSection('Service questions', 'The right engagement should fit the sales motion—not force the sales motion to fit a package.', faqs)}
+    ${faqSection('Service questions', 'The right engagement should fit the sales motion, not force the sales motion to fit a package.', faqs)}
 
     ${ctaBand({ title: 'Not sure which team structure fits?', description: 'Bring your current funnel, goals, and bottleneck. We’ll help frame the practical starting point.', primaryHref: site.calendlyUrl })}`,
   };
@@ -305,12 +305,12 @@ function sdrVisual() {
 function sdrPage(site) {
   const faqs = [
     {
-      question: 'Is outreach phone-only?',
-      answer: 'Telephone outreach is a core strength, but the program can combine phone, email, and LinkedIn follow-up based on the market, contact seniority, and campaign strategy.',
+      question: 'Is outreach only by phone?',
+      answer: 'Telephone outreach is a core strength, but the program can combine phone, email, and LinkedIn follow up based on the market, contact seniority, and campaign strategy.',
     },
     {
       question: 'Do SDRs use a fixed script?',
-      answer: 'Messaging frameworks and call preparation create consistency, but calls are not treated as one-size-fits-all scripts. Representatives are expected to respond to the account, role, context, and live conversation.',
+      answer: 'Messaging frameworks and call preparation create consistency, but calls are not treated as generic scripts. Representatives are expected to respond to the account, role, context, and live conversation.',
     },
     {
       question: 'Who builds the target account and contact lists?',
@@ -318,7 +318,7 @@ function sdrPage(site) {
     },
     {
       question: 'What happens when an SDR is underperforming?',
-      answer: 'Management includes coaching, KPI review, call feedback, and accountability. Capital Generations also owns the people-management responsibility, including replacement when necessary.',
+      answer: 'Management includes coaching, KPI review, call feedback, and accountability. Capital Generations also owns the people management responsibility, including replacement when necessary.',
     },
     {
       question: 'How are meetings handled after they are booked?',
@@ -329,13 +329,13 @@ function sdrPage(site) {
   return {
     path: '/services/sdr-teams',
     title: 'Outsourced SDR Teams | Capital Generations',
-    description: 'Dedicated outsourced SDR teams for target research, human-led prospecting, qualification, appointment setting, management, and transparent reporting.',
+    description: 'Dedicated outsourced SDR teams for target research, human led prospecting, qualification, appointment setting, management, and transparent reporting.',
     faqs,
     body: `${pageHero({
       eyebrowText: 'Outsourced SDR teams',
       title: 'Build qualified pipeline without building an internal SDR function.',
       description: 'Capital Generations recruits, trains, manages, and supports dedicated SDR capacity that targets the right accounts, starts real conversations, and books qualified meetings for your sales team.',
-      bullets: ['Phone-first multichannel outreach', 'Custom conversations—not call-center scripts', 'Manager-led coaching and accountability', 'Data support and Power BI reporting'],
+      bullets: ['Phone first multichannel outreach', 'Custom conversations, not call center scripts', 'Manager led coaching and accountability', 'Data support and Power BI reporting'],
       primaryHref: site.calendlyUrl,
       secondaryHref: '/results',
       secondaryLabel: 'See selected results',
@@ -346,15 +346,15 @@ function sdrPage(site) {
     <section class="section">
       <div class="container split-intro">
         <div>
-          ${sectionHeading({ eyebrowText: 'What the team handles', title: 'The day-to-day work required to create conversations.', description: 'Your internal sales leadership stays focused on strategy, deals, and revenue while Capital Generations runs the outreach engine.' })}
+          ${sectionHeading({ eyebrowText: 'What the team handles', title: 'The daily work required to create conversations.', description: 'Your internal sales leadership stays focused on strategy, deals, and revenue while Capital Generations runs the outreach engine.' })}
         </div>
         <div class="capability-grid">
           ${featureCard({ iconName: 'target', title: 'ICP and account targeting', description: 'Translate your ideal customer into target segments, organizations, territories, and buyer roles.' })}
-          ${featureCard({ iconName: 'database', title: 'Contact research and hygiene', description: 'Identify decision-makers, enrich coverage, remove stale records, and keep lists usable.' })}
-          ${featureCard({ iconName: 'phone', title: 'Human-led prospecting', description: 'Use phone, email, and LinkedIn with messaging tailored to the buyer and market.' })}
+          ${featureCard({ iconName: 'database', title: 'Contact research and hygiene', description: 'Identify decision makers, enrich coverage, remove stale records, and keep lists usable.' })}
+          ${featureCard({ iconName: 'phone', title: 'Human led prospecting', description: 'Use phone, email, and LinkedIn with messaging tailored to the buyer and market.' })}
           ${featureCard({ iconName: 'message', title: 'Qualification', description: 'Understand fit, timing, need, and context before passing a conversation forward.' })}
           ${featureCard({ iconName: 'calendar', title: 'Meeting setting', description: 'Schedule, confirm, and support the handoff to the client’s sales team.' })}
-          ${featureCard({ iconName: 'refresh', title: 'Follow-up', description: 'Keep appropriate prospects moving without relying on one-touch outreach.' })}
+          ${featureCard({ iconName: 'refresh', title: 'Follow up', description: 'Keep appropriate prospects moving without relying on single touch outreach.' })}
           ${featureCard({ iconName: 'shield', title: 'Management and coaching', description: 'Review performance, calls, activity, and KPIs while taking action when execution slips.' })}
           ${featureCard({ iconName: 'chart', title: 'Reporting and optimization', description: 'Track outcomes and adjust the target market, messaging, and cadence based on evidence.' })}
         </div>
@@ -365,8 +365,8 @@ function sdrPage(site) {
       <div class="container">
         ${sectionHeading({ eyebrowText: 'Built to represent your company', title: 'Context before contact.', description: 'The goal is not simply more dials. It is more credible conversations with the people your company should actually be talking to.', align: 'center' })}
         <div class="principles-grid">
-          <article class="principle-card reveal"><span>01</span><h3>Account-aware</h3><p>Outreach starts with the organization, buyer role, market, and reason the conversation may matter.</p></article>
-          <article class="principle-card reveal"><span>02</span><h3>Human-led</h3><p>Technology supports the work. Representatives handle objections, nuance, and live conversation.</p></article>
+          <article class="principle-card reveal"><span>01</span><h3>Account aware</h3><p>Outreach starts with the organization, buyer role, market, and reason the conversation may matter.</p></article>
+          <article class="principle-card reveal"><span>02</span><h3>Human led</h3><p>Technology supports the work. Representatives handle objections, nuance, and live conversation.</p></article>
           <article class="principle-card reveal"><span>03</span><h3>Professionally managed</h3><p>Coaching and accountability are part of the engagement rather than being pushed back to your Head of Sales.</p></article>
           <article class="principle-card reveal"><span>04</span><h3>Measured by outcomes</h3><p>Activity matters, but qualification, meetings held, conversion, and pipeline movement matter more.</p></article>
         </div>
@@ -405,12 +405,12 @@ function sdrPage(site) {
 }
 
 function aeVisual() {
-  return `<div class="ae-visual" role="img" aria-label="Qualified opportunities moving through discovery, follow-up, proposal, and close coordination">
+  return `<div class="ae-visual" role="img" aria-label="Qualified opportunities moving through discovery, follow up, proposal, and close coordination">
     <div class="ae-visual__top"><span>Opportunity workflow</span><i>Managed</i></div>
     <div class="ae-visual__pipeline">
       <div class="ae-stage ae-stage--active"><span>Discovery</span><b></b></div>
       <div class="ae-stage ae-stage--active"><span>Demo</span><b></b></div>
-      <div class="ae-stage"><span>Follow-up</span><b></b></div>
+      <div class="ae-stage"><span>Follow up</span><b></b></div>
       <div class="ae-stage"><span>Proposal</span><b></b></div>
       <div class="ae-stage"><span>Decision</span><b></b></div>
     </div>
@@ -422,7 +422,7 @@ function aePage(site) {
   const faqs = [
     {
       question: 'What parts of the sales process can an outsourced AE support?',
-      answer: 'Depending on the engagement, AE support can cover discovery, demonstrations, follow-up, opportunity management, CRM hygiene, pipeline movement, and close coordination. The exact scope is defined during onboarding.',
+      answer: 'Depending on the engagement, AE support can cover discovery, demonstrations, follow up, opportunity management, CRM hygiene, pipeline movement, and close coordination. The exact scope is defined during onboarding.',
     },
     {
       question: 'Do we need an existing sales process?',
@@ -430,24 +430,24 @@ function aePage(site) {
     },
     {
       question: 'Can an AE work with our internal SDRs?',
-      answer: 'Yes. The AE can receive qualified handoffs from an internal or Capital Generations SDR team, provided the qualification criteria, ownership, CRM process, and follow-up expectations are clearly defined.',
+      answer: 'Yes. The AE can receive qualified handoffs from an internal or Capital Generations SDR team, provided the qualification criteria, ownership, CRM process, and follow up expectations are clearly defined.',
     },
     {
       question: 'How is AE performance managed?',
-      answer: 'Performance is managed through agreed pipeline stages, activity and follow-up expectations, opportunity review, sales management, client-success communication, and reporting.',
+      answer: 'Performance is managed through agreed pipeline stages, activity and follow up expectations, opportunity review, sales management, client success communication, and reporting.',
     },
   ];
 
   return {
     path: '/services/ae-teams',
     title: 'Outsourced AE Teams | Capital Generations',
-    description: 'Add managed account executive capacity for discovery, demos, follow-up, opportunity management, and sales-process execution without another hiring cycle.',
+    description: 'Add managed account executive capacity for discovery, demos, follow up, opportunity management, and sales process execution without another hiring cycle.',
     faqs,
     body: `${pageHero({
       eyebrowText: 'Outsourced AE teams',
       title: 'Add sales execution capacity without starting another hiring cycle.',
-      description: 'Dedicated AE support helps your company move qualified opportunities through discovery, demonstrations, follow-up, and the sales process—with management and accountability around the work.',
-      bullets: ['Aligned to your sales process', 'Dedicated follow-up and opportunity ownership', 'Manager and client-success support', 'Pipeline reporting and review'],
+      description: 'Dedicated AE support helps your company move qualified opportunities through discovery, demonstrations, follow up, and the sales process, with management and accountability around the work.',
+      bullets: ['Aligned to your sales process', 'Dedicated follow up and opportunity ownership', 'Manager and client success support', 'Pipeline reporting and review'],
       primaryHref: site.calendlyUrl,
       secondaryHref: '/services/full-sales-teams',
       secondaryLabel: 'Explore full sales teams',
@@ -458,13 +458,13 @@ function aePage(site) {
     <section class="section">
       <div class="container split-intro">
         <div>
-          ${sectionHeading({ eyebrowText: 'Where AE support fits', title: 'When opportunity volume and sales bandwidth stop matching.', description: 'A managed AE engagement adds focused execution where qualified interest is being lost to delayed follow-up, inconsistent ownership, or limited closing capacity.' })}
-          ${checkList(['Your Head of Sales is carrying too many opportunities', 'Qualified meetings are not receiving consistent follow-up', 'A new market or segment needs dedicated coverage', 'Internal AEs need relief without a long recruiting cycle'])}
+          ${sectionHeading({ eyebrowText: 'Where AE support fits', title: 'When opportunity volume and sales bandwidth stop matching.', description: 'A managed AE engagement adds focused execution where qualified interest is being lost to delayed follow up, inconsistent ownership, or limited closing capacity.' })}
+          ${checkList(['Your Head of Sales is carrying too many opportunities', 'Qualified meetings are not receiving consistent follow up', 'A new market or segment needs dedicated coverage', 'Internal AEs need relief without a long recruiting cycle'])}
         </div>
         <div class="capability-grid capability-grid--two">
           ${featureCard({ iconName: 'message', title: 'Discovery', description: 'Run structured conversations that clarify the problem, fit, stakeholders, timing, and next step.' })}
           ${featureCard({ iconName: 'spark', title: 'Demos and presentations', description: 'Support product or service presentations using the client’s approved process and materials.' })}
-          ${featureCard({ iconName: 'refresh', title: 'Follow-up', description: 'Keep momentum after the meeting with clear ownership, relevant communication, and defined next actions.' })}
+          ${featureCard({ iconName: 'refresh', title: 'Follow up', description: 'Keep momentum after the meeting with clear ownership, relevant communication, and defined next actions.' })}
           ${featureCard({ iconName: 'briefcase', title: 'Opportunity management', description: 'Maintain stage discipline, notes, actions, and visibility inside the agreed sales workflow.' })}
           ${featureCard({ iconName: 'users', title: 'Stakeholder coordination', description: 'Map the buying group and help move conversations beyond a single point of contact.' })}
           ${featureCard({ iconName: 'chart', title: 'Pipeline review', description: 'Review movement, blockers, conversion, and next steps with management and the client team.' })}
@@ -489,8 +489,8 @@ function aePage(site) {
       <div class="container team-support">
         <div class="team-support__visual reveal">${teamPodVisual()}</div>
         <div class="team-support__copy reveal">
-          ${sectionHeading({ eyebrowText: 'Managed—not merely placed', title: 'The engagement includes an operating structure around the AE.', description: 'Capital Generations takes responsibility for talent, management, client alignment, and performance visibility so the role does not become another unmanaged contractor relationship.', tone: 'dark' })}
-          ${checkList(['Defined scope and stage ownership', 'Sales manager coaching and accountability', 'Client-success communication and alignment', 'Pipeline and activity visibility'], 'check-list--light')}
+          ${sectionHeading({ eyebrowText: 'Managed, not merely placed', title: 'The engagement includes an operating structure around the AE.', description: 'Capital Generations takes responsibility for talent, management, client alignment, and performance visibility so the role does not become another unmanaged contractor relationship.', tone: 'dark' })}
+          ${checkList(['Defined scope and stage ownership', 'Sales manager coaching and accountability', 'Client success communication and alignment', 'Pipeline and activity visibility'], 'check-list--light')}
         </div>
       </div>
     </section>
@@ -530,11 +530,11 @@ function fullSalesPage(site) {
       answer: 'Yes. The operating model can combine internal and outsourced roles as long as stage ownership, handoffs, systems, qualification criteria, and reporting responsibilities are clear.',
     },
     {
-      question: 'How are SDR-to-AE handoffs handled?',
-      answer: 'The engagement defines what qualifies as a handoff, what context is required, who owns follow-up, how quickly the AE responds, and how meeting and opportunity outcomes are recorded.',
+      question: 'How are SDR to AE handoffs handled?',
+      answer: 'The engagement defines what qualifies as a handoff, what context is required, who owns follow up, how quickly the AE responds, and how meeting and opportunity outcomes are recorded.',
     },
     {
-      question: 'Is the full-team model only for companies with no sales team?',
+      question: 'Is the full sales team model only for companies with no sales team?',
       answer: 'No. It can support an early sales function, add a new market pod, increase capacity around an existing team, or create a dedicated outbound motion while internal leaders focus elsewhere.',
     },
   ];
@@ -547,8 +547,8 @@ function fullSalesPage(site) {
     body: `${pageHero({
       eyebrowText: 'Full outsourced sales teams',
       title: 'One managed team from first touch to pipeline movement.',
-      description: 'Connect dedicated SDR and AE capacity under one operating rhythm so targeting, outreach, qualification, handoff, follow-up, and reporting work as one system.',
-      bullets: ['SDR and AE capacity in one engagement', 'Clear qualification and handoff rules', 'Unified management and client success', 'End-to-end performance visibility'],
+      description: 'Connect dedicated SDR and AE capacity under one operating rhythm so targeting, outreach, qualification, handoff, follow up, and reporting work as one system.',
+      bullets: ['SDR and AE capacity in one engagement', 'Clear qualification and handoff rules', 'Unified management and client success', 'End to end performance visibility'],
       primaryHref: site.calendlyUrl,
       secondaryHref: '/how-it-works',
       secondaryLabel: 'See the operating model',
@@ -558,12 +558,12 @@ function fullSalesPage(site) {
 
     <section class="section">
       <div class="container">
-        ${sectionHeading({ eyebrowText: 'Close the gaps between roles', title: 'Pipeline generation and sales execution should not operate as separate islands.', description: 'The full-team model creates shared context, agreed ownership, and one management cadence across the early sales journey.' })}
+        ${sectionHeading({ eyebrowText: 'Close the gaps between roles', title: 'Pipeline generation and sales execution should not operate as separate islands.', description: 'The full sales team model creates shared context, agreed ownership, and one management cadence across the early sales journey.' })}
         <div class="connected-grid">
-          <article class="connected-card reveal"><div class="icon-box">${icon('target')}</div><span>01</span><h3>Target-market design</h3><p>Define the accounts, segments, buyer roles, territories, and contact coverage that matter.</p></article>
-          <article class="connected-card reveal"><div class="icon-box">${icon('phone')}</div><span>02</span><h3>Outbound engagement</h3><p>Start account-aware conversations through phone, email, LinkedIn, and relevant follow-up.</p></article>
+          <article class="connected-card reveal"><div class="icon-box">${icon('target')}</div><span>01</span><h3>Target market design</h3><p>Define the accounts, segments, buyer roles, territories, and contact coverage that matter.</p></article>
+          <article class="connected-card reveal"><div class="icon-box">${icon('phone')}</div><span>02</span><h3>Outbound engagement</h3><p>Start account aware conversations through phone, email, LinkedIn, and relevant follow up.</p></article>
           <article class="connected-card reveal"><div class="icon-box">${icon('calendar')}</div><span>03</span><h3>Qualification and meetings</h3><p>Clarify fit and context, schedule the conversation, confirm attendance, and document the handoff.</p></article>
-          <article class="connected-card reveal"><div class="icon-box">${icon('briefcase')}</div><span>04</span><h3>Sales execution</h3><p>Run discovery, demonstrations, follow-up, opportunity movement, and next-step ownership.</p></article>
+          <article class="connected-card reveal"><div class="icon-box">${icon('briefcase')}</div><span>04</span><h3>Sales execution</h3><p>Run discovery, demonstrations, follow up, opportunity movement, and next step ownership.</p></article>
           <article class="connected-card reveal"><div class="icon-box">${icon('chart')}</div><span>05</span><h3>Review and optimization</h3><p>Use outcomes across the funnel to improve the ICP, messaging, qualification, and process.</p></article>
         </div>
       </div>
@@ -572,8 +572,8 @@ function fullSalesPage(site) {
     <section class="section section--soft">
       <div class="container full-team-benefits">
         <div class="full-team-benefits__copy">
-          ${sectionHeading({ eyebrowText: 'Why connect the team', title: 'One operating rhythm reduces lost context and delayed follow-up.', description: 'Instead of separate vendors, contractors, and internal processes, the full-team model creates a single accountable workflow.' })}
-          ${checkList(['Shared qualification standards', 'Faster, clearer SDR-to-AE handoffs', 'Consistent messaging across the buyer journey', 'One manager and client-success cadence', 'Combined visibility into activity and outcomes'])}
+          ${sectionHeading({ eyebrowText: 'Why connect the team', title: 'One operating rhythm reduces lost context and delayed follow up.', description: 'Instead of separate vendors, contractors, and internal processes, the full sales team model creates a single accountable workflow.' })}
+          ${checkList(['Shared qualification standards', 'Faster, clearer SDR to AE handoffs', 'Consistent messaging across the buyer journey', 'One manager and client success cadence', 'Combined visibility into activity and outcomes'])}
         </div>
         <div class="system-card reveal">
           <div class="system-card__head"><span>Managed revenue pod</span><i>Active</i></div>
@@ -591,17 +591,17 @@ function fullSalesPage(site) {
 
     <section class="section">
       <div class="container">
-        ${sectionHeading({ eyebrowText: 'Best-fit situations', title: 'When a full team can make sense.', description: 'The model is particularly useful when the company needs a connected sales function but does not want to build every role and support layer internally.', align: 'center' })}
+        ${sectionHeading({ eyebrowText: 'Best fit situations', title: 'When a full team can make sense.', description: 'The model is particularly useful when the company needs a connected sales function but does not want to build every role and support layer internally.', align: 'center' })}
         <div class="fit-grid">
           ${featureCard({ iconName: 'spark', title: 'New outbound motion', description: 'Launch a structured outbound program around a validated offer and target market.' })}
           ${featureCard({ iconName: 'map', title: 'New market or territory', description: 'Create a dedicated pod for a segment, geography, vertical, or product line.' })}
           ${featureCard({ iconName: 'users', title: 'Lean internal sales team', description: 'Give a Head of Sales more execution capacity without adding a full internal org chart.' })}
-          ${featureCard({ iconName: 'refresh', title: 'Inconsistent handoffs', description: 'Connect meeting creation and opportunity follow-up through one defined workflow.' })}
+          ${featureCard({ iconName: 'refresh', title: 'Inconsistent handoffs', description: 'Connect meeting creation and opportunity follow up through one defined workflow.' })}
         </div>
       </div>
     </section>
 
-    ${faqSection('Full-team questions', 'A connected team works best when ownership, process, and outcomes are explicit.', faqs)}
+    ${faqSection('Full sales team questions', 'A connected team works best when ownership, process, and outcomes are explicit.', faqs)}
 
     ${ctaBand({ title: 'Want one accountable partner across the sales motion?', description: 'Let’s map the roles, handoffs, target market, and management structure your company actually needs.', primaryHref: site.calendlyUrl })}`,
   };
@@ -626,7 +626,7 @@ function howItWorksPage(site) {
     },
     {
       question: 'What does the client need to provide?',
-      answer: 'Clients should provide product and market context, current sales materials, target-customer knowledge, approved claims, CRM or workflow access where required, feedback, and clear ownership for meetings and opportunities.',
+      answer: 'Clients should provide product and market context, current sales materials, target customer knowledge, approved claims, CRM or workflow access where required, feedback, and clear ownership for meetings and opportunities.',
     },
     {
       question: 'How often do we review performance?',
@@ -641,13 +641,13 @@ function howItWorksPage(site) {
   return {
     path: '/how-it-works',
     title: 'How Our Managed Sales Teams Work | Capital Generations',
-    description: 'See how Capital Generations aligns on ICP, builds the target market, deploys dedicated sales talent, runs human-led outreach, and improves performance.',
+    description: 'See how Capital Generations aligns on ICP, builds the target market, deploys dedicated sales talent, runs human led outreach, and improves performance.',
     faqs,
     body: `${pageHero({
       eyebrowText: 'How it works',
-      title: 'A managed sales program—not a rep dropped into your Slack.',
+      title: 'A managed sales program, not a rep dropped into your Slack.',
       description: 'Capital Generations combines discovery, targeting, sales talent, management, client success, data support, execution, and reporting in one operating model.',
-      bullets: ['Clear ICP and qualification standards', 'Prepared and managed sales talent', 'Human-led execution', 'Continuous reporting and adjustment'],
+      bullets: ['Clear ICP and qualification standards', 'Prepared and managed sales talent', 'Human led execution', 'Continuous reporting and adjustment'],
       primaryHref: site.calendlyUrl,
       secondaryHref: '/services',
       secondaryLabel: 'Explore services',
@@ -659,11 +659,11 @@ function howItWorksPage(site) {
       <div class="container">
         ${sectionHeading({ eyebrowText: 'The operating process', title: 'Five stages that turn sales capacity into a working program.', description: 'Each stage has a practical output, an owner, and a feedback loop.' })}
         <div class="process-detail__list">
-          <article class="process-detail__item reveal"><div class="process-detail__number">01</div><div class="process-detail__icon">${icon('compass')}</div><div><span>Align</span><h3>Define the commercial target.</h3><p>Clarify the product, value proposition, sales motion, ideal customer, target roles, geographies, qualification criteria, meeting expectations, and success measures.</p><ul><li>ICP and segment definition</li><li>Buyer-role priorities</li><li>Quality and handoff standards</li></ul></div></article>
+          <article class="process-detail__item reveal"><div class="process-detail__number">01</div><div class="process-detail__icon">${icon('compass')}</div><div><span>Align</span><h3>Define the commercial target.</h3><p>Clarify the product, value proposition, sales motion, ideal customer, target roles, geographies, qualification criteria, meeting expectations, and success measures.</p><ul><li>ICP and segment definition</li><li>Buyer role priorities</li><li>Quality and handoff standards</li></ul></div></article>
           <article class="process-detail__item reveal"><div class="process-detail__number">02</div><div class="process-detail__icon">${icon('search')}</div><div><span>Build</span><h3>Create the market, message, and workflow.</h3><p>Translate the strategy into target accounts, contact coverage, segmentation, outreach messaging, channel use, CRM stages, and reporting requirements.</p><ul><li>Account and contact research</li><li>Messaging frameworks</li><li>Systems and reporting setup</li></ul></div></article>
-          <article class="process-detail__item reveal"><div class="process-detail__number">03</div><div class="process-detail__icon">${icon('users')}</div><div><span>Deploy</span><h3>Prepare the right team for the engagement.</h3><p>Assign the SDR or AE capacity, sales manager, client-success lead, and data support required for the scope. Train on the offer, buyer, process, objections, and tools.</p><ul><li>Talent assignment and onboarding</li><li>Product and market preparation</li><li>Manager expectations and KPIs</li></ul></div></article>
-          <article class="process-detail__item reveal"><div class="process-detail__number">04</div><div class="process-detail__icon">${icon('phone')}</div><div><span>Engage</span><h3>Run the work with human judgment.</h3><p>Execute phone-led multichannel outreach, qualification, meeting setting, follow-up, discovery, or opportunity work according to the engagement.</p><ul><li>Account-aware conversations</li><li>Documented outcomes and context</li><li>Defined handoffs and next actions</li></ul></div></article>
-          <article class="process-detail__item reveal"><div class="process-detail__number">05</div><div class="process-detail__icon">${icon('refresh')}</div><div><span>Improve</span><h3>Use the market response to get better.</h3><p>Review call feedback, contactability, conversion, meeting outcomes, pipeline movement, and client input. Adjust targeting, messaging, workflow, and coaching accordingly.</p><ul><li>Performance and strategy reviews</li><li>Target-market refinement</li><li>Coaching and accountability action</li></ul></div></article>
+          <article class="process-detail__item reveal"><div class="process-detail__number">03</div><div class="process-detail__icon">${icon('users')}</div><div><span>Deploy</span><h3>Prepare the right team for the engagement.</h3><p>Assign the SDR or AE capacity, sales manager, client success lead, and data support required for the scope. Train on the offer, buyer, process, objections, and tools.</p><ul><li>Talent assignment and onboarding</li><li>Product and market preparation</li><li>Manager expectations and KPIs</li></ul></div></article>
+          <article class="process-detail__item reveal"><div class="process-detail__number">04</div><div class="process-detail__icon">${icon('phone')}</div><div><span>Engage</span><h3>Run the work with human judgment.</h3><p>Execute phone led multichannel outreach, qualification, meeting setting, follow up, discovery, or opportunity work according to the engagement.</p><ul><li>Account aware conversations</li><li>Documented outcomes and context</li><li>Defined handoffs and next actions</li></ul></div></article>
+          <article class="process-detail__item reveal"><div class="process-detail__number">05</div><div class="process-detail__icon">${icon('refresh')}</div><div><span>Improve</span><h3>Use the market response to get better.</h3><p>Review call feedback, contactability, conversion, meeting outcomes, pipeline movement, and client input. Adjust targeting, messaging, workflow, and coaching accordingly.</p><ul><li>Performance and strategy reviews</li><li>Target market refinement</li><li>Coaching and accountability action</li></ul></div></article>
         </div>
       </div>
     </section>
@@ -684,7 +684,7 @@ function howItWorksPage(site) {
           ${sectionHeading({ eyebrowText: 'The working cadence', title: 'Accountability happens between the strategy calls.', description: 'A good managed program is not a monthly report on activity that already happened. Management, coaching, data work, execution, and adjustment occur continuously.' })}
         </div>
         <div class="cadence-cards">
-          <article class="cadence-card reveal"><span>Daily</span><h3>Execution and management</h3><p>Outreach, follow-up, CRM updates, activity monitoring, call review, and rep accountability.</p></article>
+          <article class="cadence-card reveal"><span>Daily</span><h3>Execution and management</h3><p>Outreach, follow up, CRM updates, activity monitoring, call review, and rep accountability.</p></article>
           <article class="cadence-card reveal"><span>Weekly</span><h3>Performance and alignment</h3><p>Review market feedback, activity, outcomes, blockers, upcoming priorities, and client actions.</p></article>
           <article class="cadence-card reveal"><span>Ongoing</span><h3>Data and optimization</h3><p>Refresh target coverage, improve segmentation, adjust messaging, and respond to performance evidence.</p></article>
         </div>
@@ -712,32 +712,32 @@ function educationPage(site) {
   const faqs = [
     {
       question: 'Which education markets can Capital Generations support?',
-      answer: 'The strongest experience reflected in existing materials is with K-12 districts, schools, private-school groups, higher education, education technology, student services, special education, enrichment, and education-adjacent solutions.',
+      answer: 'The strongest experience reflected in existing materials is with K through 12 districts, schools, private school groups, higher education, education technology, student services, special education, enrichment, and education related solutions.',
     },
     {
       question: 'Which buyer roles can outreach target?',
       answer: 'Depending on the offer, outreach may target superintendents, assistant superintendents, provosts, academic leaders, curriculum and instruction, special education, IT, finance and grants, community engagement, student success, and other relevant stakeholders.',
     },
     {
-      question: 'Can the program target both district-level and school-level buyers?',
-      answer: 'Yes. The target-market design can separate district, school, campus, private-school group, and higher-education motions, with different roles, messaging, timing, and qualification rules.',
+      question: 'Can the program target both district level and school level buyers?',
+      answer: 'Yes. The target market design can separate district, school, campus, private school group, and higher education motions, with different roles, messaging, timing, and qualification rules.',
     },
     {
       question: 'How do you handle education seasonality?',
-      answer: 'Targeting, call themes, follow-up, and capacity should reflect budget cycles, school calendars, planning periods, and seasonal priorities. The program can adjust segments and effort as the market changes.',
+      answer: 'Targeting, call themes, follow up, and capacity should reflect budget cycles, school calendars, planning periods, and seasonal priorities. The program can adjust segments and effort as the market changes.',
     },
   ];
 
   return {
     path: '/industries/education',
     title: 'Education Sales Development | Capital Generations',
-    description: 'Managed education sales development for companies selling into K-12, higher education, districts, schools, academic teams, IT, special education, and student services.',
+    description: 'Managed education sales development for companies selling into K through 12, higher education, districts, schools, academic teams, IT, special education, and student services.',
     faqs,
     body: `${pageHero({
       eyebrowText: 'Education sales development',
       title: 'Reach the people who shape education buying decisions.',
-      description: 'Capital Generations helps education companies navigate multi-stakeholder markets with targeted account research, professional outreach, qualified meetings, management, and clear reporting.',
-      bullets: ['District, school, and higher-education targeting', 'Role-specific outreach and messaging', 'Phone-led human conversations', 'Experience across complex education buying groups'],
+      description: 'Capital Generations helps education companies navigate multiple stakeholder markets with targeted account research, professional outreach, qualified meetings, management, and clear reporting.',
+      bullets: ['District, school, and higher education targeting', 'Role specific outreach and messaging', 'Phone led human conversations', 'Experience across complex education buying groups'],
       primaryHref: site.calendlyUrl,
       secondaryHref: '/results',
       secondaryLabel: 'See education outcomes',
@@ -748,8 +748,8 @@ function educationPage(site) {
     <section class="section">
       <div class="container education-buyers">
         <div class="education-buyers__copy">
-          ${sectionHeading({ eyebrowText: 'A multi-stakeholder market', title: 'Education sales rarely has one buyer.', description: 'The right outreach program understands the difference between the economic buyer, academic owner, technical evaluator, operational influencer, and end-user advocate.' })}
-          <p>Targeting is structured around the offer and buying process—not a generic list of “school contacts.”</p>
+          ${sectionHeading({ eyebrowText: 'A multiple stakeholder market', title: 'Education sales rarely has one buyer.', description: 'The right outreach program understands the difference between the economic buyer, academic owner, technical evaluator, operational influencer, and end user advocate.' })}
+          <p>Targeting is structured around the offer and buying process, not a generic list of “school contacts.”</p>
         </div>
         <div class="buyer-cloud reveal" aria-label="Examples of education buyer roles">
           ${tag('Superintendent')}${tag('Assistant Superintendent')}${tag('Provost')}${tag('Academic Director')}${tag('Curriculum & Instruction')}${tag('Special Education')}${tag('Exceptional Learners')}${tag('IT leadership')}${tag('Finance & Grants')}${tag('Community Engagement')}${tag('Student Success')}${tag('Strategic Planning')}
@@ -761,10 +761,10 @@ function educationPage(site) {
       <div class="container">
         ${sectionHeading({ eyebrowText: 'Built for education complexity', title: 'The program adapts to the market you are actually selling into.', description: 'District outreach, private schools, colleges, campus groups, and education technology each require different account structures, roles, timing, and language.' })}
         <div class="feature-grid feature-grid--four">
-          ${featureCard({ iconName: 'map', title: 'Market segmentation', description: 'Separate district, school, private-school, higher-education, geography, enrollment, and other useful segments.' })}
-          ${featureCard({ iconName: 'users', title: 'Buying-group coverage', description: 'Map multiple stakeholders instead of depending on one contact record per account.' })}
-          ${featureCard({ iconName: 'clock', title: 'Calendar awareness', description: 'Adjust focus around planning periods, budget cycles, school-year timing, and seasonal needs.' })}
-          ${featureCard({ iconName: 'message', title: 'Role-relevant conversations', description: 'Tailor the reason for outreach to academic, operational, technical, financial, or student outcomes.' })}
+          ${featureCard({ iconName: 'map', title: 'Market segmentation', description: 'Separate district, school, private school, higher education, geography, enrollment, and other useful segments.' })}
+          ${featureCard({ iconName: 'users', title: 'Buyer group coverage', description: 'Map multiple stakeholders instead of depending on one contact record per account.' })}
+          ${featureCard({ iconName: 'clock', title: 'Calendar awareness', description: 'Adjust focus around planning periods, budget cycles, school year timing, and seasonal needs.' })}
+          ${featureCard({ iconName: 'message', title: 'Role relevant conversations', description: 'Tailor the reason for outreach to academic, operational, technical, financial, or student outcomes.' })}
         </div>
       </div>
     </section>
@@ -773,10 +773,10 @@ function educationPage(site) {
       <div class="container">
         ${sectionHeading({ eyebrowText: 'Where we can help', title: 'Common education sales motions.', description: 'The final target market and team structure are always built around the client’s offer and goals.' })}
         <div class="use-case-grid">
-          <article class="use-case-card reveal"><span>K-12</span><h3>District and school outreach</h3><p>Reach central-office leaders, school administrators, academic functions, technology, student services, and other defined buyers.</p></article>
-          <article class="use-case-card reveal"><span>Private education</span><h3>School and multi-campus growth</h3><p>Target individual schools, ownership groups, networks, and relevant leaders with a segmented approach.</p></article>
-          <article class="use-case-card reveal"><span>Higher education</span><h3>Institution and campus development</h3><p>Engage provost, academic, student-success, technology, finance, and program stakeholders where relevant.</p></article>
-          <article class="use-case-card reveal"><span>EdTech & services</span><h3>New category or product adoption</h3><p>Build awareness and qualified conversations for technology, enrichment, student-support, training, and service offerings.</p></article>
+          <article class="use-case-card reveal"><span>K through 12</span><h3>District and school outreach</h3><p>Reach central office leaders, school administrators, academic functions, technology, student services, and other defined buyers.</p></article>
+          <article class="use-case-card reveal"><span>Private education</span><h3>School and multiple campus growth</h3><p>Target individual schools, ownership groups, networks, and relevant leaders with a segmented approach.</p></article>
+          <article class="use-case-card reveal"><span>Higher education</span><h3>Institution and campus development</h3><p>Engage provost, academic, student success, technology, finance, and program stakeholders where relevant.</p></article>
+          <article class="use-case-card reveal"><span>EdTech & services</span><h3>New category or product adoption</h3><p>Build awareness and qualified conversations for technology, enrichment, student support, training, and service offerings.</p></article>
         </div>
       </div>
     </section>
@@ -788,7 +788,7 @@ function educationPage(site) {
           ${resultMetric({ value: '600%', label: 'increase in meetings held', detail: 'By month three in one education engagement.' })}
           ${resultMetric({ value: '200+', label: 'meetings scheduled', detail: 'In the first half of 2023 for one provider.' })}
           ${resultMetric({ value: '$3.5M', label: 'pipeline generated', detail: 'Reported in 2023 in a selected engagement.' })}
-          ${resultMetric({ value: '250%', label: 'private-school growth', detail: 'During a seasonal school-start ramp in one engagement.' })}
+          ${resultMetric({ value: '250%', label: 'private school growth', detail: 'During a seasonal school start ramp in one engagement.' })}
         </div>
       </div>
     </section>
@@ -816,11 +816,11 @@ function resultsPage(site) {
     },
     {
       question: 'Are these results guaranteed?',
-      answer: 'No. Results depend on the offer, pricing, market, timing, sales cycle, target quality, internal follow-up, and other factors. The examples show selected prior outcomes, not a promise of future performance.',
+      answer: 'No. Results depend on the offer, pricing, market, timing, sales cycle, target quality, internal follow up, and other factors. The examples show selected prior outcomes, not a promise of future performance.',
     },
     {
       question: 'Which metrics are tracked?',
-      answer: 'Metrics can include account and prospect coverage, calls and outreach activity, contactability, qualified contact, meetings scheduled, meetings held, canceled and no-show outcomes, conversion, geography, segments, and pipeline progression.',
+      answer: 'Metrics can include account and prospect coverage, calls and outreach activity, contactability, qualified contact, meetings scheduled, meetings held, canceled and missed meeting outcomes, conversion, geography, segments, and pipeline progression.',
     },
     {
       question: 'Can reporting be tailored to our sales process?',
@@ -835,9 +835,9 @@ function resultsPage(site) {
     faqs,
     body: `${pageHero({
       eyebrowText: 'Results and reporting',
-      title: 'Performance should be visible—and tied to the right outcomes.',
+      title: 'Performance should be visible, and tied to the right outcomes.',
       description: 'Capital Generations measures the activity behind the work, the quality of the conversations, the status of meetings, and the pipeline movement that follows.',
-      bullets: ['Anonymized client outcomes', 'Meeting and conversion visibility', 'Target-market performance', 'Power BI dashboard reporting'],
+      bullets: ['Anonymized client outcomes', 'Meeting and conversion visibility', 'Target market performance', 'Power BI dashboard reporting'],
       primaryHref: site.calendlyUrl,
       secondaryHref: '/how-it-works',
       secondaryLabel: 'See how the work runs',
@@ -847,10 +847,10 @@ function resultsPage(site) {
 
     <section class="section results-overview">
       <div class="container">
-        ${sectionHeading({ eyebrowText: 'Selected outcomes', title: 'Evidence from prior engagements.', description: 'These figures are anonymized and drawn from selected client work. They are not guarantees. Performance varies based on the market, offer, timing, sales cycle, and client follow-through.', align: 'center' })}
+        ${sectionHeading({ eyebrowText: 'Selected outcomes', title: 'Evidence from prior engagements.', description: 'These figures are anonymized and drawn from selected client work. They are not guarantees. Performance varies based on the market, offer, timing, sales cycle, and client follow through.', align: 'center' })}
         <div class="metrics-grid metrics-grid--four">
           ${resultMetric({ value: '600%', label: 'increase in meetings held', detail: 'By month three in one education engagement.' })}
-          ${resultMetric({ value: '3×', label: 'as many meetings as internal staff', detail: 'In a selected side-by-side engagement.' })}
+          ${resultMetric({ value: '3×', label: 'as many meetings as internal staff', detail: 'In a selected direct comparison engagement.' })}
           ${resultMetric({ value: '200+', label: 'meetings scheduled in H1', detail: 'Generated for one client during 2023.' })}
           ${resultMetric({ value: '$3.5M', label: 'pipeline generated', detail: 'Reported during 2023 in a selected engagement.' })}
         </div>
@@ -870,14 +870,14 @@ function resultsPage(site) {
           <article class="case-study-card reveal">
             <div class="case-study-card__meta"><span>STEM and enrichment</span><i>Scaled SDR team</i></div>
             <h3>Scale a successful education outbound motion.</h3>
-            <p>The program expanded from one SDR to a four-person structure serving school-level and district-level targets across multiple education offerings.</p>
+            <p>The program expanded from one SDR to a team of four serving school and district targets across multiple education offerings.</p>
             <div class="case-study-card__outcomes"><div><strong>200+</strong><span>meetings scheduled in H1 2023</span></div><div><strong>$3.5M</strong><span>pipeline generated in 2023</span></div></div>
           </article>
           <article class="case-study-card reveal">
-            <div class="case-study-card__meta"><span>K-12 services</span><i>Market-development program</i></div>
-            <h3>Open new private-school opportunities.</h3>
-            <p>Capital Generations built outbound targeting around industries and geographies, helping the client reach multi-campus organizations during a critical school-start growth period.</p>
-            <div class="case-study-card__outcomes"><div><strong>250%</strong><span>private-school growth during ramp-up</span></div><div><strong>Multiple</strong><span>multi-campus clients added</span></div></div>
+            <div class="case-study-card__meta"><span>K through 12 services</span><i>Market development program</i></div>
+            <h3>Open new private school opportunities.</h3>
+            <p>Capital Generations built outbound targeting around industries and geographies, helping the client reach multiple campus organizations during a critical school start growth period.</p>
+            <div class="case-study-card__outcomes"><div><strong>250%</strong><span>private school growth during ramp period</span></div><div><strong>Multiple</strong><span>multiple campus clients added</span></div></div>
           </article>
           <article class="case-study-card reveal">
             <div class="case-study-card__meta"><span>B2B technology</span><i>Dedicated outbound partner</i></div>
@@ -892,8 +892,8 @@ function resultsPage(site) {
     <section class="section reporting-detail">
       <div class="container reporting-section__grid">
         <div class="reporting-section__copy">
-          ${sectionHeading({ eyebrowText: 'The dashboard is part of the service', title: 'Know what happened—and where to adjust.', description: 'The reporting structure is designed to turn daily execution into a useful management view rather than a raw activity dump.' })}
-          ${checkList(['Account and prospect coverage', 'Call composition and contactability', 'Qualified-contact and conversion trends', 'Meetings scheduled, held, canceled, and missed', 'Performance by geography, segment, or target market', 'Meeting and pipeline follow-through'])}
+          ${sectionHeading({ eyebrowText: 'The dashboard is part of the service', title: 'Know what happened, and where to adjust.', description: 'The reporting structure is designed to turn daily execution into a useful management view rather than a raw activity dump.' })}
+          ${checkList(['Account and prospect coverage', 'Call composition and contactability', 'Qualified contact and conversion trends', 'Meetings scheduled, held, canceled, and missed', 'Performance by geography, segment, or target market', 'Meeting and pipeline follow through'])}
         </div>
         ${dashboardMock()}
       </div>
@@ -923,11 +923,11 @@ function aboutPage(site) {
     },
     {
       question: 'What type of company is the best fit?',
-      answer: 'The strongest fit is typically a growing B2B company—often under 100 employees—with a credible offer, a defined or emerging ideal customer profile, and a Head of Sales or commercial leader who needs more execution capacity.',
+      answer: 'The strongest fit is typically a growing B2B company, often under 100 employees, with a credible offer, a defined or emerging ideal customer profile, and a Head of Sales or commercial leader who needs more execution capacity.',
     },
     {
       question: 'What is Capital Generations not?',
-      answer: 'The model is not positioned as a low-cost call center, a shared pool of generic appointment setters, a list broker, or an automated spray-and-pray service. It is managed sales capacity built to represent the client professionally.',
+      answer: 'The model is not positioned as a low cost call center, a shared pool of generic appointment setters, a list broker, or an automated mass automated outreach service. It is managed sales capacity built to represent the client professionally.',
     },
     {
       question: 'Does Capital Generations work outside education?',
@@ -938,13 +938,13 @@ function aboutPage(site) {
   return {
     path: '/about',
     title: 'About Capital Generations | Managed B2B Sales Teams',
-    description: 'Capital Generations is a New York-based outsourced sales company providing dedicated SDR and AE capacity with recruiting, training, management, data, and reporting.',
+    description: 'Capital Generations is a New York based outsourced sales company providing dedicated SDR and AE capacity with recruiting, training, management, data, and reporting.',
     faqs,
     body: `${pageHero({
       eyebrowText: 'About Capital Generations',
-      title: 'Built by sales operators—not lead resellers.',
+      title: 'Built by sales operators, not lead resellers.',
       description: 'Capital Generations exists to give growing companies professionally managed sales capacity without requiring them to build every role, process, tool, and management layer internally.',
-      bullets: ['Human-led B2B sales execution', 'Dedicated sales talent', 'Management and accountability', 'Targeting, data, and reporting support'],
+      bullets: ['Human led B2B sales execution', 'Dedicated sales talent', 'Management and accountability', 'Targeting, data, and reporting support'],
       primaryHref: site.calendlyUrl,
       secondaryHref: '/how-it-works',
       secondaryLabel: 'See how we work',
@@ -955,7 +955,7 @@ function aboutPage(site) {
     <section class="section about-story">
       <div class="container about-story__grid">
         <div>
-          ${sectionHeading({ eyebrowText: 'Our point of view', title: 'Outsourcing should remove management burden—not create another one.', description: 'Hiring a rep is only the beginning. Someone still has to recruit, train, coach, supply data, review calls, track performance, manage turnover, and connect the work to revenue.' })}
+          ${sectionHeading({ eyebrowText: 'Our point of view', title: 'Outsourcing should remove management burden, not create another one.', description: 'Hiring a rep is only the beginning. Someone still has to recruit, train, coach, supply data, review calls, track performance, manage turnover, and connect the work to revenue.' })}
         </div>
         <div class="about-story__copy reveal">
           <p>Capital Generations brings those responsibilities together in one managed engagement. The client gets dedicated sales capacity, while Capital Generations owns the operating work required to keep that capacity productive and accountable.</p>
@@ -966,7 +966,7 @@ function aboutPage(site) {
 
     <section class="section section--soft values-section">
       <div class="container">
-        ${sectionHeading({ eyebrowText: 'Operating principles', title: 'How the company should feel to a client.', description: 'Professional, direct, responsive, and accountable—without pretending sales development is automatic.', align: 'center' })}
+        ${sectionHeading({ eyebrowText: 'Operating principles', title: 'How the company should feel to a client.', description: 'Professional, direct, responsive, and accountable, without pretending sales development is automatic.', align: 'center' })}
         <div class="feature-grid feature-grid--four">
           ${featureCard({ iconName: 'message', title: 'Human', description: 'Technology supports the process. People create the conversations, interpret context, and handle nuance.' })}
           ${featureCard({ iconName: 'shield', title: 'Accountable', description: 'Managers own coaching and performance action rather than passing every people issue to the client.' })}
@@ -988,17 +988,17 @@ function aboutPage(site) {
 
     <section class="section positioning-section">
       <div class="container">
-        ${sectionHeading({ eyebrowText: 'What we are—and what we are not', title: 'Managed sales capacity built to represent your company.', description: 'Capital Generations is designed for clients who care about professionalism, communication quality, management, and measurable execution.' })}
+        ${sectionHeading({ eyebrowText: 'What we are, and what we are not', title: 'Managed sales capacity built to represent your company.', description: 'Capital Generations is designed for clients who care about professionalism, communication quality, management, and measurable execution.' })}
         <div class="positioning-grid">
-          <div class="positioning-card positioning-card--yes reveal"><span>${icon('check')}Capital Generations</span><ul><li>Dedicated sales capacity</li><li>Human-led, account-aware outreach</li><li>Manager coaching and accountability</li><li>Data and reporting support</li><li>Built around the client’s goals</li></ul></div>
-          <div class="positioning-card positioning-card--no reveal"><span>Not the model</span><ul><li>Shared appointment-setter pool</li><li>Generic call-center scripts</li><li>Automated volume without context</li><li>A list of leads with no ownership</li><li>Another contractor for you to manage</li></ul></div>
+          <div class="positioning-card positioning-card--yes reveal"><span>${icon('check')}Capital Generations</span><ul><li>Dedicated sales capacity</li><li>Human led, account aware outreach</li><li>Manager coaching and accountability</li><li>Data and reporting support</li><li>Built around the client’s goals</li></ul></div>
+          <div class="positioning-card positioning-card--no reveal"><span>Not the model</span><ul><li>Shared appointment setter pool</li><li>Generic call center scripts</li><li>Automated volume without context</li><li>A list of leads with no ownership</li><li>Another contractor for you to manage</li></ul></div>
         </div>
       </div>
     </section>
 
     ${faqSection('About the company', 'A few practical details about fit, location, and positioning.', faqs)}
 
-    ${ctaBand({ title: 'Looking for a managed sales partner rather than another vendor?', description: 'Let’s talk about the sales capacity, accountability, and target-market work your company needs.', primaryHref: site.calendlyUrl })}`,
+    ${ctaBand({ title: 'Looking for a managed sales partner rather than another vendor?', description: 'Let’s talk about the sales capacity, accountability, and target market work your company needs.', primaryHref: site.calendlyUrl })}`,
   };
 }
 
@@ -1027,8 +1027,8 @@ function contactPage(site) {
     body: `${pageHero({
       eyebrowText: 'Start a conversation',
       title: 'Tell us where your sales motion needs more capacity.',
-      description: 'We’ll talk through your offer, target market, team, current funnel, and the outcomes you need—then determine whether Capital Generations is a practical fit.',
-      bullets: ['No published package pushed on the call', 'Practical discussion of fit and scope', 'SDR, AE, or full-team options', 'Clear next steps if there is a fit'],
+      description: 'We’ll talk through your offer, target market, team, current funnel, and the outcomes you need, then determine whether Capital Generations is a practical fit.',
+      bullets: ['No published package pushed on the call', 'Practical discussion of fit and scope', 'SDR, AE, or full sales team options', 'Clear next steps if there is a fit'],
       primaryHref: site.calendlyUrl,
       primaryLabel: 'Choose a time',
       secondaryHref: `mailto:${site.email}`,
@@ -1090,8 +1090,8 @@ function contactPage(site) {
         ${sectionHeading({ eyebrowText: 'What happens next', title: 'A straightforward first conversation.', description: 'The goal is to understand fit before discussing an engagement structure.', align: 'center' })}
         <div class="process-grid process-grid--three">
           ${processStep({ number: '01', iconName: 'message', title: 'Understand', description: 'Discuss the offer, target market, current team, pipeline, and sales bottleneck.' })}
-          ${processStep({ number: '02', iconName: 'compass', title: 'Frame', description: 'Determine whether SDR, AE, or full-team capacity is the relevant starting point.' })}
-          ${processStep({ number: '03', iconName: 'arrow', title: 'Decide', description: 'Agree on the next discovery step—or conclude quickly if the fit is not right.' })}
+          ${processStep({ number: '02', iconName: 'compass', title: 'Frame', description: 'Determine whether SDR, AE, or full sales team capacity is the relevant starting point.' })}
+          ${processStep({ number: '03', iconName: 'arrow', title: 'Decide', description: 'Agree on the next discovery step, or conclude quickly if the fit is not right.' })}
         </div>
       </div>
     </section>
@@ -1113,7 +1113,7 @@ function privacyPage(site) {
       <h2>Scheduling and form providers</h2>
       <p>The website links to Calendly for scheduling, WhatsApp for messaging, and LinkedIn for company information. The contact form uses Formspree. Information submitted through or shared with those services is also subject to each provider’s privacy and security practices.</p>
       <h2>Analytics</h2>
-      <p>Google Analytics 4 may be added after launch to understand website traffic and usage. When enabled, analytics may collect device, browser, approximate location, referral, page-view, and interaction information according to Google’s configuration and policies.</p>
+      <p>Google Analytics 4 may be added after launch to understand website traffic and usage. When enabled, analytics may collect device, browser, approximate location, referral, page view, and interaction information according to Google’s configuration and policies.</p>
       <h2>How information may be shared</h2>
       <p>Information may be shared with service providers that support website hosting, scheduling, form processing, analytics, email, and business operations. Capital Generations does not intend to sell personal information submitted through the website.</p>
       <h2>Data retention and security</h2>

@@ -1,9 +1,9 @@
 export const site = {
   name: 'Capital Generations',
   shortName: 'Capital Generations',
-  url: 'https://capitalgenerations.tech',
+  url: 'https://capitalgenerations.com',
   email: 'contact@capitalgenerations.com',
-  phoneDisplay: '631-877-1393',
+  phoneDisplay: '(631) 877 1393',
   phoneE164: '+16318771393',
   phoneUrl: 'tel:+16318771393',
   whatsappUrl: 'https://wa.me/16318771393',

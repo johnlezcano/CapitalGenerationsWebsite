@@ -103,11 +103,11 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(3.15rem, 7vw, 6.3rem);
+  font-size: clamp(2.9rem, 5.7vw, 5.35rem);
 }
 
 h2 {
-  font-size: clamp(2.25rem, 4.5vw, 4.25rem);
+  font-size: clamp(2.1rem, 3.7vw, 3.65rem);
 }
 
 h3 {
@@ -617,7 +617,7 @@ h3 {
 .home-hero__content h1 {
   max-width: 800px;
   margin-bottom: 28px;
-  font-size: clamp(3.4rem, 6.6vw, 6.5rem);
+  font-size: clamp(3.1rem, 5.4vw, 5.45rem);
 }
 
 .home-hero__content > p {
@@ -1750,7 +1750,7 @@ h3 {
 
 .page-hero__content h1 {
   margin-bottom: 24px;
-  font-size: clamp(3.1rem, 6.2vw, 5.8rem);
+  font-size: clamp(2.9rem, 5.1vw, 5rem);
 }
 
 .page-hero__lead {
@@ -3732,7 +3732,7 @@ h3 {
 
   .home-hero__content h1,
   .page-hero__content h1 {
-    font-size: clamp(3rem, 13vw, 5.2rem);
+    font-size: clamp(2.85rem, 11vw, 4.7rem);
   }
 
   .hero-proof {
@@ -3855,7 +3855,7 @@ h3 {
 
 @media (max-width: 560px) {
   h2 {
-    font-size: clamp(2.1rem, 11vw, 3.4rem);
+    font-size: clamp(2rem, 10vw, 3.15rem);
   }
 
   .button-row,
@@ -3871,7 +3871,7 @@ h3 {
 
   .home-hero__content h1,
   .page-hero__content h1 {
-    font-size: clamp(2.75rem, 14vw, 4.2rem);
+    font-size: clamp(2.6rem, 13vw, 3.9rem);
   }
 
   .revenue-system,

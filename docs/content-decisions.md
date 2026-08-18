@@ -7,21 +7,21 @@
 - Raw Power BI screenshots
 - School, district, contact, and campaign details visible in the supplied dashboards
 - Published service pricing
-- Proposal-specific pricing
-- Nationality- or ethnicity-based competitor language
-- The 35-million-account database claim, pending confirmation that it remains current and supportable
-- Month-to-month contract language, pending confirmation that it applies to every current engagement
+- Proposal specific pricing
+- Nationality or ethnicity based competitor language
+- The 35 million account database claim, pending confirmation that it remains current and supportable
+- Monthly contract language, pending confirmation that it applies to every current engagement
 
 ## Anonymized proof used
 
 The site uses selected outcome claims from the supplied proposal without naming the client:
 
 - 600% increase in meetings held by month three
-- 3× as many meetings as internal staff
-- 200+ meetings scheduled in H1 2023
+- 3 times as many meetings as internal staff
+- 200 plus meetings scheduled in the first half of 2023
 - $3.5M pipeline generated in 2023
-- 250% private-school growth during a seasonal ramp
-- 3:1 meeting advantage over an internal team in a selected engagement
+- 250% private school growth during a seasonal ramp
+- 3 to 1 meeting advantage over an internal team in a selected engagement
 
 These claims should receive one final internal review before the production domain is connected.
 
@@ -34,14 +34,18 @@ The site does not publish the supplied screenshots. Instead, it contains an illu
 - qualification
 - meeting status
 - conversion trends
-- target-market performance
+- target market performance
 
-The component is labeled illustrative and contains no client-specific values.
+The component is labeled illustrative and contains no client specific values.
+
+## Copy style
+
+Version 1.3.0 removes dash punctuation and hyphenated style phrases from public page copy, metadata, accessibility copy, interface messages, and text inside generated SVG assets. Technical URLs, file names, CSS selectors, and machine values still use normal hyphens where required.
 
 ## Confirmed public contact details
 
 - Email: `contact@capitalgenerations.com`
-- Phone: `631-877-1393`
+- Displayed phone: `(631) 877 1393`
 - Telephone link: `tel:+16318771393`
 - WhatsApp: `https://wa.me/16318771393`
 - Calendly: `https://calendly.com/capitalgenerations/conversation`
@@ -59,11 +63,11 @@ The endpoint is wired into the source and generated contact page. Formspree deli
 
 ## Domain
 
-The canonical domain is currently configured as:
+The intended canonical domain is configured as:
 
-- `https://capitalgenerations.tech`
+- `https://capitalgenerations.com`
 
-Domain and DNS work remains last. Change `site.url` only if the final production domain differs.
+The registrar is Squarespace. DNS access and final domain connection remain launch tasks. The old `.tech` domain can later redirect to `.com` or be retired after old links are considered.
 
 ## Remaining integrations
 

@@ -147,7 +147,7 @@
         if (!response.ok) throw new Error('Form submission failed');
 
         contactForm.reset();
-        showStatus('Thanks—your inquiry was sent. Capital Generations will follow up shortly.', 'success');
+        showStatus('Thanks. Your inquiry was sent. Capital Generations will follow up shortly.', 'success');
         trackEvent('form_submit_success', { form_name: 'contact', page_path: window.location.pathname });
       } catch (error) {
         showStatus(

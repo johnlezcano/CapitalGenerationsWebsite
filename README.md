@@ -1,15 +1,15 @@
 # Capital Generations Website
 
-Version **1.2.0** of the production-ready Capital Generations marketing website.
+Version **1.3.0** of the production ready Capital Generations marketing website.
 
-The site is a zero-dependency static Node.js build. It does not use WordPress, a database, or a CMS. The source generates a deployable `dist/` directory, and `vercel.json` is configured for GitHub-to-Vercel deployment.
+The site is a zero dependency static Node.js build. It does not use WordPress, a database, or a CMS. The source generates a deployable `dist/` directory, and `vercel.json` is configured for the existing GitHub to Vercel deployment.
 
 ## Complete package structure
 
 The complete delivery archive contains two main folders:
 
-- `capital-generations-site/` — this is the website repository content to upload to GitHub and deploy with Vercel
-- `private-source-assets/` — the original dashboard screenshots and proposal supplied for the project; do not publish this folder or place it in a public repository
+- `capital-generations-site/`: website repository content to upload to GitHub and deploy with Vercel
+- `private-source-assets/`: original dashboard screenshots and proposal supplied for the project; do not publish this folder or place it in a public repository
 
 Custom generated website assets are included in `public/assets/generated/` and are safe to deploy.
 
@@ -17,20 +17,23 @@ Custom generated website assets are included in `public/assets/generated/` and a
 
 - Responsive desktop, tablet, and mobile layouts
 - 11 indexable pages plus a custom 404 page
-- SDR, AE, and full-sales-team service pages
-- Education-industry landing page
+- SDR, AE, and full sales team service pages
+- Education industry landing page
 - Anonymized results and sanitized reporting visuals
 - Calendly calls to action
-- Formspree contact-form integration
-- Public phone and click-to-call links
+- Formspree contact form integration
+- Public phone and click to call links
 - WhatsApp links plus a global floating WhatsApp button
-- LinkedIn links in the contact page and footer
-- GA4-ready event tracking
+- LinkedIn links on the contact page and in the footer
+- GA4 ready event tracking
 - Google Search Console verification placeholder
 - SEO titles, descriptions, canonicals, Open Graph tags, schema, sitemap, and robots file
-- Accessibility basics, responsive navigation, reduced-motion support, and keyboard focus states
-- Legacy redirects from the current website
-- No published pricing, client logos, or client names
+- Accessibility basics, responsive navigation, reduced motion support, and keyboard focus states
+- Legacy redirects from the old website structure
+- No published pricing, client logos, client names, or raw dashboards
+- Public copy rewritten without dash punctuation or hyphenated style phrases
+- Refined desktop hero and section heading scale
+- Final canonical URL prepared for `capitalgenerations.com`
 
 ## Current production configuration
 
@@ -38,9 +41,9 @@ The main settings are in `site.config.mjs`:
 
 ```js
 export const site = {
-  url: 'https://capitalgenerations.tech',
+  url: 'https://capitalgenerations.com',
   email: 'contact@capitalgenerations.com',
-  phoneDisplay: '631-877-1393',
+  phoneDisplay: '(631) 877 1393',
   phoneE164: '+16318771393',
   phoneUrl: 'tel:+16318771393',
   whatsappUrl: 'https://wa.me/16318771393',
@@ -56,7 +59,7 @@ export const site = {
 };
 ```
 
-The Formspree endpoint is connected in code. Formspree controls the receiving inbox, and the user has confirmed live delivery. Keep the Formspree recipient set to `contact@capitalgenerations.com`.
+The Formspree endpoint is connected in code. Formspree controls the receiving inbox, and live delivery has been confirmed. Keep the Formspree recipient set to `contact@capitalgenerations.com`.
 
 ## Local use
 
@@ -86,20 +89,21 @@ The validation script rebuilds the site and checks:
 - required generated files
 - page titles and descriptions
 - one H1 per page
-- canonical tags
+- canonical tags using `https://capitalgenerations.com`
 - broken internal links
 - required Formspree, phone, WhatsApp, email, and LinkedIn values
-- global WhatsApp-button output
+- global WhatsApp button output
+- public copy and metadata for dash styled writing
 - accidental client names
 - accidental pricing publication
-- prohibited nationality-based positioning language
+- prohibited nationality based positioning language
 
 ## Project structure
 
 ```text
 capital-generations-site/
 ├── dist/                    # Generated deployable website
-├── docs/                    # Strategy, checklist, launch notes, and QA documentation
+├── docs/                    # Strategy, checklist, previews, launch notes, and QA documentation
 ├── public/                  # Static source assets
 ├── scripts/
 │   ├── build.mjs            # Generates pages and SEO files
@@ -122,7 +126,7 @@ Use the existing connected repository and Vercel project:
 
 ```bash
 git add -A
-git commit -m "Update public contact email and established year"
+git commit -m "Refine website copy and typography"
 git push origin main
 ```
 
@@ -131,7 +135,7 @@ Vercel should automatically build and deploy the pushed commit using:
 - build command: `npm run build`
 - output directory: `dist`
 
-Review the new Vercel deployment before doing any domain or DNS work.
+Review the new Vercel deployment before changing domain or DNS records.
 
 ## Formspree verification
 
@@ -156,29 +160,33 @@ GA4 is not connected yet. After the GA4 property and web data stream exist:
 4. Commit and push.
 5. Confirm Realtime traffic and conversion events.
 
-Tracked events include Calendly, phone, email, WhatsApp, LinkedIn, and form-success/error interactions.
+Tracked events include Calendly, phone, email, WhatsApp, LinkedIn, and form success or error interactions.
 
 ## Google Search Console
 
-Search Console is not connected yet. The site supports HTML meta-tag verification through `searchConsoleVerification` in `site.config.mjs`. DNS verification can also be completed when the domain is connected.
+Search Console is not connected yet. The site supports HTML meta tag verification through `searchConsoleVerification` in `site.config.mjs`. DNS verification can also be completed after Squarespace DNS access is confirmed.
 
-After verification, submit:
+After the final domain is connected and verified, submit:
 
 ```text
-https://capitalgenerations.tech/sitemap.xml
+https://capitalgenerations.com/sitemap.xml
 ```
 
 ## Domain and DNS
 
-Domain and DNS work is intentionally last. After the updated Vercel deployment, Formspree, analytics, Search Console, and final QA are ready:
+The intended final domain is `capitalgenerations.com`, registered at Squarespace. The site already generates canonical URLs, structured data, Open Graph URLs, robots instructions, and the sitemap for that domain.
 
-1. Add the domain in the Vercel project.
-2. Follow the DNS records Vercel provides.
-3. Confirm HTTPS.
-4. Confirm the preferred `www` or non-`www` version.
-5. Recheck canonicals, sitemap, forms, analytics, and Search Console.
+After the version 1.3.0 Vercel deployment is ready:
 
-The current canonical domain is `https://capitalgenerations.tech`.
+1. Confirm access to the Squarespace DNS settings.
+2. Add `capitalgenerations.com` and `www.capitalgenerations.com` to the Vercel project.
+3. Enter the exact DNS records supplied by Vercel in Squarespace.
+4. Preserve all existing email related MX and TXT records.
+5. Confirm HTTPS.
+6. Confirm the preferred `www` or non `www` version.
+7. Recheck canonicals, sitemap, forms, analytics, and Search Console.
+
+The old `.tech` domain can later redirect to `.com` or be retired after important old links have been considered.
 
 ## Content editing locations
 
@@ -192,10 +200,12 @@ The current canonical domain is `https://capitalgenerations.tech`.
 
 Before the domain is switched:
 
+- verify the new Vercel deployment
 - verify the Formspree delivery inbox
-- connect and test GA4
-- verify Search Console
+- connect and test GA4 when ready
+- verify Search Console when ready
 - test phone, WhatsApp, LinkedIn, Calendly, and all forms
 - confirm the public email, established year, and phone number
 - confirm client names, dashboards, proposal pricing, and original source assets remain private
+- complete final testing on real desktop, phone, and tablet devices
 - have qualified counsel review the privacy notice
