@@ -5,7 +5,7 @@ This is the source of truth checklist for the project.
 ## 1. Domain
 - [x] Confirm domain: capitalgenerations.com
 - [x] Confirm registrar: Squarespace
-- [ ] Confirm DNS access
+- [x] Confirm DNS access
 
 ## 2. Hosting
 - [x] Create or confirm Vercel account
@@ -66,13 +66,14 @@ This is the source of truth checklist for the project.
 - [x] Upload code to GitHub
 - [x] Deploy through Vercel
 - [x] Confirm production deployment
-- [ ] Deploy version 1.3.0 update
+- [x] Deploy version 1.3.0 update
+- [ ] Deploy version 1.4.0 mobile navigation fix
 
 ## 10. Connect domain
-- [ ] Add domain in Vercel
-- [ ] Configure Squarespace DNS
-- [ ] Confirm HTTPS
-- [ ] Confirm www and non www behavior
+- [x] Add domain in Vercel
+- [x] Configure Squarespace DNS
+- [x] Confirm HTTPS
+- [x] Confirm www and non www behavior
 - [ ] Decide whether to redirect or retire capitalgenerations.tech
 
 ## 11. Business email
@@ -139,7 +140,7 @@ This is the source of truth checklist for the project.
 - [ ] Domain working
 
 ## 19. Launch
-- [ ] Site publicly live on capitalgenerations.com
+- [x] Site publicly live on capitalgenerations.com
 - [ ] Final production review
 
 ## 20. Ongoing maintenance
@@ -153,6 +154,6 @@ This is the source of truth checklist for the project.
 
 ## Current release status
 
-Version 1.3.0 is ready to upload to the existing GitHub repository. It removes dash styled wording from public copy, reduces oversized desktop typography, retains all contact integrations, and prepares canonical SEO output for `capitalgenerations.com`.
+Version 1.4.0 is ready to upload to the existing GitHub repository. It fixes the mobile navigation clipping and layering issue by turning the menu into a full viewport overlay with reliable scrolling.
 
-The previous version is already deployed through the connected GitHub and Vercel setup. The next project action is to push version 1.3.0 and confirm the automatic Vercel deployment. GA4, Search Console, real device QA, and Squarespace DNS work remain afterward.
+The final `.com` domain, Squarespace DNS, HTTPS, GitHub, and Vercel deployment are already working. The next project action is to push version 1.4.0, confirm the automatic Vercel deployment, and repeat the mobile menu test on the live site. GA4, Search Console, and final real device QA remain afterward.

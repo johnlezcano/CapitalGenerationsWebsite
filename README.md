@@ -1,6 +1,6 @@
 # Capital Generations Website
 
-Version **1.3.0** of the production ready Capital Generations marketing website.
+Version **1.4.0** of the production ready Capital Generations marketing website.
 
 The site is a zero dependency static Node.js build. It does not use WordPress, a database, or a CMS. The source generates a deployable `dist/` directory, and `vercel.json` is configured for the existing GitHub to Vercel deployment.
 
@@ -34,6 +34,7 @@ Custom generated website assets are included in `public/assets/generated/` and a
 - Public copy rewritten without dash punctuation or hyphenated style phrases
 - Refined desktop hero and section heading scale
 - Final canonical URL prepared for `capitalgenerations.com`
+- Mobile navigation overlay fix with scrollable access to every menu item
 
 ## Current production configuration
 
@@ -126,7 +127,7 @@ Use the existing connected repository and Vercel project:
 
 ```bash
 git add -A
-git commit -m "Refine website copy and typography"
+git commit -m "Fix mobile navigation overlay"
 git push origin main
 ```
 
@@ -135,7 +136,7 @@ Vercel should automatically build and deploy the pushed commit using:
 - build command: `npm run build`
 - output directory: `dist`
 
-Review the new Vercel deployment before changing domain or DNS records.
+Review the new Vercel deployment on the connected production domain.
 
 ## Formspree verification
 
@@ -176,15 +177,12 @@ https://capitalgenerations.com/sitemap.xml
 
 The intended final domain is `capitalgenerations.com`, registered at Squarespace. The site already generates canonical URLs, structured data, Open Graph URLs, robots instructions, and the sitemap for that domain.
 
-After the version 1.3.0 Vercel deployment is ready:
+The production domain is already connected through Squarespace DNS and Vercel. After the version 1.4.0 deployment is ready:
 
-1. Confirm access to the Squarespace DNS settings.
-2. Add `capitalgenerations.com` and `www.capitalgenerations.com` to the Vercel project.
-3. Enter the exact DNS records supplied by Vercel in Squarespace.
-4. Preserve all existing email related MX and TXT records.
-5. Confirm HTTPS.
-6. Confirm the preferred `www` or non `www` version.
-7. Recheck canonicals, sitemap, forms, analytics, and Search Console.
+1. Confirm `capitalgenerations.com` and `www.capitalgenerations.com` still show valid configuration in Vercel.
+2. Confirm HTTPS and the preferred redirect behavior remain healthy.
+3. Recheck the mobile navigation on the production domain.
+4. Recheck canonicals, sitemap, forms, analytics, and Search Console.
 
 The old `.tech` domain can later redirect to `.com` or be retired after important old links have been considered.
 
@@ -198,7 +196,7 @@ The old `.tech` domain can later redirect to `.com` or be retired after importan
 
 ## Important launch review
 
-Before the domain is switched:
+Before final project signoff:
 
 - verify the new Vercel deployment
 - verify the Formspree delivery inbox

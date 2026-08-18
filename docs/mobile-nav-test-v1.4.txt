@@ -1,0 +1,52 @@
+iphone_se 375x667: PASS
+  nav=375x595 client=594 scroll=792 maxScroll=198 final=198
+  OK  services details opens
+  OK  body scroll lock active
+  OK  mobile nav uses header anchored overlay
+  OK  overlay fills viewport below header
+  OK  nav has usable client height
+  OK  menu overlays page content
+  OK  all four service links exist
+  OK  book button reachable after scrolling
+  OK  about reachable after scrolling
+  OK  contact reachable after scrolling
+  OK  bottom of viewport remains inside menu overlay
+android_small 360x640: PASS
+  nav=360x568 client=567 scroll=792 maxScroll=225 final=225
+  OK  services details opens
+  OK  body scroll lock active
+  OK  mobile nav uses header anchored overlay
+  OK  overlay fills viewport below header
+  OK  nav has usable client height
+  OK  menu overlays page content
+  OK  all four service links exist
+  OK  book button reachable after scrolling
+  OK  about reachable after scrolling
+  OK  contact reachable after scrolling
+  OK  bottom of viewport remains inside menu overlay
+iphone_modern 390x844: PASS
+  nav=390x772 client=771 scroll=792 maxScroll=21 final=21
+  OK  services details opens
+  OK  body scroll lock active
+  OK  mobile nav uses header anchored overlay
+  OK  overlay fills viewport below header
+  OK  nav has usable client height
+  OK  menu overlays page content
+  OK  all four service links exist
+  OK  book button reachable after scrolling
+  OK  about reachable after scrolling
+  OK  contact reachable after scrolling
+  OK  bottom of viewport remains inside menu overlay
+ipad_portrait 768x1024: PASS
+  nav=768x952 client=951 scroll=951 maxScroll=0 final=0
+  OK  services details opens
+  OK  body scroll lock active
+  OK  mobile nav uses header anchored overlay
+  OK  overlay fills viewport below header
+  OK  nav has usable client height
+  OK  menu overlays page content
+  OK  all four service links exist
+  OK  book button reachable after scrolling
+  OK  about reachable after scrolling
+  OK  contact reachable after scrolling
+  OK  bottom of viewport remains inside menu overlay

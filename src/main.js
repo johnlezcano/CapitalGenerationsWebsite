@@ -19,19 +19,26 @@
   setHeaderState();
   window.addEventListener('scroll', setHeaderState, { passive: true });
 
-  const closeMenu = () => {
+  const menuToggleLabel = menuToggle?.querySelector('.sr-only');
+
+  const setMenuState = (open) => {
     if (!menuToggle || !siteNav) return;
-    menuToggle.setAttribute('aria-expanded', 'false');
-    siteNav.classList.remove('is-open');
-    body.classList.remove('menu-open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+    siteNav.classList.toggle('is-open', open);
+    body.classList.toggle('menu-open', open);
+    if (menuToggleLabel) menuToggleLabel.textContent = open ? 'Close navigation' : 'Open navigation';
+    siteNav.scrollTop = 0;
+    if (!open) {
+      siteNav.querySelectorAll('.nav-dropdown[open]').forEach((details) => details.removeAttribute('open'));
+    }
   };
+
+  const closeMenu = () => setMenuState(false);
 
   if (menuToggle && siteNav) {
     menuToggle.addEventListener('click', () => {
       const open = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!open));
-      siteNav.classList.toggle('is-open', !open);
-      body.classList.toggle('menu-open', !open);
+      setMenuState(!open);
     });
 
     siteNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));

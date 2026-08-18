@@ -3569,20 +3569,32 @@ h3 {
     display: block;
   }
 
+  .site-header {
+    overflow: visible;
+  }
+
   .site-nav {
-    position: fixed;
-    top: var(--header-height);
+    position: absolute;
+    top: 100%;
     right: 0;
-    bottom: 0;
+    bottom: auto;
     left: 0;
+    z-index: 10;
     display: none;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    height: calc(100dvh - var(--header-height));
+    min-height: 0;
     overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     align-content: start;
     align-items: stretch;
     gap: 0;
-    padding: 22px 24px 36px;
-    background: rgba(255, 255, 255, 0.99);
+    padding: 22px 24px calc(36px + env(safe-area-inset-bottom));
+    background: #fff;
     border-top: 1px solid var(--line);
+    box-shadow: 0 24px 52px rgba(5, 31, 58, 0.16);
   }
 
   .site-nav.is-open {

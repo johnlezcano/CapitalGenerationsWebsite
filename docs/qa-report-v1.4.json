@@ -1,0 +1,70 @@
+{
+  "project": "Capital Generations website",
+  "version": "1.4.0",
+  "generated_at_utc": "2026-08-18T15:31:53.503816+00:00",
+  "build": {
+    "status": "passed",
+    "indexable_pages": 11,
+    "html_files_checked": 12,
+    "generated_files_checked": 38
+  },
+  "mobile_navigation": {
+    "status": "passed",
+    "viewports_tested": [
+      "360x640",
+      "375x667",
+      "390x844",
+      "768x1024"
+    ],
+    "full_viewport_overlay": true,
+    "scrollable_on_short_screens": true,
+    "service_links_present": 4,
+    "primary_links_reachable": [
+      "How it works",
+      "Results",
+      "Education",
+      "About",
+      "Contact",
+      "Book a call"
+    ],
+    "page_content_covered_by_menu": true,
+    "scroll_resets_on_open_and_close": true
+  },
+  "seo": {
+    "canonical_domain": "https://capitalgenerations.com",
+    "sitemap": "https://capitalgenerations.com/sitemap.xml",
+    "robots_sitemap": "https://capitalgenerations.com/sitemap.xml",
+    "ga4_configured": false,
+    "search_console_configured": false
+  },
+  "contact": {
+    "email": "contact@capitalgenerations.com",
+    "phone_display": "(631) 877 1393",
+    "phone_link": "tel:+16318771393",
+    "whatsapp": "https://wa.me/16318771393",
+    "formspree": "https://formspree.io/f/xjybazzn",
+    "calendly": "https://calendly.com/capitalgenerations/conversation",
+    "linkedin": "https://www.linkedin.com/company/capital-generations"
+  },
+  "production": {
+    "domain_connected": true,
+    "dns_provider": "Squarespace",
+    "hosting": "Vercel",
+    "https_confirmed": true,
+    "microsoft_365_email_records_preserved": true
+  },
+  "pending": [
+    "Push version 1.4.0 to the existing GitHub repository",
+    "Confirm the automatic Vercel deployment",
+    "Repeat mobile menu QA on the production domain",
+    "Complete final real device QA",
+    "Configure GA4",
+    "Verify Google Search Console and submit sitemap"
+  ],
+  "privacy": {
+    "literal_private_client_tokens_in_deployable_project": 0,
+    "retired_personal_email_references_in_deployable_project": 0,
+    "raw_client_dashboards_in_site_package": false,
+    "proposal_in_site_package": false
+  }
+}

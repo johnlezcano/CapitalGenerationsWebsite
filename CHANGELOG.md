@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.4.0: Mobile navigation overlay fix
+
+- Reworked the mobile navigation as a full viewport overlay anchored below the sticky header
+- Removed the clipped fixed positioning behavior that allowed page content to cover or hide menu items
+- Added reliable vertical scrolling for shorter phone screens, dynamic viewport height support, safe area padding, and overscroll containment
+- Ensured all four service links plus How it works, Results, Education, About, Contact, and Book a call remain reachable
+- Reset the mobile menu scroll position whenever it opens or closes
+- Close the Services submenu when the main menu closes and update the accessible menu button label
+- Verified the open Services menu at 360 by 640, 375 by 667, 390 by 844, and 768 by 1024 viewport sizes
+
 ## 1.3.0: Copy and typography refinement
 
 - Rewrote public page copy, metadata, accessibility copy, interface messages, and generated SVG text to remove dash punctuation and hyphenated style phrases

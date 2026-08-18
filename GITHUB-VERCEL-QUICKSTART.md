@@ -1,6 +1,6 @@
 # Update the existing GitHub and Vercel deployment
 
-The GitHub repository, Vercel account, repository connection, and first deployment already exist. Push this release into that existing setup.
+The GitHub repository, Vercel project, production domain, Squarespace DNS records, HTTPS, and Microsoft 365 email records are already connected and working.
 
 ## 1. Use only the deployable website folder
 
@@ -18,20 +18,18 @@ From the local Git repository, copy in the updated files and run:
 
 ```bash
 git add -A
-git commit -m "Refine website copy and typography"
+git commit -m "Fix mobile navigation overlay"
 git push origin main
 ```
 
-Version 1.3.0 includes:
+Version 1.4.0 includes:
 
-- public copy without dash punctuation or hyphenated style phrases
-- smaller desktop hero and section heading type
-- a light supporting type adjustment on tablet and mobile
-- canonical URLs prepared for `https://capitalgenerations.com`
-- `contact@capitalgenerations.com`
-- displayed phone number `(631) 877 1393`
-- Formspree, WhatsApp, Calendly, and LinkedIn integrations
-- Established 2020 in the footer and organization schema
+- a full viewport mobile navigation overlay
+- all four Services links visible and reachable
+- How it works, Results, Education, About, Contact, and Book a call reachable on short phone screens
+- vertical menu scrolling with mobile safe area padding
+- menu scroll reset and improved accessible toggle labeling
+- all existing Formspree, phone, WhatsApp, Calendly, email, LinkedIn, SEO, and domain settings retained
 
 ## 3. Let Vercel deploy automatically
 
@@ -42,39 +40,31 @@ Build command: npm run build
 Output directory: dist
 ```
 
-Open the new Vercel deployment URL and confirm the build is marked **Ready**.
+Open the new deployment and confirm it is marked **Ready**.
 
-## 4. Test before domain work
+## 4. Test the mobile navigation on production
 
-Before changing DNS:
+1. Open the homepage on a phone.
+2. Open the main menu.
+3. Open Services.
+4. Confirm all four Services options appear.
+5. Confirm the menu can scroll on shorter screens.
+6. Confirm How it works, Results, Education, About, Contact, and Book a call are clickable.
+7. Close and reopen the menu and confirm it starts at the top.
 
-1. Open the homepage and compare desktop and mobile typography.
-2. Open `/contact` on the deployed site.
-3. Test Calendly, phone, WhatsApp, email, and LinkedIn links.
-4. Submit one real Formspree inquiry.
-5. Confirm delivery to `contact@capitalgenerations.com`.
-6. Check navigation and calls to action on desktop and mobile.
+## 5. Confirm production health
 
-## 5. Domain preparation
-
-The build now uses `https://capitalgenerations.com` for canonical tags, structured data, Open Graph URLs, robots output, and sitemap entries. This is intentional even while the Vercel preview URL is used.
-
-When ready:
-
-1. Confirm Squarespace DNS access.
-2. Add the `.com` and `www` domains in Vercel.
-3. Use the exact DNS records Vercel provides.
-4. Preserve business email MX and TXT records.
-5. Confirm HTTPS and the preferred domain version.
+- open `https://capitalgenerations.com`
+- open `https://www.capitalgenerations.com`
+- confirm HTTPS has no certificate warning
+- confirm Microsoft 365 email continues to send and receive
+- confirm the contact form still reaches `contact@capitalgenerations.com`
 
 ## 6. Remaining integrations
 
-After this release is deployed and tested:
-
-- add the GA4 Measurement ID
+- configure GA4
 - verify Google Search Console
 - submit `https://capitalgenerations.com/sitemap.xml`
 - complete final real device QA
-- connect the domain and DNS
 
 Run `npm run validate` before each push.
