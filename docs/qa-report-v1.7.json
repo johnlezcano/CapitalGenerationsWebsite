@@ -1,0 +1,37 @@
+{
+  "project": "Capital Generations Website",
+  "version": "1.7.0",
+  "build_date": "2026-08-18",
+  "status": "passed_local_validation",
+  "scope": {
+    "more_than_an_sdr_homepage_section": true,
+    "expanded_sdr_operating_team_section": true,
+    "responsive_native_team_layout": true,
+    "final_presentation_asset_included": true,
+    "new_founder_section": false,
+    "placeholder_people_or_assets": false
+  },
+  "generated": {
+    "indexable_pages": 11,
+    "custom_404_pages": 1,
+    "html_files_checked": 12
+  },
+  "production": {
+    "primary_url": "https://www.capitalgenerations.com",
+    "hosting": "Vercel",
+    "registrar_and_dns": "Squarespace",
+    "ga4_measurement_id": "G-RGYQXFRE1W",
+    "search_console": "verified",
+    "sitemap_status": "Success"
+  },
+  "checks": {
+    "build": "passed",
+    "internal_links": "passed",
+    "canonical_urls": "passed",
+    "ga4_tag_on_every_page": "passed",
+    "formspree_configuration": "passed",
+    "public_contact_configuration": "passed",
+    "private_content_exclusion": "passed",
+    "dash_styled_public_copy": "passed"
+  }
+}

@@ -1,4 +1,4 @@
-# QA Report: Version 1.6.0
+# QA Report: Version 1.7.0
 
 ## Build result
 
@@ -7,16 +7,18 @@
 - 11 indexable pages generated
 - Custom 404 page generated
 - 12 HTML files checked
-- 38 total generated files checked
-- 11 page routes plus sitemap and robots returned HTTP 200 through the local production server
+- Final More Than an SDR presentation graphic included in the public asset package
 
-## Humanization scope
+## More Than an SDR scope
 
-- Existing page copy was rewritten in a more direct and conversational voice
-- Calls to action now vary by page and invite prospects to discuss sales goals, pipeline, team needs, and specific gaps
-- The current page structure and visual layout were left unchanged
-- No founder, leadership, biography, photo, team, or placeholder sections were added
-- Existing support team visuals and sections were retained rather than expanded
+- Added the responsive operating team model to the homepage
+- Added SDR Manager, Client Success, Data, and Administrative Support
+- Added responsibilities and What you get benefits for each function
+- Added People, Process, Performance, and Outcomes summary content
+- Replaced the previous generic homepage support feature grid to avoid duplication
+- Replaced the previous SDR team pod with the deeper operating team model
+- Native HTML and CSS are used for the website version so the content remains readable on mobile
+- Final user supplied presentation graphic is included unchanged as an asset
 
 ## Production configuration retained
 
@@ -33,14 +35,14 @@
 
 - No client names, raw dashboard files, proposal pricing, or retired private email are present in the public website package
 - Public website copy remains free of dash styled prose
+- No founder, leadership, biography, photograph, or placeholder people section was added
 - SEO titles, descriptions, canonicals, schema, sitemap, robots, and social metadata remain in place
 
 ## Regression coverage
 
-- Mobile navigation source and styles are unchanged from the verified overlay fix
+- Mobile navigation source and behavior are retained from the verified overlay fix
 - Form submission and analytics logic are unchanged
 - Internal link validation passed
 - Required generated file validation passed
 - Contact integration validation passed
 - GA4 tag validation passed on every HTML page
-- Local HTTP route checks passed

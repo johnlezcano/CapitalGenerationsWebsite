@@ -4,6 +4,7 @@ import {
   ctaBand,
   dashboardMock,
   eyebrow,
+  managedTeamSystem,
   faqItem,
   featureCard,
   icon,
@@ -108,24 +109,6 @@ function homePage(site) {
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        ${sectionHeading({
-          eyebrowText: 'More than a rep',
-          title: 'You get more than a rep.',
-          description: 'We handle the hiring, training, management, data, and reporting around the seller, so your team is not left stitching it all together.',
-          align: 'center',
-        })}
-        <div class="feature-grid feature-grid--five">
-          ${featureCard({ iconName: 'users', title: 'Recruiting & training', description: 'We find the rep, onboard them, train them, and replace them when needed.' })}
-          ${featureCard({ iconName: 'target', title: 'ICP targeting', description: 'We help focus the team on the accounts and people most likely to be a fit.' })}
-          ${featureCard({ iconName: 'shield', title: 'Sales management', description: 'A sales manager reviews calls, coaches the rep, and makes sure the work gets done.' })}
-          ${featureCard({ iconName: 'database', title: 'Data support', description: 'We build and maintain the lists the rep needs to keep reaching the right people.' })}
-          ${featureCard({ iconName: 'chart', title: 'Reporting', description: 'You can see the activity, meetings, outcomes, and where we think the program should change.' })}
-        </div>
-      </div>
-    </section>
-
     <section class="section section--soft">
       <div class="container">
         ${sectionHeading({
@@ -138,6 +121,19 @@ function homePage(site) {
           ${serviceCard({ iconName: 'briefcase', eyebrowText: 'Sales execution', title: 'Outsourced AE teams', description: 'We add a dedicated seller to run discovery, follow up, and opportunity movement inside your process.', href: '/services/ae-teams', bullets: ['Fits your sales process', 'Owns the follow up', 'Keeps the pipeline moving'] })}
           ${serviceCard({ iconName: 'layers', eyebrowText: 'Connected coverage', title: 'Full sales teams', description: 'We connect SDR and AE work so the handoffs are clear and the whole motion is managed together.', href: '/services/full-sales-teams', bullets: ['Clear SDR and AE handoffs', 'One management rhythm', 'Visibility from first touch onward'] })}
         </div>
+      </div>
+    </section>
+
+    <section class="section managed-team-section">
+      <div class="container">
+        ${sectionHeading({
+          eyebrowText: 'The team behind the rep',
+          title: 'More Than an SDR',
+          description: 'Every engagement includes a dedicated seller supported by a broader operating team. You get the people, process, data, and support needed to keep the work moving.',
+          align: 'center',
+        })}
+        ${managedTeamSystem()}
+        <div class="section-link-row section-link-row--center">${arrowLink('See everything behind the SDR', '/services/sdr-teams')}</div>
       </div>
     </section>
 
@@ -392,13 +388,10 @@ function sdrPage(site) {
       </div>
     </section>
 
-    <section class="section section--dark">
-      <div class="container team-support">
-        <div class="team-support__visual reveal">${teamPodVisual()}</div>
-        <div class="team-support__copy reveal">
-          ${sectionHeading({ eyebrowText: 'One dedicated rep. A broader support team.', title: 'Your SDR is not working alone.', description: 'A manager, client success lead, data resource, and reporting view help keep the rep prepared and accountable.', tone: 'dark' })}
-          ${checkList(['SDR manager for daily coaching and follow through', 'Client success lead who stays in touch', 'Data support for target accounts and contacts', 'Power BI dashboard so you can see the work'], 'check-list--light')}
-        </div>
+    <section class="section section--soft managed-team-section managed-team-section--sdr">
+      <div class="container">
+        ${sectionHeading({ eyebrowText: 'The team behind the rep', title: 'More Than an SDR', description: 'Your dedicated SDR is backed by sales management, client success, data, reporting, integrations, and operational support. That broader team is part of the engagement.', align: 'center' })}
+        ${managedTeamSystem({ detailed: true })}
       </div>
     </section>
 

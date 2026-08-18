@@ -170,6 +170,107 @@ export function teamPodVisual() {
   </div>`;
 }
 
+
+
+function managedCapability(iconName, title, description = '') {
+  return `<div class="managed-team-capability">
+    <div class="managed-team-capability__icon">${icon(iconName)}</div>
+    <div><strong>${title}</strong>${description ? `<span>${description}</span>` : ''}</div>
+  </div>`;
+}
+
+function managedBenefits(items) {
+  return `<div class="managed-team-benefits"><strong>What you get</strong>${checkList(items, 'managed-team-benefits__list')}</div>`;
+}
+
+export function managedTeamSystem({ detailed = false } = {}) {
+  const sdrBenefits = detailed
+    ? ['Daily accountability', 'Training and coaching', 'Call reviews and feedback', 'One to one coaching and support', 'Performance management', 'A manager who cares and holds the bar high']
+    : ['Daily accountability', 'Training and coaching', 'Call reviews and feedback'];
+
+  const successBenefits = detailed
+    ? ['A team that owns the process and drives results', 'Proactive updates and continuous improvement']
+    : ['Strategy that stays active', 'Proactive updates and continuous improvement'];
+
+  const dataBenefits = detailed
+    ? ['Full visibility in real time', 'No manual guessing', 'Clean data that powers better decisions']
+    : ['Custom visibility', 'Clean data and connected systems'];
+
+  const adminBenefits = detailed
+    ? ['Smooth operations', 'Invoices and administration', 'Ad hoc support', 'Things done without you chasing']
+    : ['Smooth operations', 'Ad hoc support when something comes up'];
+
+  return `<div class="managed-team-system ${detailed ? 'managed-team-system--detailed' : 'managed-team-system--compact'}">
+    <div class="managed-team-system__client reveal">
+      <div class="managed-team-system__client-icon">${icon('briefcase')}</div>
+      <div><span>Client</span><small>You get an entire team behind the results.</small></div>
+    </div>
+    <div class="managed-team-system__grid">
+      <article class="managed-team-card reveal">
+        <div class="managed-team-card__head">
+          <div class="managed-team-card__head-icon">${icon('users')}</div>
+          <div><h3>SDR Manager</h3><p>Leads. Coaches. Holds accountable.</p></div>
+        </div>
+        <div class="managed-team-card__body">
+          ${managedCapability('phone', 'Dedicated SDR(s)', 'Executes outreach and books qualified meetings.')}
+          ${managedCapability('users', 'Training and coaching')}
+          ${managedCapability('shield', 'Accountability')}
+          ${managedBenefits(sdrBenefits)}
+        </div>
+      </article>
+
+      <article class="managed-team-card reveal">
+        <div class="managed-team-card__head">
+          <div class="managed-team-card__head-icon">${icon('target')}</div>
+          <div><h3>Client Success</h3><p>Strategy. Execution. Improvement.</p></div>
+        </div>
+        <div class="managed-team-card__body">
+          ${managedCapability('compass', 'Strategy', detailed ? 'ICP, messaging, cadence, and campaign strategy built around your goals.' : '')}
+          ${managedCapability('message', 'Copy and templates', detailed ? 'Messaging and templates built for the market and buyer.' : '')}
+          ${managedCapability('refresh', 'Campaign management', detailed ? 'Lists, cadences, follow up, and ongoing changes.' : '')}
+          ${managedCapability('chart', 'Reporting', detailed ? 'Clear reporting on activity, conversations, meetings, and pipeline.' : '')}
+          ${managedBenefits(successBenefits)}
+        </div>
+      </article>
+
+      <article class="managed-team-card reveal">
+        <div class="managed-team-card__head">
+          <div class="managed-team-card__head-icon">${icon('database')}</div>
+          <div><h3>Data</h3><p>Data. Systems. Automation.</p></div>
+        </div>
+        <div class="managed-team-card__body">
+          ${managedCapability('chart', 'Custom Power BI dashboard', detailed ? 'A reporting view built around the metrics that matter to your program.' : '')}
+          ${managedCapability('database', 'CRM and API integrations', detailed ? 'Automated data flows into your CRM through integrations or custom work.' : '')}
+          ${managedCapability('settings', 'Custom workflow support', detailed ? 'Custom automation and technical support when the sales process needs it.' : '')}
+          ${managedBenefits(dataBenefits)}
+        </div>
+      </article>
+
+      <article class="managed-team-card reveal">
+        <div class="managed-team-card__head">
+          <div class="managed-team-card__head-icon">${icon('settings')}</div>
+          <div><h3>Administrative Support</h3><p>Operations. Support. Whatever it takes.</p></div>
+        </div>
+        <div class="managed-team-card__body">
+          ${managedCapability('briefcase', 'Invoicing', detailed ? 'Administrative support around the engagement.' : '')}
+          ${managedCapability('spark', 'Ad Hoc Support', detailed ? 'When something extra comes up, we help get it handled.' : '')}
+          ${managedBenefits(adminBenefits)}
+        </div>
+      </article>
+    </div>
+
+    <div class="managed-team-system__summary reveal">
+      <div class="managed-team-system__summary-copy"><strong>This is more than an SDR.</strong><span>It is a managed team, a proven process, and the systems to drive results.</span></div>
+      <div class="managed-team-system__summary-items">
+        <div>${icon('users')}<span><strong>People</strong><small>The right people in the right roles.</small></span></div>
+        <div>${icon('settings')}<span><strong>Process</strong><small>A repeatable process that drives results.</small></span></div>
+        <div>${icon('chart')}<span><strong>Performance</strong><small>Measured, managed, and improved.</small></span></div>
+        <div>${icon('target')}<span><strong>Outcomes</strong><small>More conversations. More pipeline. More revenue.</small></span></div>
+      </div>
+    </div>
+  </div>`;
+}
+
 export function dashboardMock() {
   return `<figure class="dashboard-mock reveal">
     <div class="dashboard-mock__bar">

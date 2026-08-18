@@ -1,6 +1,6 @@
 # Capital Generations Website
 
-Version **1.6.0** of the production Capital Generations marketing website.
+Version **1.7.0** of the production Capital Generations marketing website.
 
 The site is a zero dependency static Node.js build. It does not use WordPress, a database, or a CMS. The source generates a deployable `dist/` directory, and `vercel.json` is configured for the existing GitHub to Vercel deployment.
 
@@ -37,7 +37,10 @@ Custom generated website assets are included in `public/assets/generated/` and a
 - No published pricing, client logos, client names, or raw dashboards
 - Public copy rewritten without dash punctuation or hyphenated style phrases
 - Existing copy humanized with direct language and conversational calls to action
-- No founder, leadership, biography, photo, team, or placeholder sections added in this release
+- New responsive “More Than an SDR” operating team section on the homepage
+- Expanded “More Than an SDR” section on the SDR services page
+- Final presentation diagram included as a deployable brand asset and review reference
+- No founder, leadership, biography, photo, or placeholder people sections added in this release
 
 ## Current production configuration
 

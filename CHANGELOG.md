@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.7.0: More Than an SDR operating team section
+
+- Added a new responsive “More Than an SDR” section to the homepage
+- Replaced the earlier generic support feature grid with the four part operating team model
+- Added SDR Manager, Client Success, Data, and Administrative Support as the core support functions behind the dedicated seller
+- Added the key responsibilities and “What you get” benefits for each support function
+- Added a People, Process, Performance, and Outcomes summary strip
+- Replaced the previous SDR page support pod with a deeper version of the same operating team model
+- Added the finalized presentation diagram to the website asset package without using it as a small unreadable mobile screenshot
+- Preserved the existing humanized copy, conversational calls to action, mobile navigation fix, GA4, Search Console, Formspree, Calendly, WhatsApp, LinkedIn, SEO, and production domain settings
+- Did not add founder, leadership, biography, photograph, or placeholder people sections
+
 ## 1.6.0: Human copy and conversational calls to action
 
 - Rewrote the existing website copy to sound more direct, natural, and personal while preserving the service positioning and SEO structure
