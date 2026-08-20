@@ -167,6 +167,32 @@ try {
   failures.push('Unable to inspect contact/index.html for production contact configuration.');
 }
 
+const aboutHtmlPath = path.join(dist, 'about', 'index.html');
+try {
+  const aboutHtml = await readFile(aboutHtmlPath, 'utf8');
+  const requiredTeamCopy = [
+    'John Lezcano',
+    'Founder and Managing Director',
+    '>Gustavo<',
+    '>Gabriel<',
+    '>Fernanda<',
+    '>Nicole<',
+    '>Aline<',
+    'The people behind the work',
+  ];
+  for (const value of requiredTeamCopy) {
+    if (!aboutHtml.includes(value)) failures.push(`about/index.html: missing team content: ${value}`);
+  }
+  for (const retiredFullName of ['Gustavo Neves', 'Gabriel Aguiar']) {
+    if (aboutHtml.includes(retiredFullName)) failures.push(`about/index.html: public team card should use first name only: ${retiredFullName}`);
+  }
+  for (const slug of ['john', 'gustavo', 'gabriel', 'fernanda', 'nicole', 'aline']) {
+    if (!aboutHtml.includes(`/assets/team/${slug}-640.webp`)) failures.push(`about/index.html: missing team image reference for ${slug}`);
+  }
+} catch {
+  failures.push('Unable to inspect about/index.html for team section content.');
+}
+
 if (!site.formspreeEndpoint.startsWith('https://formspree.io/f/')) {
   failures.push('site.config.mjs: Formspree endpoint is missing or invalid.');
 }
@@ -218,6 +244,18 @@ for (const required of ['index.html', '404.html', 'sitemap.xml', 'robots.txt', '
     if (!info.isFile()) failures.push(`Required output is not a file: ${required}`);
   } catch {
     failures.push(`Missing required output: ${required}`);
+  }
+}
+
+for (const slug of ['john', 'gustavo', 'gabriel', 'fernanda', 'nicole', 'aline']) {
+  for (const width of ['320', '640']) {
+    const required = `assets/team/${slug}-${width}.webp`;
+    try {
+      const info = await stat(path.join(dist, required));
+      if (!info.isFile()) failures.push(`Required team image is not a file: ${required}`);
+    } catch {
+      failures.push(`Missing required team image: ${required}`);
+    }
   }
 }
 

@@ -4,7 +4,8 @@
 
 - `public/assets/images/`: optimized Capital Generations logo, logo mark, icons, favicon files, Open Graph artwork, and the finalized More Than an SDR presentation diagram
 - `public/assets/generated/`: original generated SVG illustrations and PNG previews made for this build
-- `docs/previews/`: version 1.3 desktop and mobile homepage previews
+- `public/assets/team/`: optimized 320 pixel and 640 pixel WebP crops of the six approved team photographs
+- `docs/previews/`: responsive navigation and website review previews, including the version 1.8 team crop sheet
 - `docs/generated-assets/`: review copies of all generated visual assets
 - `docs/reference-assets/more-than-an-sdr.png`: exact review copy of the finalized user supplied operating team diagram
 

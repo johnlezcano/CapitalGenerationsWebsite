@@ -127,6 +127,12 @@ function organizationSchema(site) {
     telephone: site.phoneE164,
     description: site.description,
     foundingDate: site.foundedYear,
+    founder: {
+      '@type': 'Person',
+      name: 'John Lezcano',
+      jobTitle: 'Founder and Managing Director',
+      image: `${site.url}/assets/team/john-640.webp`,
+    },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',

@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.8.0: About page team profiles
+
+- Added a new real team section to the About page using the six approved team photographs
+- Added John Lezcano as Founder and Managing Director with a featured founder profile and longer biography
+- Added Gustavo, Gabriel, Fernanda, Nicole, and Aline using first names only as requested
+- Added cleaned and humanized biographies for every team member
+- Ordered the team by leadership and client facing responsibility
+- Cropped every photograph to a consistent four by five profile ratio and generated 320 pixel and 640 pixel WebP assets
+- Added the real people section to the About page while retaining the existing operating model section
+- Added responsive layouts for desktop, tablet, and mobile
+- Added founder information to organization structured data and changed the About page schema type to AboutPage
+- Retained the More Than an SDR sections, GA4, Search Console, Formspree, Calendly, WhatsApp, LinkedIn, SEO, mobile navigation, and production domain settings
+
 ## 1.7.0: More Than an SDR operating team section
 
 - Added a new responsive “More Than an SDR” section to the homepage

@@ -1,4 +1,4 @@
-# QA Report: Version 1.7.0
+# QA Report: Version 1.8.0
 
 ## Build result
 
@@ -7,18 +7,18 @@
 - 11 indexable pages generated
 - Custom 404 page generated
 - 12 HTML files checked
-- Final More Than an SDR presentation graphic included in the public asset package
+- 51 generated files checked
 
-## More Than an SDR scope
+## About page team scope
 
-- Added the responsive operating team model to the homepage
-- Added SDR Manager, Client Success, Data, and Administrative Support
-- Added responsibilities and What you get benefits for each function
-- Added People, Process, Performance, and Outcomes summary content
-- Replaced the previous generic homepage support feature grid to avoid duplication
-- Replaced the previous SDR team pod with the deeper operating team model
-- Native HTML and CSS are used for the website version so the content remains readable on mobile
-- Final user supplied presentation graphic is included unchanged as an asset
+- John Lezcano appears as Founder and Managing Director
+- Gustavo, Gabriel, Fernanda, Nicole, and Aline appear using first names only
+- All six approved photographs are used
+- Every team image has a consistent four by five crop
+- Every profile has responsive 320 pixel and 640 pixel WebP assets
+- Founder profile is visually more prominent than the remaining team cards
+- Team order follows the approved leadership and responsibility hierarchy
+- The existing About page operating model section remains in place beneath the real team profiles
 
 ## Production configuration retained
 
@@ -33,9 +33,9 @@
 
 ## Content and privacy
 
-- No client names, raw dashboard files, proposal pricing, or retired private email are present in the public website package
+- No private client names, raw dashboard files, proposal pricing, or retired private email are present in the public website package
 - Public website copy remains free of dash styled prose
-- No founder, leadership, biography, photograph, or placeholder people section was added
+- Team cards do not publish surnames for Gustavo or Gabriel
 - SEO titles, descriptions, canonicals, schema, sitemap, robots, and social metadata remain in place
 
 ## Regression coverage
@@ -46,3 +46,4 @@
 - Required generated file validation passed
 - Contact integration validation passed
 - GA4 tag validation passed on every HTML page
+- About page team content and image references are now included in automated validation

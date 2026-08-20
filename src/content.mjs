@@ -917,6 +917,96 @@ function aboutVisual() {
   </div>`;
 }
 
+function teamPhoto({ slug, name, role, bio }) {
+  return `<article class="team-profile-card reveal">
+    <div class="team-profile-card__media">
+      <img
+        src="/assets/team/${slug}-640.webp"
+        srcset="/assets/team/${slug}-320.webp 320w, /assets/team/${slug}-640.webp 640w"
+        sizes="(max-width: 700px) 100vw, (max-width: 1080px) 50vw, 33vw"
+        width="640"
+        height="800"
+        loading="lazy"
+        decoding="async"
+        alt="${name}, ${role} at Capital Generations"
+      />
+    </div>
+    <div class="team-profile-card__body">
+      <span class="team-profile-card__role">${role}</span>
+      <h3>${name}</h3>
+      <p>${bio}</p>
+    </div>
+  </article>`;
+}
+
+function teamSection() {
+  return `<section class="section people-section">
+    <div class="container">
+      ${sectionHeading({
+        eyebrowText: 'The people behind the work',
+        title: 'Meet the team behind Capital Generations.',
+        description: 'Clients do not work with a faceless outsourced sales operation. These are the people who manage the reps, shape the strategy, build the reporting, and keep the day to day work moving.',
+        align: 'center',
+      })}
+
+      <article class="founder-profile reveal">
+        <div class="founder-profile__media">
+          <img
+            src="/assets/team/john-640.webp"
+            srcset="/assets/team/john-320.webp 320w, /assets/team/john-640.webp 640w"
+            sizes="(max-width: 800px) 100vw, 42vw"
+            width="640"
+            height="800"
+            loading="lazy"
+            decoding="async"
+            alt="John Lezcano, Founder and Managing Director of Capital Generations"
+          />
+        </div>
+        <div class="founder-profile__content">
+          <span class="founder-profile__role">Founder and Managing Director</span>
+          <h3>John Lezcano</h3>
+          <p>John leads Capital Generations with a focus on building sales teams that work in the real world. He works closely with clients on strategy, team structure, execution, and growth while overseeing the people and processes behind each engagement. His approach comes from years of building and managing outbound sales teams and understanding firsthand how much work goes into recruiting, training, coaching, and keeping a sales organization accountable.</p>
+          <p>He founded Capital Generations around a simple idea: clients should get more than a rep. They should get a team that understands their business, stays close to the work, and takes responsibility for helping create real pipeline.</p>
+          <blockquote>Clients should get more than a rep. They should get a team that understands the business and takes responsibility for the work.</blockquote>
+        </div>
+      </article>
+
+      <div class="team-profile-grid">
+        ${teamPhoto({
+          slug: 'gustavo',
+          name: 'Gustavo',
+          role: 'SDR Manager',
+          bio: 'Gustavo leads the day to day management of the SDR team, with a focus on coaching, accountability, execution, and continuous improvement. He works closely with reps to review performance, strengthen outreach, and keep campaigns aligned with client goals. His role is to make sure the team has the support, structure, and feedback needed to perform consistently.',
+        })}
+        ${teamPhoto({
+          slug: 'gabriel',
+          name: 'Gabriel',
+          role: 'Client Strategist',
+          bio: 'Gabriel works closely with clients to understand what they are trying to accomplish and turn those goals into a clear outreach strategy. He helps shape campaign direction, refine messaging and targeting, and make adjustments as performance data comes in. His role is to keep client objectives connected to the day to day execution so the team stays focused on the right priorities.',
+        })}
+        ${teamPhoto({
+          slug: 'fernanda',
+          name: 'Fernanda',
+          role: 'Sales Operations & Data Reporting',
+          bio: 'Fernanda supports the data and reporting side of Capital Generations, helping turn day to day sales activity into clear, useful information. She organizes and monitors performance data, maintains reporting systems, and helps identify the trends that matter most to each client program. Her work gives the team better visibility into what is happening and where adjustments may be needed.',
+        })}
+        ${teamPhoto({
+          slug: 'nicole',
+          name: 'Nicole',
+          role: 'Administrative Support & Reporting',
+          bio: 'Nicole helps keep the operational side of Capital Generations organized, accurate, and moving. She supports reporting, documentation, internal coordination, and the day to day workflows that keep client programs on track. She also helps make sure information is updated, processes are followed, and the team has what it needs to stay responsive.',
+        })}
+        ${teamPhoto({
+          slug: 'aline',
+          name: 'Aline',
+          role: 'Administrative Support',
+          bio: 'Aline keeps the day to day administrative side of Capital Generations organized and moving. She supports documentation, coordination, invoicing, internal follow up, and the many small details that help the broader team stay focused on client work. Her role is all about keeping things running smoothly behind the scenes and stepping in wherever extra support is needed.',
+        })}
+      </div>
+    </div>
+  </section>`;
+}
+
 function aboutPage(site) {
   const faqs = [
     {
@@ -939,8 +1029,9 @@ function aboutPage(site) {
 
   return {
     path: '/about',
+    schemaType: 'AboutPage',
     title: 'About Capital Generations | Managed B2B Sales Teams',
-    description: 'Capital Generations is a New York based outsourced sales company providing dedicated SDR and AE capacity with recruiting, training, management, data, and reporting.',
+    description: 'Meet the people behind Capital Generations, a New York based outsourced sales company providing dedicated SDR and AE capacity with recruiting, training, management, data, and reporting.',
     faqs,
     body: `${pageHero({
       eyebrowText: 'About Capital Generations',
@@ -978,6 +1069,8 @@ function aboutPage(site) {
         </div>
       </div>
     </section>
+
+    ${teamSection()}
 
     <section class="section section--dark">
       <div class="container team-support">
