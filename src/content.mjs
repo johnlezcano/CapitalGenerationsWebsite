@@ -1151,7 +1151,7 @@ function contactPage(site) {
           </div>
         </div>
 
-        <div class="contact-form-wrap reveal">
+        <div id="contact-form" class="contact-form-wrap reveal">
           <div class="contact-form-wrap__head">
             ${eyebrow('Send a note')}
             <h2>Prefer to write it out first?</h2>
