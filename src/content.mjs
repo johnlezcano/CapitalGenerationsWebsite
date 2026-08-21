@@ -974,31 +974,31 @@ function teamSection() {
       <div class="team-profile-grid">
         ${teamPhoto({
           slug: 'gustavo',
-          name: 'Gustavo',
+          name: 'Gustavo Neves',
           role: 'SDR Manager',
           bio: 'Gustavo leads the day to day management of the SDR team, with a focus on coaching, accountability, execution, and continuous improvement. He works closely with reps to review performance, strengthen outreach, and keep campaigns aligned with client goals. His role is to make sure the team has the support, structure, and feedback needed to perform consistently.',
         })}
         ${teamPhoto({
           slug: 'gabriel',
-          name: 'Gabriel',
+          name: 'Gabriel Aguiar',
           role: 'Client Strategist',
           bio: 'Gabriel works closely with clients to understand what they are trying to accomplish and turn those goals into a clear outreach strategy. He helps shape campaign direction, refine messaging and targeting, and make adjustments as performance data comes in. His role is to keep client objectives connected to the day to day execution so the team stays focused on the right priorities.',
         })}
         ${teamPhoto({
           slug: 'fernanda',
-          name: 'Fernanda',
+          name: 'Fernanda Monello',
           role: 'Sales Operations & Data Reporting',
           bio: 'Fernanda supports the data and reporting side of Capital Generations, helping turn day to day sales activity into clear, useful information. She organizes and monitors performance data, maintains reporting systems, and helps identify the trends that matter most to each client program. Her work gives the team better visibility into what is happening and where adjustments may be needed.',
         })}
         ${teamPhoto({
           slug: 'nicole',
-          name: 'Nicole',
+          name: 'Nicole Ortega',
           role: 'Administrative Support & Reporting',
           bio: 'Nicole helps keep the operational side of Capital Generations organized, accurate, and moving. She supports reporting, documentation, internal coordination, and the day to day workflows that keep client programs on track. She also helps make sure information is updated, processes are followed, and the team has what it needs to stay responsive.',
         })}
         ${teamPhoto({
           slug: 'aline',
-          name: 'Aline',
+          name: 'Aline Santos',
           role: 'Administrative Support',
           bio: 'Aline keeps the day to day administrative side of Capital Generations organized and moving. She supports documentation, coordination, invoicing, internal follow up, and the many small details that help the broader team stay focused on client work. Her role is all about keeping things running smoothly behind the scenes and stepping in wherever extra support is needed.',
         })}
