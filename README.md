@@ -1,6 +1,6 @@
 # Capital Generations Website
 
-Version **1.8.0** of the production Capital Generations marketing website.
+Version **1.8.1** of the production Capital Generations marketing website.
 
 The site is a zero dependency static Node.js build. It does not use WordPress, a database, or a CMS. The source generates a deployable `dist/` directory, and `vercel.json` is configured for the existing GitHub to Vercel deployment.
 
@@ -12,6 +12,10 @@ The complete delivery archive contains two main folders:
 - `private-source-assets/`: original dashboard screenshots and proposal supplied for the project; do not publish this folder or place it in a public repository
 
 Custom generated website assets are included in `public/assets/generated/` and are safe to deploy.
+
+## Version 1.9.0 update
+
+Added Vitória Pureza after Aline Santos on the About page, with the approved Client Strategy/Marketing Support title, biography, and responsive WebP portrait. Existing team names are retained as supplied in the source.
 
 ## Included in this release
 

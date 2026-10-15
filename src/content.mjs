@@ -1002,6 +1002,12 @@ function teamSection() {
           role: 'Administrative Support',
           bio: 'Aline keeps the day to day administrative side of Capital Generations organized and moving. She supports documentation, coordination, invoicing, internal follow up, and the many small details that help the broader team stay focused on client work. Her role is all about keeping things running smoothly behind the scenes and stepping in wherever extra support is needed.',
         })}
+        ${teamPhoto({
+          slug: 'vitoria',
+          name: 'Vitória Pureza',
+          role: 'Client Strategy/Marketing Support',
+          bio: 'Vitória supports client success and Capital Generations’ marketing efforts. She helps coordinate client communication, organize follow up, and keep day to day priorities on track. She also supports the planning and execution of Capital Generations’ outreach and marketing campaigns.',
+        })}
       </div>
     </div>
   </section>`;

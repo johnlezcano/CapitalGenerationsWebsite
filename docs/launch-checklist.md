@@ -155,4 +155,4 @@ This is the source of truth checklist for the project.
 
 ## Current release status
 
-The launch checklist is complete. Version 1.6.0 is an approved copy and call to action refinement that retains the live production configuration. Founder and team content remain a separate future update after internal assets are supplied.
+The checklist above records the original launch. Version 1.8.1 includes the founder and team profiles with confirmed full names, aligned validation, and content visibility without JavaScript. The local build and validation have passed. This maintenance release has not yet been deployed or visually verified in a browser.

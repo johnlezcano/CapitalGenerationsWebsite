@@ -1,0 +1,16 @@
+COMPLETE WEBSITE UPDATE — VERSION 1.9.0
+
+1. Extract this ZIP on your computer.
+2. Open the CapitalGenerationsWebsite-main folder.
+3. Open your existing GitHub website repository at its top level.
+4. Choose Add file > Upload files.
+5. Drag ALL files and folders INSIDE CapitalGenerationsWebsite-main into GitHub.
+   Upload the contents, not the ZIP and not the enclosing folder.
+   package.json and vercel.json must stay at the repository top level.
+6. Commit the changes to the branch connected to Vercel.
+7. Wait for Vercel to finish deploying, then open /about and confirm Vitória appears after Aline.
+
+All existing files are included. No manual code editing is needed.
+Vercel settings: build command npm run build; output directory dist.
+
+If GitHub asks for fewer files, upload the folders in separate batches, then the top-level files. Upload src and public together when possible. The final repository must contain all supplied files.

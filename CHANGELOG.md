@@ -1,10 +1,24 @@
 # Changelog
 
+## 1.9.0: Vitória Pureza team profile
+
+- Added Vitória immediately after Aline Santos on the About page.
+- Used the approved title and biography.
+- Added 320 and 640 pixel WebP portraits in the existing four by five format.
+- Updated validation for all current team names and new image files.
+- Rebuilt all deployable files from source.
+
+## 1.8.1: Confirmed names and resilient content visibility
+
+- Retained all manually amended full team names and updated validation.
+- Made reveal sections visible without JavaScript, with optional animations.
+- Rebuilt generated pages and aligned current release documentation.
+
 ## 1.8.0: About page team profiles
 
 - Added a new real team section to the About page using the six approved team photographs
 - Added John Lezcano as Founder and Managing Director with a featured founder profile and longer biography
-- Added Gustavo, Gabriel, Fernanda, Nicole, and Aline using first names only as requested
+- Added Gustavo, Gabriel, Fernanda, Nicole, and Aline initially using first names only; full names were subsequently confirmed in 1.8.1
 - Added cleaned and humanized biographies for every team member
 - Ordered the team by leadership and client facing responsibility
 - Cropped every photograph to a consistent four by five profile ratio and generated 320 pixel and 640 pixel WebP assets

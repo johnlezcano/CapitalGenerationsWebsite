@@ -173,20 +173,19 @@ try {
   const requiredTeamCopy = [
     'John Lezcano',
     'Founder and Managing Director',
-    '>Gustavo<',
-    '>Gabriel<',
-    '>Fernanda<',
-    '>Nicole<',
-    '>Aline<',
+    '>Gustavo Neves<',
+    '>Gabriel Aguiar<',
+    '>Fernanda Monello<',
+    '>Nicole Ortega<',
+    '>Aline Santos<',
+    '>Vitória Pureza<',
+    'Client Strategy/Marketing Support',
     'The people behind the work',
   ];
   for (const value of requiredTeamCopy) {
     if (!aboutHtml.includes(value)) failures.push(`about/index.html: missing team content: ${value}`);
   }
-  for (const retiredFullName of ['Gustavo Neves', 'Gabriel Aguiar']) {
-    if (aboutHtml.includes(retiredFullName)) failures.push(`about/index.html: public team card should use first name only: ${retiredFullName}`);
-  }
-  for (const slug of ['john', 'gustavo', 'gabriel', 'fernanda', 'nicole', 'aline']) {
+  for (const slug of ['john', 'gustavo', 'gabriel', 'fernanda', 'nicole', 'aline', 'vitoria']) {
     if (!aboutHtml.includes(`/assets/team/${slug}-640.webp`)) failures.push(`about/index.html: missing team image reference for ${slug}`);
   }
 } catch {
@@ -247,7 +246,7 @@ for (const required of ['index.html', '404.html', 'sitemap.xml', 'robots.txt', '
   }
 }
 
-for (const slug of ['john', 'gustavo', 'gabriel', 'fernanda', 'nicole', 'aline']) {
+for (const slug of ['john', 'gustavo', 'gabriel', 'fernanda', 'nicole', 'aline', 'vitoria']) {
   for (const width of ['320', '640']) {
     const required = `assets/team/${slug}-${width}.webp`;
     try {

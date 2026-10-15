@@ -67,6 +67,12 @@
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            if (typeof entry.target.animate === 'function') {
+              entry.target.animate(
+                [{ opacity: 0, transform: 'translateY(18px)' }, { opacity: 1, transform: 'translateY(0)' }],
+                { duration: 700, easing: 'ease-out' },
+              );
+            }
             entry.target.classList.add('is-visible');
             observer.unobserve(entry.target);
           }
