@@ -13,7 +13,7 @@ The complete delivery archive contains two main folders:
 
 Custom generated website assets are included in `public/assets/generated/` and are safe to deploy.
 
-## Version 1.9.0 update
+## Version 1.9.1 update
 
 Added Vitória Pureza after Aline Santos on the About page, with the approved Client Strategy/Marketing Support title, biography, and responsive WebP portrait. Existing team names are retained as supplied in the source.
 

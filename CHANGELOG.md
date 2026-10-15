@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.9.1: Six-person team grid correction
+
+- Removed the original five-person layout offsets and tablet last-card centering.
+- All six team cards flow in order: three columns on desktop, two on tablet, one on mobile.
+- Vitória follows Aline on desktop row two.
+
+
 ## 1.9.0: Vitória Pureza team profile
 
 - Added Vitória immediately after Aline Santos on the About page.

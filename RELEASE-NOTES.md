@@ -1,4 +1,4 @@
-# Capital Generations Website 1.9.0
+# Capital Generations Website 1.9.1
 
 Added Vitória Pureza immediately after Aline Santos in the About team section.
 Title: Client Strategy/Marketing Support.
@@ -8,3 +8,5 @@ This is the complete repository, including all source code, public assets, docum
 Existing team names and production integrations are preserved from the source.
 
 Run npm run validate to rebuild and check the site.
+
+Version 1.9.1 corrects the team grid: three cards per desktop row, two per tablet row, and one per mobile row. Removed the old five-person positioning rules.
