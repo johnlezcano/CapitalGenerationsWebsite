@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.10.0: Homepage introduction video
+
+- Added the supplied 60-second video below the hero with an actual branded video frame as the thumbnail.
+- Video source is assigned only on click; no autoplay or initial media download.
+- Native controls, mobile inline playback, fallback link, and GA4 play/completion events.
+- Preserved the corrected six-person team grid.
+
+
 ## 1.9.1: Six-person team grid correction
 
 - Removed the original five-person layout offsets and tablet last-card centering.

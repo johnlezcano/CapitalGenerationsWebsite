@@ -1,4 +1,4 @@
-COMPLETE WEBSITE UPDATE — VERSION 1.9.1
+COMPLETE WEBSITE UPDATE — VERSION 1.10.0
 
 1. Extract this ZIP on your computer.
 2. Open the CapitalGenerationsWebsite-main folder.

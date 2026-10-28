@@ -176,4 +176,22 @@
       }
     });
   }
+
+  const videoPreview = document.querySelector('[data-video-play]');
+  const introPlayer = document.querySelector('[data-intro-player]');
+  if (videoPreview && introPlayer) {
+    const videoError = document.querySelector('[data-video-error]');
+    introPlayer.addEventListener('error', () => { if (videoError) videoError.hidden = false; });
+    videoPreview.addEventListener('click', (event) => {
+      event.preventDefault();
+      introPlayer.src = videoPreview.getAttribute('href');
+      videoPreview.hidden = true;
+      introPlayer.hidden = false;
+      introPlayer.focus();
+      const playback = introPlayer.play();
+      if (playback) playback.catch(() => { if (videoError) videoError.hidden = false; });
+    });
+    introPlayer.addEventListener('play', () => trackEvent('intro_video_play', { page_path: window.location.pathname }));
+    introPlayer.addEventListener('ended', () => trackEvent('intro_video_complete', { page_path: window.location.pathname }));
+  }
 })();
