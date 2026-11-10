@@ -61,7 +61,7 @@ The site does not use nationality, ethnicity, or geography as a negative competi
 
 Primary conversion:
 
-- Book a strategy conversation through Calendly
+- Book a strategy conversation through Microsoft Bookings
 
 Secondary conversion:
 

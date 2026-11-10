@@ -48,7 +48,7 @@ Public page copy, metadata, accessibility copy, interface messages, and text ins
 - Displayed phone: `(631) 877 1393`
 - Telephone link: `tel:+16318771393`
 - WhatsApp: `https://wa.me/16318771393`
-- Calendly: `https://calendly.com/capitalgenerations/conversation`
+- Microsoft Bookings: `/book/`
 - LinkedIn: `https://www.linkedin.com/company/capital-generations`
 - Location: New York, NY
 - Established: 2020

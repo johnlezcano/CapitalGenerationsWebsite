@@ -139,7 +139,7 @@
 
       if (!endpoint) {
         showStatus(
-          `The form is temporarily unavailable. Please email ${emailLink} or use the Calendly link.`,
+          `The form is temporarily unavailable. Please email ${emailLink} or use the Microsoft Bookings link.`,
           'error',
         );
         return;
@@ -195,3 +195,22 @@
     introPlayer.addEventListener('ended', () => trackEvent('intro_video_complete', { page_path: window.location.pathname }));
   }
 })();
+
+ 
+// Create the external calendar only after an intentional visitor action.
+const bookingTrigger = document.querySelector('[data-booking-load]');
+bookingTrigger?.addEventListener('click', () => {
+  const container = document.getElementById('booking-calendar');
+  if (!container || container.querySelector('iframe')) return;
+  const frame = document.createElement('iframe');
+  frame.title = 'Schedule a consultation with Capital Generations';
+  frame.src = bookingTrigger.dataset.bookingUrl;
+  frame.width = '100%';
+  frame.height = '1000';
+  frame.setAttribute('scrolling', 'yes');
+  container.hidden = false;
+  container.append(frame);
+  bookingTrigger.setAttribute('aria-expanded', 'true');
+  bookingTrigger.disabled = true;
+  bookingTrigger.querySelector('span').textContent = 'Calendar opened below';
+});

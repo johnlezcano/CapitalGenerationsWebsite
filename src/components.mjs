@@ -37,12 +37,12 @@ export function arrowLink(label, href, className = '') {
 
 export function primaryButton(label, href, options = {}) {
   const { external = false, className = '', track = '' } = options;
-  return `<a class="button button--primary ${className}" href="${href}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}${track ? ` data-track="${track}"` : ''}><span>${label}</span>${icon('arrow')}</a>`;
+  return `<a class="button button--primary ${className}" href="${href}"${external && !href.startsWith('/') ? ' target="_blank" rel="noopener noreferrer"' : ''}${track ? ` data-track="${track}"` : ''}><span>${label}</span>${icon('arrow')}</a>`;
 }
 
 export function secondaryButton(label, href, options = {}) {
   const { external = false, className = '', track = '' } = options;
-  return `<a class="button button--secondary ${className}" href="${href}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}${track ? ` data-track="${track}"` : ''}><span>${label}</span>${icon('arrow')}</a>`;
+  return `<a class="button button--secondary ${className}" href="${href}"${external && !href.startsWith('/') ? ' target="_blank" rel="noopener noreferrer"' : ''}${track ? ` data-track="${track}"` : ''}><span>${label}</span>${icon('arrow')}</a>`;
 }
 
 export function eyebrow(text, tone = '') {

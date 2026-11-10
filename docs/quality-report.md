@@ -29,7 +29,7 @@
 - Formspree remains `https://formspree.io/f/xjybazzn`
 - Public email remains `contact@capitalgenerations.com`
 - Phone and WhatsApp remain connected to `+16318771393`
-- Calendly and LinkedIn links remain unchanged
+- Microsoft Bookings and LinkedIn links remain unchanged
 
 ## Content and privacy
 

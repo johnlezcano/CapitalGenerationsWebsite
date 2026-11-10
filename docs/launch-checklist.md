@@ -92,7 +92,7 @@ This is the source of truth checklist for the project.
 ## 13. WhatsApp and scheduling
 - [x] WhatsApp button
 - [x] Business WhatsApp number
-- [x] Calendly booking link
+- [x] Microsoft Bookings booking link
 
 ## 14. Google Search Console
 - [x] Create Domain property

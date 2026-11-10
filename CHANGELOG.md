@@ -40,7 +40,7 @@
 - Added the real people section to the About page while retaining the existing operating model section
 - Added responsive layouts for desktop, tablet, and mobile
 - Added founder information to organization structured data and changed the About page schema type to AboutPage
-- Retained the More Than an SDR sections, GA4, Search Console, Formspree, Calendly, WhatsApp, LinkedIn, SEO, mobile navigation, and production domain settings
+- Retained the More Than an SDR sections, GA4, Search Console, Formspree, Microsoft Bookings, WhatsApp, LinkedIn, SEO, mobile navigation, and production domain settings
 
 ## 1.7.0: More Than an SDR operating team section
 
@@ -51,7 +51,7 @@
 - Added a People, Process, Performance, and Outcomes summary strip
 - Replaced the previous SDR page support pod with a deeper version of the same operating team model
 - Added the finalized presentation diagram to the website asset package without using it as a small unreadable mobile screenshot
-- Preserved the existing humanized copy, conversational calls to action, mobile navigation fix, GA4, Search Console, Formspree, Calendly, WhatsApp, LinkedIn, SEO, and production domain settings
+- Preserved the existing humanized copy, conversational calls to action, mobile navigation fix, GA4, Search Console, Formspree, Microsoft Bookings, WhatsApp, LinkedIn, SEO, and production domain settings
 - Did not add founder, leadership, biography, photograph, or placeholder people sections
 
 ## 1.6.0: Human copy and conversational calls to action
@@ -61,13 +61,13 @@
 - Added varied conversational calls to action across page heroes, closing sections, navigation, footer, and contact flows
 - Kept the current page structure and visual layout unchanged
 - Did not add founder, leadership, team biography, photo, or placeholder sections
-- Retained GA4, Search Console, Formspree, Calendly, WhatsApp, LinkedIn, mobile navigation, domain, SEO, and Microsoft 365 configuration
+- Retained GA4, Search Console, Formspree, Microsoft Bookings, WhatsApp, LinkedIn, mobile navigation, domain, SEO, and Microsoft 365 configuration
 - Preserved the site rule against dash styled public copy
 
 ## 1.5.0: Google Analytics 4 production tracking
 
 - Added the production Google tag with Measurement ID `G-RGYQXFRE1W` to every generated page
-- Retained and activated existing event tracking for Calendly, phone, email, WhatsApp, LinkedIn, and contact form outcomes
+- Retained and activated existing event tracking for Microsoft Bookings, phone, email, WhatsApp, LinkedIn, and contact form outcomes
 - Added a fallback loader in the main script without duplicating the standard Google tag
 - Updated the privacy notice to describe active Google Analytics 4 usage
 - Aligned canonical URLs, schema, Open Graph URLs, robots output, and sitemap entries with the live primary `www` domain
@@ -110,8 +110,8 @@
 ## 1.1.0: Production contact integrations
 
 - Connected Formspree endpoint `https://formspree.io/f/xjybazzn`
-- Added the original public contact email, phone, WhatsApp, LinkedIn, and Calendly integrations
-- Added analytics event hooks for phone, email, WhatsApp, LinkedIn, Calendly, and forms
+- Added the original public contact email, phone, WhatsApp, LinkedIn, and Microsoft Bookings integrations
+- Added analytics event hooks for phone, email, WhatsApp, LinkedIn, Microsoft Bookings, and forms
 - Added version 1.1 automated QA and responsive screenshots
 
 ## 1.0.0: Initial website build

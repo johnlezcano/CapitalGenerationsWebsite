@@ -24,13 +24,13 @@ Added Vitória Pureza after Aline Santos on the About page, with the approved Cl
 - SDR, AE, and full sales team service pages
 - Education industry landing page
 - Anonymized results and sanitized reporting visuals
-- Calendly calls to action
+- Microsoft Bookings calls to action
 - Formspree contact form integration
 - Public phone and click to call links
 - WhatsApp links plus a global floating WhatsApp button
 - LinkedIn links on the contact page and in the footer
 - Google Analytics 4 with Measurement ID `G-RGYQXFRE1W`
-- Analytics events for Calendly, phone, email, WhatsApp, LinkedIn, and contact form outcomes
+- Analytics events for Microsoft Bookings, phone, email, WhatsApp, LinkedIn, and contact form outcomes
 - Google Search Console domain verification completed through Squarespace DNS
 - Search Console sitemap submitted successfully with 11 discovered pages
 - SEO titles, descriptions, canonicals, Open Graph tags, schema, sitemap, and robots file
@@ -62,7 +62,7 @@ export const site = {
   whatsappUrl: 'https://wa.me/16318771393',
   location: 'New York, NY',
   foundedYear: 2020,
-  calendlyUrl: 'https://calendly.com/capitalgenerations/conversation',
+  bookingPath: '/book/',
   formspreeEndpoint: 'https://formspree.io/f/xjybazzn',
   gaMeasurementId: 'G-RGYQXFRE1W',
   searchConsoleVerification: '',
@@ -161,7 +161,7 @@ G-RGYQXFRE1W
 
 The standard Google tag is generated in the document head on every page. The existing event hooks report these interactions when GA4 is active:
 
-- header and footer Calendly links
+- header and footer Microsoft Bookings links
 - phone links
 - email links
 - WhatsApp links
@@ -175,7 +175,7 @@ After deployment:
 2. Open Reports, then Realtime.
 3. Visit the production website in a separate browser tab.
 4. Navigate between several pages.
-5. Click one non destructive tracked link, such as LinkedIn or Calendly.
+5. Click one non destructive tracked link, such as LinkedIn or Microsoft Bookings.
 6. Confirm the active user and event appear in Realtime.
 
 Do not submit repeated production form tests solely to generate analytics events.

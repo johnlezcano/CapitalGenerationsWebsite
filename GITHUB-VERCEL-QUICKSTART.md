@@ -27,7 +27,7 @@ Version 1.6.0 includes:
 - more direct and conversational copy across the existing website
 - varied calls to action tied to pipeline, team needs, sales gaps, and goals
 - no new founder, leadership, biography, photo, team, or placeholder sections
-- the existing GA4, Search Console, Formspree, phone, WhatsApp, Calendly, email, LinkedIn, SEO, domain, and website configuration
+- the existing GA4, Search Console, Formspree, phone, WhatsApp, Microsoft Bookings, email, LinkedIn, SEO, domain, and website configuration
 - the mobile navigation overlay fix
 - the rule against dash styled public copy
 

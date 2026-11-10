@@ -9,7 +9,8 @@ export const site = {
   whatsappUrl: 'https://wa.me/16318771393',
   location: 'New York, NY',
   foundedYear: 2020,
-  calendlyUrl: 'https://calendly.com/capitalgenerations/conversation',
+  bookingPath: '/book/',
+  microsoftBookingsUrl: 'https://bookings.cloud.microsoft/book/CapitalGenerations1@capitalgenerations.com/?ismsaljsauthenabled',
   description:
     'Capital Generations hires, trains, manages, and reports on dedicated SDR and AE teams that help growing B2B companies create qualified pipeline.',
 

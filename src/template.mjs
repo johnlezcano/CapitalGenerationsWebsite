@@ -51,7 +51,7 @@ function header(site, currentPath) {
         <div class="site-nav__mobile-contact">
           ${navAnchor('Contact', '/contact', currentPath)}
         </div>
-        ${primaryButton('Let’s talk sales', site.calendlyUrl, { external: true, className: 'site-nav__cta', track: 'book_call_header' })}
+        ${primaryButton('Let’s talk sales', site.bookingPath, { external: true, className: 'site-nav__cta', track: 'book_call_header' })}
       </nav>
     </div>
   </header>`;
@@ -96,7 +96,7 @@ function footer(site) {
         <div class="site-footer__cta">
           <span>Trying to create more pipeline?</span>
           <h2>Tell us where sales is getting stuck.</h2>
-          ${primaryButton('Talk through your goals', site.calendlyUrl, { external: true, track: 'book_call_footer' })}
+          ${primaryButton('Talk through your goals', site.bookingPath, { external: true, track: 'book_call_footer' })}
         </div>
       </div>
       <div class="site-footer__bottom">

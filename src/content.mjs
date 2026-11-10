@@ -30,7 +30,7 @@ function homeHero(site) {
         <h1>Build pipeline without building the entire team.</h1>
         <p>We hire the reps, train them, manage them, and make sure the work gets done. You get more qualified conversations without taking on another recruiting and management job.</p>
         <div class="button-row">
-          ${primaryButton('Talk through your sales goals', site.calendlyUrl, { external: true, track: 'book_call_hero' })}
+          ${primaryButton('Talk through your sales goals', site.bookingPath, { external: true, track: 'book_call_hero' })}
           ${secondaryButton('See how it works', '/how-it-works', { className: 'button--on-dark' })}
         </div>
         <div class="hero-proof">
@@ -217,7 +217,7 @@ function homePage(site) {
     ${ctaBand({
       title: 'Want to talk through your pipeline?',
       description: 'Tell us what you are trying to fix or build. We will give you a straight answer about whether our team can help.',
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Talk through your sales goals',
       secondaryLabel: 'Send us a note',
     })}`,
@@ -254,7 +254,7 @@ function servicesPage(site) {
       title: 'Tell us where sales is getting stuck. We can add the team around it.',
       description: 'Need more meetings, more follow up, or both? We hire and manage the people who do the work, and we keep you close to the results.',
       bullets: ['A rep who works on your program', 'A manager who stays close to the work', 'Data and client support', 'Reporting you can actually use'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Talk through the gap',
       secondaryHref: '/how-it-works',
       secondaryLabel: 'See how it works',
@@ -301,7 +301,7 @@ function servicesPage(site) {
 
     ${faqSection('Service questions', 'The team should fit your sales motion, not force you into a package.', faqs)}
 
-    ${ctaBand({ title: 'Not sure where to start?', description: 'Tell us what is happening in your funnel. We will talk it through and suggest the most practical starting point.', primaryHref: site.calendlyUrl, primaryLabel: 'Talk through the options', secondaryLabel: 'Send us a note' })}`,
+    ${ctaBand({ title: 'Not sure where to start?', description: 'Tell us what is happening in your funnel. We will talk it through and suggest the most practical starting point.', primaryHref: site.bookingPath, primaryLabel: 'Talk through the options', secondaryLabel: 'Send us a note' })}`,
   };
 }
 
@@ -352,7 +352,7 @@ function sdrPage(site) {
       title: 'Build qualified pipeline without building an internal SDR function.',
       description: 'We hire the SDR, train them on your business, manage the daily work, and make sure the right accounts are getting real outreach.',
       bullets: ['Phone, email, and LinkedIn outreach', 'Real conversations instead of call center scripts', 'A manager who coaches and holds accountable', 'Data support and reporting'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Talk about your pipeline',
       secondaryHref: '/results',
       secondaryLabel: 'See selected results',
@@ -414,7 +414,7 @@ function sdrPage(site) {
 
     ${faqSection('Outsourced SDR questions', 'Straight answers about what the team does and how we manage it.', faqs)}
 
-    ${ctaBand({ title: 'Want to see what an SDR team could look like for you?', description: 'Tell us who you sell to, how outbound works today, and where you need more help.', primaryHref: site.calendlyUrl, primaryLabel: 'Talk through your SDR needs', secondaryLabel: 'Send us a note' })}`,
+    ${ctaBand({ title: 'Want to see what an SDR team could look like for you?', description: 'Tell us who you sell to, how outbound works today, and where you need more help.', primaryHref: site.bookingPath, primaryLabel: 'Talk through your SDR needs', secondaryLabel: 'Send us a note' })}`,
   };
 }
 
@@ -462,7 +462,7 @@ function aePage(site) {
       title: 'Add a seller who can keep good opportunities moving.',
       description: 'We give qualified opportunities consistent ownership through discovery, demos, follow up, and the rest of your process. We manage the person and the work around them.',
       bullets: ['Works inside your sales process', 'Owns follow up and next steps', 'Supported by a manager and client success', 'Clear pipeline review'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Talk through your pipeline',
       secondaryHref: '/services/full-sales-teams',
       secondaryLabel: 'Explore full sales teams',
@@ -512,7 +512,7 @@ function aePage(site) {
 
     ${faqSection('Outsourced AE questions', 'We shape the role around your product, process, sales cycle, and team.', faqs)}
 
-    ${ctaBand({ title: 'Have good opportunities but not enough follow through?', description: 'Tell us where deals are slowing down. We will talk through whether added AE support makes sense.', primaryHref: site.calendlyUrl, primaryLabel: 'Talk through your pipeline', secondaryLabel: 'Send us a note' })}`,
+    ${ctaBand({ title: 'Have good opportunities but not enough follow through?', description: 'Tell us where deals are slowing down. We will talk through whether added AE support makes sense.', primaryHref: site.bookingPath, primaryLabel: 'Talk through your pipeline', secondaryLabel: 'Send us a note' })}`,
   };
 }
 
@@ -564,7 +564,7 @@ function fullSalesPage(site) {
       title: 'One team to create the conversation and keep it moving.',
       description: 'We connect SDR and AE work so the target, handoff, follow up, and reporting stay clear from first contact onward.',
       bullets: ['SDR and AE support in one team', 'Clear rules for qualification and handoff', 'One manager and client success rhythm', 'Visibility from first touch onward'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Map out your sales team',
       secondaryHref: '/how-it-works',
       secondaryLabel: 'See how the team works',
@@ -619,7 +619,7 @@ function fullSalesPage(site) {
 
     ${faqSection('Full sales team questions', 'The team works best when everyone is clear on ownership, process, and outcomes.', faqs)}
 
-    ${ctaBand({ title: 'Need one team to own the handoffs?', description: 'Tell us how sales is set up today. We will help map the roles, ownership, and support you actually need.', primaryHref: site.calendlyUrl, primaryLabel: 'Map out the team', secondaryLabel: 'Send us a note' })}`,
+    ${ctaBand({ title: 'Need one team to own the handoffs?', description: 'Tell us how sales is set up today. We will help map the roles, ownership, and support you actually need.', primaryHref: site.bookingPath, primaryLabel: 'Map out the team', secondaryLabel: 'Send us a note' })}`,
   };
 }
 
@@ -664,7 +664,7 @@ function howItWorksPage(site) {
       title: 'We do not hand you a rep and disappear.',
       description: 'We learn your business, set up the target market and message, manage the people, and stay close to the work from launch onward.',
       bullets: ['A clear target and definition of a good meeting', 'A rep who is trained and managed', 'Real conversations with real buyers', 'Reporting and changes as we learn'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Walk through your sales motion',
       secondaryHref: '/services',
       secondaryLabel: 'Explore services',
@@ -710,7 +710,7 @@ function howItWorksPage(site) {
 
     ${faqSection('Process questions', 'We build the launch and working rhythm around the role, market, and what your team is ready for.', faqs)}
 
-    ${ctaBand({ title: 'Want to talk through how this would work for your team?', description: 'We will walk through your market, roles, tools, handoffs, and goals before suggesting a setup.', primaryHref: site.calendlyUrl, primaryLabel: 'Walk through it with us', secondaryLabel: 'Send us a note' })}`,
+    ${ctaBand({ title: 'Want to talk through how this would work for your team?', description: 'We will walk through your market, roles, tools, handoffs, and goals before suggesting a setup.', primaryHref: site.bookingPath, primaryLabel: 'Walk through it with us', secondaryLabel: 'Send us a note' })}`,
   };
 }
 
@@ -755,7 +755,7 @@ function educationPage(site) {
       title: 'Reach the right education buyers without treating every school the same.',
       description: 'We help education companies find the right accounts, understand the buying group, start professional conversations, and create meetings with real context.',
       bullets: ['District, school, and higher education targeting', 'Messages built for the role', 'Real phone conversations', 'Experience with complex buying groups'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Talk through your education market',
       secondaryHref: '/results',
       secondaryLabel: 'See education outcomes',
@@ -813,7 +813,7 @@ function educationPage(site) {
 
     ${faqSection('Education sales questions', 'Straight answers about buyer roles, account structure, timing, and handoffs.', faqs)}
 
-    ${ctaBand({ title: 'Trying to sell into schools, districts, or colleges?', description: 'Tell us what you sell and who you need to reach. We will talk through the market, timing, and team required.', primaryHref: site.calendlyUrl, primaryLabel: 'Talk through the market', secondaryLabel: 'Send us a note' })}`,
+    ${ctaBand({ title: 'Trying to sell into schools, districts, or colleges?', description: 'Tell us what you sell and who you need to reach. We will talk through the market, timing, and team required.', primaryHref: site.bookingPath, primaryLabel: 'Talk through the market', secondaryLabel: 'Send us a note' })}`,
   };
 }
 
@@ -856,7 +856,7 @@ function resultsPage(site) {
       title: 'You should be able to see what is working.',
       description: 'We track the work, the conversations, the meetings, and the pipeline so you know what is happening and where we need to change course.',
       bullets: ['Real results with client names kept private', 'Meetings and conversion you can follow', 'Visibility by target market', 'Power BI reporting'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Talk about the numbers that matter',
       secondaryHref: '/how-it-works',
       secondaryLabel: 'See how the work runs',
@@ -920,7 +920,7 @@ function resultsPage(site) {
 
     ${faqSection('Results and reporting questions', 'Reporting should make the next decision easier, not just add more charts.', faqs)}
 
-    ${ctaBand({ title: 'What would a good result look like for your team?', description: 'Tell us what you are trying to change in the funnel. We will talk through what the team should own and what we would measure.', primaryHref: site.calendlyUrl, primaryLabel: 'Talk through your goals', secondaryLabel: 'Send us a note' })}`,
+    ${ctaBand({ title: 'What would a good result look like for your team?', description: 'Tell us what you are trying to change in the funnel. We will talk through what the team should own and what we would measure.', primaryHref: site.bookingPath, primaryLabel: 'Talk through your goals', secondaryLabel: 'Send us a note' })}`,
   };
 }
 
@@ -1061,7 +1061,7 @@ function aboutPage(site) {
       title: 'We built Capital Generations to take the hard parts of building a sales team off your plate.',
       description: 'We hire, train, manage, and support dedicated sellers so growing companies can get more sales work done without building every role and process themselves.',
       bullets: ['Real people having real sales conversations', 'Sellers dedicated to your program', 'Management and coaching included', 'Targeting, data, and reporting support'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Talk with our team',
       secondaryHref: '/how-it-works',
       secondaryLabel: 'See how we work',
@@ -1117,7 +1117,7 @@ function aboutPage(site) {
 
     ${faqSection('About the company', 'A few straight answers about fit, location, and how we work.', faqs)}
 
-    ${ctaBand({ title: 'Want to see whether we would work well together?', description: 'Tell us what your team needs. We will have a straightforward conversation about fit.', primaryHref: site.calendlyUrl, primaryLabel: 'Have a real conversation', secondaryLabel: 'Send us a note' })}`,
+    ${ctaBand({ title: 'Want to see whether we would work well together?', description: 'Tell us what your team needs. We will have a straightforward conversation about fit.', primaryHref: site.bookingPath, primaryLabel: 'Have a real conversation', secondaryLabel: 'Send us a note' })}`,
   };
 }
 
@@ -1148,7 +1148,7 @@ function contactPage(site) {
       title: 'Tell us what you are trying to build.',
       description: 'Give us the real version. What are you selling, who are you trying to reach, and where is the process getting stuck? We will help figure out whether we are a fit.',
       bullets: ['A practical conversation, not a canned pitch', 'Straight answers about fit and scope', 'SDR, AE, or full team options', 'A clear next step, even if it is not us'],
-      primaryHref: site.calendlyUrl,
+      primaryHref: site.bookingPath,
       primaryLabel: 'Pick a time to talk',
       secondaryHref: `mailto:${site.email}`,
       secondaryLabel: 'Send an email',
@@ -1163,8 +1163,8 @@ function contactPage(site) {
           <span class="contact-option__label">Fastest option</span>
           <h2>Let’s talk about what you need.</h2>
           <p>Pick a time that works. We will talk about the people you need to reach, the sales work that is not getting done, and what a good outcome would look like.</p>
-          ${primaryButton('Pick a time', site.calendlyUrl, { external: true, track: 'book_call_contact' })}
-          <small>Calendly opens in a new tab.</small>
+          ${primaryButton('Pick a time', site.bookingPath, { external: true, track: 'book_call_contact' })}
+          <small>Choose a time on our scheduling page.</small>
           <div class="direct-contact" aria-label="Other ways to contact Capital Generations">
             <span>Or contact us directly</span>
             <a href="${site.phoneUrl}" data-track="phone_contact">${icon('phone')}<span><strong>${site.phoneDisplay}</strong><small>Call Capital Generations</small></span></a>
@@ -1230,7 +1230,7 @@ function privacyPage(site) {
       <h2>Information you submit</h2>
       <p>When you contact Capital Generations, book a meeting, or submit a website form, you may provide information such as your name, work email, company, website, service interest, and message. Capital Generations may use that information to respond to your inquiry, evaluate fit, communicate about services, and maintain business records.</p>
       <h2>Scheduling and form providers</h2>
-      <p>The website links to Calendly for scheduling, WhatsApp for messaging, and LinkedIn for company information. The contact form uses Formspree. Information submitted through or shared with those services is also subject to each provider’s privacy and security practices.</p>
+      <p>The website links to Microsoft Bookings for scheduling, WhatsApp for messaging, and LinkedIn for company information. The contact form uses Formspree. Information submitted through or shared with those services is also subject to each provider’s privacy and security practices.</p>
       <h2>Analytics</h2>
       <p>The website uses Google Analytics 4 to understand website traffic and usage. Analytics may collect device, browser, approximate location, referral, page view, and interaction information according to Google’s configuration and policies.</p>
       <h2>How information may be shared</h2>
@@ -1258,5 +1258,54 @@ export function buildPages(site) {
     aboutPage(site),
     contactPage(site),
     privacyPage(site),
+    bookingPage(site),
   ];
+}
+
+
+function bookingPage(site) {
+  return {
+    path: '/book',
+    title: 'Schedule a Sales Consultation | Capital Generations',
+    description: 'Schedule a consultation with Capital Generations to discuss your sales goals, outbound strategy, pipeline development, and sales support needs.',
+    body: `<section class="booking-hero">
+      <div class="container booking-hero__inner">
+        <div class="booking-hero__copy">
+          <img class="booking-hero__logo" src="/assets/images/logo-capital-generations.png" alt="Capital Generations" width="566" height="240">
+          <h1>Let’s talk about your sales goals.</h1>
+          <p>A practical conversation about your pipeline, your team, and where you need support.</p>
+          ${primaryButton('Schedule your call', '#availability')}
+        </div>
+        <figure class="booking-hero__portrait">
+          <img src="/assets/images/john-booking.webp" alt="John Lezcano, Founder and Managing Director" width="900" height="1125" fetchpriority="high">
+          <figcaption><strong>John Lezcano</strong><span>Founder and Managing Director</span></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section"><div class="container booking-intro">
+      ${eyebrow('Start a conversation')}
+      <h2>Tell us where you want to take your sales.</h2>
+      <p>Looking to build pipeline, improve your outbound sales efforts, or expand your sales team? Let’s talk about your goals, your current sales process, and where Capital Generations may be able to help.</p>
+      <p>We’ll discuss your needs, your target market, and the sales development or managed sales support that makes the most sense for your business.</p>
+    </div></section>
+    <section class="section section--soft" id="availability"><div class="container">
+      <div class="booking-panel">
+        ${eyebrow('Choose a time')}
+        <h2>Make time for a conversation.</h2>
+        <p>Select an available time that works for you.</p>
+        <button type="button" class="button button--primary booking-embed-trigger" data-booking-load data-booking-url="${site.microsoftBookingsUrl}" aria-controls="booking-calendar" aria-expanded="false" data-track="booking_view_availability"><span>View Availability</span>${icon('arrow')}</button>
+        <a class="button button--primary booking-mobile-link" href="${site.microsoftBookingsUrl}" target="_blank" rel="noopener noreferrer" data-track="booking_open_mobile"><span>Open Scheduling Calendar</span>${icon('arrow')}</a>
+        <p class="booking-fallback">Having trouble with the calendar? <a href="${site.microsoftBookingsUrl}" target="_blank" rel="noopener noreferrer" data-track="booking_open_direct">Open the scheduling page directly.</a></p>
+        <noscript><p>Use the direct scheduling link above to choose your appointment.</p></noscript>
+        <div id="booking-calendar" class="booking-calendar" hidden></div>
+      </div>
+    </div></section>
+    <section class="section"><div class="container booking-intro">
+      ${eyebrow('What happens next')}
+      <h2>A conversation about your business.</h2>
+      <p>Once you’ve scheduled your call, you’ll receive a confirmation email with your meeting details.</p>
+      <p>During our conversation, we’ll learn more about your sales goals, answer your questions, and discuss whether Capital Generations is the right fit for your needs.</p>
+      ${arrowLink('Prefer to send us a note?', '/contact')}
+    </div></section>`,
+  };
 }
