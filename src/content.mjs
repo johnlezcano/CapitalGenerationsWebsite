@@ -1269,17 +1269,14 @@ function bookingPage(site) {
     title: 'Schedule a Sales Consultation | Capital Generations',
     description: 'Schedule a consultation with Capital Generations to discuss your sales goals, outbound strategy, pipeline development, and sales support needs.',
     body: `<section class="booking-hero">
-      <div class="container booking-hero__inner">
-        <div class="booking-hero__copy">
+      <div class="container">
+        <img class="booking-blue-banner" src="/assets/images/booking-blue-banner.webp" alt="" width="1983" height="793" fetchpriority="high">
+        <div class="booking-blue-copy">
           <img class="booking-hero__logo" src="/assets/images/logo-capital-generations.png" alt="Capital Generations" width="566" height="240">
           <h1>Let’s talk about your sales goals.</h1>
           <p>A practical conversation about your pipeline, your team, and where you need support.</p>
-          ${primaryButton('Schedule your call', '#availability')}
         </div>
-        <figure class="booking-hero__portrait">
-          <img src="/assets/images/john-booking.webp" alt="John Lezcano, Founder and Managing Director" width="900" height="1125" fetchpriority="high">
-          <figcaption><strong>John Lezcano</strong><span>Founder and Managing Director</span></figcaption>
-        </figure>
+        <div class="booking-blue-action">${primaryButton('Schedule your call', '#availability')}</div>
       </div>
     </section>
     <section class="section"><div class="container booking-intro">

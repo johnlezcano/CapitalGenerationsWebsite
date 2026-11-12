@@ -3,14 +3,14 @@
 Complete replacement repository, including source, public assets, generated dist pages, existing team, and the original brand video.
 
 ## Changes
-- New /book page with the approved banner composition: original John Lezcano portrait, actual logo, and responsive live text. No duplicate portrait.
+- New /book page with the approved banner composition: approved abstract blue banner with no people or personal caption; readable live text on phones.
 - Existing scheduling buttons now open /book/ in the same tab.
 - Microsoft Bookings initializes only when View Availability is clicked.
 - Phones up to 640px wide receive a prominent direct scheduling link.
 - A direct Microsoft scheduling fallback remains visible on all screen sizes.
 - Added introduction, what happens next, metadata, and sitemap entry.
 - Existing form endpoint, analytics, contact information, team, video, Vercel configuration, and robots rules retained.
-- Portrait optimized to a 55 KB WebP file.
+- Abstract banner optimized to a 96 KB WebP file.
 - Updated scheduling references in source and documentation. Older QA reports are historical, not evidence for this release.
 
 ## Verification
